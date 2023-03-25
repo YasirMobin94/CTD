@@ -12,26 +12,103 @@ namespace CTD.Controllers
         {
             _logger = logger;
         }
-		[Route("")]
-		public IActionResult Index()
+
+        #region Home
+
+        [Route("")]
+        public IActionResult Index()
         {
             return View();
         }
-		[Route("contact-us")]
-		public IActionResult ContactUs()
-		{
-			return View();
-		}
-		[Route("privacy")]
-		public IActionResult Privacy()
-		{
-			return View();
-		}
-		[Route("about-us")]
+
+        #endregion
+
+
+        #region Contact
+
+        [Route("contact-us")]
+        public IActionResult ContactUs()
+        {
+            return View();
+        }
+
+        #endregion
+
+        #region About
+
+        [Route("about-us")]
         public IActionResult AboutUs()
         {
             return View();
         }
+
+        #endregion
+
+        #region Services
+
+        [Route("services")]
+        public IActionResult Services()
+        {
+            return View();
+        }
+
+        [Route("digital-marketing")]
+        public IActionResult DigitalMarketing()
+        {
+            return View();
+        }
+
+        [Route("web-development")]
+        public IActionResult WebDevelopment()
+        {
+            return View();
+        }
+
+        [Route("graphic-designing")]
+        public IActionResult GraphicDesigning()
+        {
+            return View();
+        }
+
+        [Route("mobile-app-development")]
+        public IActionResult MobileAppDevelopment()
+        {
+            return View();
+        }
+
+        [Route("custom-software-development")]
+        public IActionResult CustomSoftwareDevelopment()
+        {
+            return View();
+        }
+        #endregion
+
+        #region Portfolio
+
+        [Route("portfolio")]
+        public IActionResult Portfolio()
+        {
+            return View();
+        }
+
+        #endregion
+
+        #region Blogs
+
+        [Route("blogs")]
+        public IActionResult Blogs()
+        {
+            return View();
+        }
+
+        #endregion
+
+        [Route("privacy")]
+		public IActionResult Privacy()
+		{
+			return View();
+		}
+		
         [Route("faq")]
         public IActionResult FAQ()
         {
@@ -58,22 +135,18 @@ namespace CTD.Controllers
         {
             return View();
         }
-		[Route("services")]
-		public IActionResult Services()
-		{
-			return View();
-		}
+		
 		[Route("services-detail")]
 		public IActionResult ServicesDetail()
 		{
 			return View();
 		}
-		[Route("projects")]
-		public IActionResult Projects()
-		{
-			return View();
-		}
-		[Route("projects-detail")]
+        [Route("projects")]
+        public IActionResult Projects()
+        {
+            return View();
+        }
+        [Route("projects-detail")]
 		public IActionResult ProjectsDetail()
 		{
 			return View();
