@@ -48,14 +48,14 @@
 		});
 		
 		//Disable dropdown parent link
-		$('.navigation li.dropdown > a').on('click', function(e) {
-			e.preventDefault();
-		});
+		//$('.navigation li.dropdown > a').on('click', function(e) {
+		//	e.preventDefault();
+		//});
 		
 		//Disable dropdown parent link
-		$('.main-header .navigation li.dropdown > a,.hidden-bar .side-menu li.dropdown > a').on('click', function(e) {
-			e.preventDefault();
-		});
+		//$('.main-header .navigation li.dropdown > a,.hidden-bar .side-menu li.dropdown > a').on('click', function(e) {
+		//	e.preventDefault();
+		//});
 		
 	}
 	

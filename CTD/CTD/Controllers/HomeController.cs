@@ -1,4 +1,5 @@
-﻿using CTD.Models;
+﻿using CTD.Extensions;
+using CTD.Models;
 using Microsoft.AspNetCore.Mvc;
 using System.Diagnostics;
 
@@ -91,11 +92,27 @@ namespace CTD.Controllers
             return View();
         }
 
-        #endregion
+		[Route("portfolio/{portfolioTitle}")]
+		public IActionResult PortfolioDetail(string portfolioTitle)
+		{
+            var viewName = portfolioTitle.ToPortfolioViewName();
+            if (!string.IsNullOrEmpty(viewName))
+            {
+                ViewBag.Title = portfolioTitle.ToReplaceString()
+                                            .ToTitleCaseText();
+                return View($"~/Views/Shared/Portfolio/{viewName}.cshtml");
+            }
+            else
+            {
+                return RedirectToAction(nameof(CommingSoon));
+            }
+		}
 
-        #region Blogs
+		#endregion
 
-        [Route("blogs")]
+		#region Blogs
+
+		[Route("blogs")]
         public IActionResult Blogs()
         {
             return View();
