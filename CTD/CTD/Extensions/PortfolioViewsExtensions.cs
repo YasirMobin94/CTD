@@ -6,8 +6,7 @@
         {
             return source switch
             {
-                "banner-designs" => "_Index",
-                //"banner-designs" => "_BannerDesigns",
+                "banner-designs" => "_BannerDesigns",
                 "logo-designs" => "_LogoDesigns",
                 "social-media-posts-designs" => "_SocialMediaPostsDesigns",
                 "web-designs" => "_WebDesigns",
