@@ -98,8 +98,8 @@ namespace CTD.Controllers
             var viewName = portfolioTitle.ToPortfolioViewName();
             if (!string.IsNullOrEmpty(viewName))
             {
-                ViewBag.Title = portfolioTitle.ToReplaceString()
-                                            .ToTitleCaseText();
+                //ViewBag.Title = portfolioTitle.ToReplaceString()
+                //                              .ToTitleCaseText();
                 return View($"~/Views/Shared/Portfolio/{viewName}.cshtml");
             }
             else
