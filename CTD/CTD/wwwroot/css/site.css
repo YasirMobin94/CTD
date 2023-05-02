@@ -25,6 +25,10 @@ body {
     margin-bottom: 100px;
 }
 
+.base-color {
+    color: #141d38;
+}
+
 .center-items {
     display: flex;
     align-items: center;
@@ -175,6 +179,7 @@ body {
     .our-results-section .text-row-title {
         font-size: 2.5rem;
     }
+
     .project-detail-section .about-project-title h1 {
         font-size: 3rem;
     }
@@ -183,5 +188,148 @@ body {
 @media (max-width: 353px) {
     .our-results-section .text-row-title {
         font-size: 2rem;
+    }
+}
+
+.services-page-section {
+    padding: 70px 0px 70px;
+}
+
+    .services-page-section .about-service-title h1 {
+        /*color: #141d38;*/
+        font-size: 3rem;
+        line-height: 114.5%;
+        text-transform: capitalize;
+        font-weight: 700;
+    }
+
+    .services-page-section .about-service-title h2 {
+        font-weight: 400
+    }
+
+    .services-page-section .about-service-title span {
+        font-size: 1.3rem;
+        line-height: 2rem;
+    }
+
+    .services-page-section .sidebar-form {
+        position: relative;
+        padding: 45px 30px;
+        box-shadow: 0px 0px 20px rgba(0,0,0,0.15);
+        border-radius: 0.5rem;
+    }
+
+        .services-page-section .sidebar-form form {
+            margin-top: 1rem
+        }
+
+            .services-page-section .sidebar-form form input,
+            .services-page-section .sidebar-form form textarea {
+                background: #f8fafc;
+                border-radius: 0.5rem;
+            }
+
+        .services-page-section .sidebar-form .btn.btn-block {
+            margin-top: 1rem;
+        }
+
+        .services-page-section .sidebar-form .sidebar-form-text h6 {
+            font-weight: bolder;
+            color: black;
+        }
+
+        .services-page-section .sidebar-form .sidebar-form-text span {
+            font-size: 1.1rem
+        }
+
+    .services-page-section ul li {
+        list-style: disc;
+    }
+
+    .services-page-section ul {
+        margin: 20px 0 0 20px;
+        font-size: 1.35rem;
+        font-weight: 500;
+    }
+
+        .services-page-section ul li {
+            margin-bottom: 0.6rem;
+        }
+
+    .services-page-section .reviews-section {
+        margin-top: 3rem;
+    }
+
+.satis-section {
+    background: #141D38;
+    color: #f8fafc;
+    padding: 2rem;
+}
+
+.services-page-section .service-detail-section {
+    margin-top: 3rem;
+}
+
+    .services-page-section .service-detail-section .title-label {
+        font-size: 1rem;
+        padding: 0.5rem;
+        background: #23304F;
+        color: #fff;
+        border-radius: 0.5rem;
+    }
+
+    .services-page-section .service-detail-section .service-detail {
+        margin-top: 2rem;
+    }
+
+        .services-page-section .service-detail-section .service-detail h2 {
+            font-size: 1.4rem;
+            text-transform: capitalize;
+            font-weight: 700;
+        }
+
+        .services-page-section .service-detail-section .service-detail p {
+            font-size: 1.1rem;
+            line-height: 1.7rem;
+            /*text-align: justify;*/
+            margin-bottom: 2rem
+        }
+
+        .services-page-section .service-detail-section .service-detail .detail-with-list ul {
+            margin-left: 2rem;
+            font-size: initial;
+        }
+
+.services-page-section .reviews-section {
+    margin-bottom: 3rem;
+}
+
+@media (max-width: 991px) {
+    .services-page-section .about-service-title h1 {
+        font-size: 2rem;
+    }
+
+    .services-page-section .about-service-title h2 {
+        font-size: 1.5rem;
+    }
+
+
+
+    .services-page-section .reviews-section .review-starts {
+        display: flex;
+    }
+    
+    .services-page-section .right-form-rail {
+        order: 1
+    }
+
+    .services-page-section .left-rail {
+        order: 2
+    }
+}
+
+@media (max-width: 767px) {
+    .services-page-section .sidebar-form {
+        margin-bottom: 1rem
     }
 }
