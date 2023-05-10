@@ -8,6 +8,27 @@ html {
     }
 }
 
+.font-montserrat {
+    font-family: 'Montserrat', sans-serif !important;
+}
+
+.uppercase {
+    text-transform: uppercase;
+}
+
+.font-semibold {
+    font-weight: 600;
+}
+
+.font-medium {
+    font-weight: 500;
+}
+
+.text-base {
+    font-size: 1rem;
+    line-height: 1.5rem;
+}
+
 html {
     position: relative;
     min-height: 100%;
@@ -305,8 +326,9 @@ body {
 }
 
 @media (max-width: 991px) {
+    .blog-detail-section-wrapper .about-blog-title h1,
     .services-page-section .about-service-title h1 {
-        font-size: 2rem;
+        font-size: 2rem !important;
     }
 
     .services-page-section .about-service-title h2 {
@@ -318,7 +340,7 @@ body {
     .services-page-section .reviews-section .review-starts {
         display: flex;
     }
-    
+
     .services-page-section .right-form-rail {
         order: 1
     }
@@ -333,3 +355,110 @@ body {
         margin-bottom: 1rem
     }
 }
+
+.blog-page-section .card {
+    border-radius: 0.5rem !important;
+    outline: none;
+    box-shadow: 0 10px 15px -3px rgba(0,0,0,0.1), 0 4px 6px -2px rgba(0,0,0,0.05);
+    border: 0;
+}
+
+
+/* Blog Detail  */
+.news-block .inner-box .lower-content h4 {
+    font-size: 1.25rem !important
+}
+
+.blog-detail-section-wrapper {
+    padding: 10px 0px 70px;
+}
+
+    .blog-detail-section-wrapper .blog-detail-section-inner .title-label {
+        font-size: 1rem;
+        padding: 0.5rem;
+        background: #23304F;
+        color: #fff;
+        border-radius: 0.5rem;
+    }
+
+    .blog-detail-section-wrapper .blog-detail-section-inner .blog-body img {
+        width: 100%;
+        height: auto;
+        overflow: hidden;
+        margin-bottom: 2rem;
+    }
+
+    .blog-detail-section-wrapper .blog-detail-section-inner .blog-body {
+        margin-top: 2rem;
+    }
+
+        .blog-detail-section-wrapper .blog-detail-section-inner .blog-body h2 {
+            font-size: 2rem;
+            text-transform: capitalize;
+            font-weight: 700;
+        }
+
+        .blog-detail-section-wrapper .blog-detail-section-inner .blog-body h3 {
+            font-size: 1.4rem;
+            text-transform: capitalize;
+            font-weight: 600;
+        }
+
+        .blog-detail-section-wrapper .blog-detail-section-inner .blog-body p {
+            font-size: 1.1rem;
+            line-height: 1.7rem;
+            /*text-align: justify;*/
+            margin-bottom: 2rem
+        }
+
+    .blog-detail-section-wrapper .blog-detail-section-inner .blog-detail .detail-with-list ul {
+        margin-left: 2rem;
+        font-size: initial;
+    }
+
+    .blog-detail-section-wrapper .about-blog-title h1 {
+        /*color: #141d38;*/
+        font-size: 3rem;
+        line-height: 114.5%;
+        text-transform: capitalize;
+        font-weight: 700;
+    }
+
+    .blog-detail-section-wrapper .about-blog-title h2 {
+        font-weight: 400
+    }
+
+    .blog-detail-section-wrapper .about-blog-title span {
+        font-size: 1.3rem;
+        line-height: 2rem;
+    }
+
+    .blog-detail-section-wrapper .sidebar-form {
+        position: relative;
+        padding: 45px 30px;
+        box-shadow: 0px 0px 20px rgba(0,0,0,0.15);
+        border-radius: 0.5rem;
+    }
+
+        .blog-detail-section-wrapper .sidebar-form form {
+            margin-top: 1rem
+        }
+
+            .blog-detail-section-wrapper .sidebar-form form input,
+            .blog-detail-section-wrapper .sidebar-form form textarea {
+                background: #f8fafc;
+                border-radius: 0.5rem;
+            }
+
+        .blog-detail-section-wrapper .sidebar-form .btn.btn-block {
+            margin-top: 1rem;
+        }
+
+        .blog-detail-section-wrapper .sidebar-form .sidebar-form-text h6 {
+            font-weight: bolder;
+            color: black;
+        }
+
+        .blog-detail-section-wrapper .sidebar-form .sidebar-form-text span {
+            font-size: 1.1rem
+        }

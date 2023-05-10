@@ -91,10 +91,10 @@ namespace CTD.Controllers
             return View();
         }
 
-		[Route("portfolio/{portfolioTitle}")]
-		public IActionResult PortfolioDetail(string portfolioTitle)
+		[Route("portfolio/{portfolioSlug}")]
+		public IActionResult PortfolioDetail(string portfolioSlug)
 		{
-            var viewName = portfolioTitle.ToPortfolioViewName();
+            var viewName = portfolioSlug.PortfolioViewName();
             if (!string.IsNullOrEmpty(viewName))
             {
                 //ViewBag.Title = portfolioTitle.ToReplaceString()
@@ -116,7 +116,19 @@ namespace CTD.Controllers
         {
             return View();
         }
-
+        [Route("blogs/{blogSlug}")]
+        public IActionResult BlogDetail(string blogSlug)
+        {
+            var viewName = blogSlug.BlogViewName();
+            if (!string.IsNullOrEmpty(viewName))
+            {
+                return View($"~/Views/Shared/Blogs/{viewName}.cshtml");
+            }
+            else
+            {
+                return RedirectToAction(nameof(CommingSoon));
+            }
+        }
         #endregion
 
         [Route("privacy")]

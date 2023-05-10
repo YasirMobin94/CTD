@@ -10849,9 +10849,9 @@ img {
 
 .blog-page-section {
     position: relative;
-    padding: 100px 0px 100px;
+    padding: 10px 0px 100px;
 }
-
+   
     .blog-page-section .styled-pagination {
         margin-top: 50px;
     }

@@ -1,160 +1,253 @@
 ﻿@{
-	ViewBag.Title = "OurBlog";
-	Layout = "~/Views/Shared/_Layout.cshtml";
+    ViewBag.Title = "OurBlog";
+    Layout = "~/Views/Shared/_Layout.cshtml";
 }
-<!--Page Title-->
-<section class="page-title">
-	<div class="pattern-layer-one" style="background-image: url(images/background/pattern-16.png)"></div>
-	<div class="auto-container">
-		<h2>Latest News</h2>
-		<ul class="page-breadcrumb">
-			<li><a href="@Url.Action("Index","Home")">home</a></li>
-			<li>Blogs</li>
-		</ul>
-	</div>
-</section>
-<!--End Page Title-->
-<!-- Blog Page Section -->
 <section class="blog-page-section">
-	<div class="auto-container">
-		<div class="row clearfix">
+    <div class="auto-container">
+        <!-- Sec Title -->
+        <div class="sec-title centered">
+            <h2>CTD Blogs</h2>
+            <h6>Latest tools and resources for online marketing and web design.</h6>
+        </div>
+        <div class="row clearfix">
 
-			<!-- News Block -->
-			<div class="news-block col-lg-4 col-md-6 col-sm-12">
-				<div class="inner-box wow fadeInLeft" data-wow-delay="0ms" data-wow-duration="1500ms">
-					<div class="image">
-						<a href="news-detail.html"><img src="images/resource/news-1.jpg" alt="" /></a>
-					</div>
-					<div class="lower-content">
-						<div class="post-date">22 <span>DEC</span></div>
-						<ul class="post-meta">
-							<li><span class="icon flaticon-comment"></span>3 comments</li>
-							<li><span class="icon flaticon-user"></span>Admin</li>
-						</ul>
-						<h4><a href="news-detail.html">Define World Best IT Solution Technology</a></h4>
-						<div class="text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has ...</div>
-						<a class="read-more" href="news-detail.html">Read More<span class="arrow flaticon-long-arrow-pointing-to-the-right"></span></a>
-					</div>
-				</div>
-			</div>
+            <div class="news-block col-lg-4 col-md-6 col-sm-12">
+                <div class="inner-box wow fadeInLeft" data-wow-delay="0ms" data-wow-duration="1500ms">
+                    <div class="card">
+                        <img src="images/resource/news-1.jpg" class="card-img-top" alt="...">
+                        <div class="card-body lower-content">
+                            <a href="#" class="font-montserrat"><strong>Article</strong></a>
+                            <h4><a href="@Url.Action("BlogDetail","Home", new { blogSlug = "why-blogging-is-important-for-sacramento-seo"})">Why Blogging is Important for Sacramento SEO</a></h4>
+                            <div class="text font-montserrat">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has ...</div>
+                            <strong class="base-color font-montserrat">Mukarram</strong>
+                            <div class="">
+                                <time datetime="April 13th, 2023" class="base-color font-montserrat"> April 13th, 2023</time>
+                                <span aria-hidden="true">·</span>
+                                <a class="read-more" href="@Url.Action("BlogDetail","Home", new { blogSlug = "why-blogging-is-important-for-sacramento-seo"})">Read More<span class="arrow flaticon-long-arrow-pointing-to-the-right"></span></a>
+                            </div>
 
-			<!-- News Block -->
-			<div class="news-block col-lg-4 col-md-6 col-sm-12">
-				<div class="inner-box wow fadeInUp" data-wow-delay="0ms" data-wow-duration="1500ms">
-					<div class="image">
-						<a href="news-detail.html"><img src="images/resource/news-2.jpg" alt="" /></a>
-					</div>
-					<div class="lower-content">
-						<div class="post-date">15 <span>DEC</span></div>
-						<ul class="post-meta">
-							<li><span class="icon flaticon-comment"></span>3 comments</li>
-							<li><span class="icon flaticon-user"></span>Admin</li>
-						</ul>
-						<h4><a href="news-detail.html">You Must Try 20 Secret Of Digital Transform</a></h4>
-						<div class="text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has ...</div>
-						<a class="read-more" href="news-detail.html">Read More<span class="arrow flaticon-long-arrow-pointing-to-the-right"></span></a>
-					</div>
-				</div>
-			</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="news-block col-lg-4 col-md-6 col-sm-12">
+                <div class="inner-box wow fadeInLeft" data-wow-delay="0ms" data-wow-duration="1500ms">
+                    <div class="card">
+                        <img src="images/resource/news-1.jpg" class="card-img-top" alt="...">
+                        <div class="card-body lower-content">
+                            <a href="#" class="font-montserrat"><strong>Article</strong></a>
+                            <h4><a href="@Url.Action("BlogDetail","Home", new { blogSlug = "define-world-best-it-solution"})">Define World Best IT Solution Technology</a></h4>
+                            <div class="text font-montserrat">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has ...</div>
+                            <strong class="base-color font-montserrat">Mukarram</strong>
+                            <div class="">
+                                <time datetime="April 13th, 2023" class="base-color font-montserrat"> April 13th, 2023</time>
+                                <span aria-hidden="true">·</span>
+                                <a class="read-more" href="@Url.Action("BlogDetail","Home", new { blogSlug = "define-world-best-it-solution"})">Read More<span class="arrow flaticon-long-arrow-pointing-to-the-right"></span></a>
+                            </div>
 
-			<!-- News Block -->
-			<div class="news-block col-lg-4 col-md-6 col-sm-12">
-				<div class="inner-box wow fadeInRight" data-wow-delay="0ms" data-wow-duration="1500ms">
-					<div class="image">
-						<a href="news-detail.html"><img src="images/resource/news-3.jpg" alt="" /></a>
-					</div>
-					<div class="lower-content">
-						<div class="post-date">10 <span>oct</span></div>
-						<ul class="post-meta">
-							<li><span class="icon flaticon-comment"></span>3 comments</li>
-							<li><span class="icon flaticon-user"></span>Admin</li>
-						</ul>
-						<h4><a href="news-detail.html">Digital Conference Of IT Tech Events in 2020</a></h4>
-						<div class="text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has ...</div>
-						<a class="read-more" href="news-detail.html">Read More<span class="arrow flaticon-long-arrow-pointing-to-the-right"></span></a>
-					</div>
-				</div>
-			</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="news-block col-lg-4 col-md-6 col-sm-12">
+                <div class="inner-box wow fadeInLeft" data-wow-delay="0ms" data-wow-duration="1500ms">
+                    <div class="card">
+                        <img src="images/resource/news-1.jpg" class="card-img-top" alt="...">
+                        <div class="card-body lower-content">
+                            <a href="#" class="font-montserrat"><strong>Article</strong></a>
+                            <h4><a href="@Url.Action("BlogDetail","Home", new { blogSlug = "define-world-best-it-solution"})">Define World Best IT Solution Technology</a></h4>
+                            <div class="text font-montserrat">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has ...</div>
+                            <strong class="base-color font-montserrat">Mukarram</strong>
+                            <div class="">
+                                <time datetime="April 13th, 2023" class="base-color font-montserrat"> April 13th, 2023</time>
+                                <span aria-hidden="true">·</span>
+                                <a class="read-more" href="@Url.Action("BlogDetail","Home", new { blogSlug = "define-world-best-it-solution"})">Read More<span class="arrow flaticon-long-arrow-pointing-to-the-right"></span></a>
+                            </div>
 
-			<!-- News Block -->
-			<div class="news-block col-lg-4 col-md-6 col-sm-12">
-				<div class="inner-box wow fadeInLeft" data-wow-delay="0ms" data-wow-duration="1500ms">
-					<div class="image">
-						<a href="news-detail.html"><img src="images/resource/news-14.jpg" alt="" /></a>
-					</div>
-					<div class="lower-content">
-						<div class="post-date">22 <span>DEC</span></div>
-						<ul class="post-meta">
-							<li><span class="icon flaticon-comment"></span>3 comments</li>
-							<li><span class="icon flaticon-user"></span>Admin</li>
-						</ul>
-						<h4><a href="news-detail.html">Plan Your Project with Your Software</a></h4>
-						<div class="text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has ...</div>
-						<a class="read-more" href="news-detail.html">Read More<span class="arrow flaticon-long-arrow-pointing-to-the-right"></span></a>
-					</div>
-				</div>
-			</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="news-block col-lg-4 col-md-6 col-sm-12">
+                <div class="inner-box wow fadeInRight" data-wow-delay="0ms" data-wow-duration="1500ms">
+                    <div class="card">
+                        <img src="images/resource/news-1.jpg" class="card-img-top" alt="...">
+                        <div class="card-body lower-content">
+                            <a href="#" class="font-montserrat"><strong>Article</strong></a>
+                            <h4><a href="@Url.Action("BlogDetail","Home", new { blogSlug = "define-world-best-it-solution"})">Define World Best IT Solution Technology</a></h4>
+                            <div class="text font-montserrat">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has ...</div>
+                            <strong class="base-color font-montserrat">Mukarram</strong>
+                            <div class="">
+                                <time datetime="April 13th, 2023" class="base-color font-montserrat"> April 13th, 2023</time>
+                                <span aria-hidden="true">·</span>
+                                <a class="read-more" href="@Url.Action("BlogDetail","Home", new { blogSlug = "define-world-best-it-solution"})">Read More<span class="arrow flaticon-long-arrow-pointing-to-the-right"></span></a>
+                            </div>
 
-			<!-- News Block -->
-			<div class="news-block col-lg-4 col-md-6 col-sm-12">
-				<div class="inner-box wow fadeInUp" data-wow-delay="0ms" data-wow-duration="1500ms">
-					<div class="image">
-						<a href="news-detail.html"><img src="images/resource/news-15.jpg" alt="" /></a>
-					</div>
-					<div class="lower-content">
-						<div class="post-date">15 <span>DEC</span></div>
-						<ul class="post-meta">
-							<li><span class="icon flaticon-comment"></span>3 comments</li>
-							<li><span class="icon flaticon-user"></span>Admin</li>
-						</ul>
-						<h4><a href="news-detail.html">You have a Great Business Idea?</a></h4>
-						<div class="text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has ...</div>
-						<a class="read-more" href="news-detail.html">Read More<span class="arrow flaticon-long-arrow-pointing-to-the-right"></span></a>
-					</div>
-				</div>
-			</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="news-block col-lg-4 col-md-6 col-sm-12">
+                <div class="inner-box wow fadeInRight" data-wow-delay="0ms" data-wow-duration="1500ms">
+                    <div class="card">
+                        <img src="images/resource/news-1.jpg" class="card-img-top" alt="...">
+                        <div class="card-body lower-content">
+                            <a href="#" class="font-montserrat"><strong>Article</strong></a>
+                            <h4><a href="@Url.Action("BlogDetail","Home", new { blogSlug = "define-world-best-it-solution"})">Define World Best IT Solution Technology</a></h4>
+                            <div class="text font-montserrat">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has ...</div>
+                            <strong class="base-color font-montserrat">Mukarram</strong>
+                            <div class="">
+                                <time datetime="April 13th, 2023" class="base-color font-montserrat"> April 13th, 2023</time>
+                                <span aria-hidden="true">·</span>
+                                <a class="read-more" href="@Url.Action("BlogDetail","Home", new { blogSlug = "define-world-best-it-solution"})">Read More<span class="arrow flaticon-long-arrow-pointing-to-the-right"></span></a>
+                            </div>
 
-			<!-- News Block -->
-			<div class="news-block col-lg-4 col-md-6 col-sm-12">
-				<div class="inner-box wow fadeInRight" data-wow-delay="0ms" data-wow-duration="1500ms">
-					<div class="image">
-						<a href="news-detail.html"><img src="images/resource/news-16.jpg" alt="" /></a>
-					</div>
-					<div class="lower-content">
-						<div class="post-date">10 <span>oct</span></div>
-						<ul class="post-meta">
-							<li><span class="icon flaticon-comment"></span>3 comments</li>
-							<li><span class="icon flaticon-user"></span>Admin</li>
-						</ul>
-						<h4><a href="news-detail.html">How to Make Website WCAG Compliant?</a></h4>
-						<div class="text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has ...</div>
-						<a class="read-more" href="news-detail.html">Read More<span class="arrow flaticon-long-arrow-pointing-to-the-right"></span></a>
-					</div>
-				</div>
-			</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="news-block col-lg-4 col-md-6 col-sm-12">
+                <div class="inner-box wow fadeInRight" data-wow-delay="0ms" data-wow-duration="1500ms">
+                    <div class="card">
+                        <img src="images/resource/news-1.jpg" class="card-img-top" alt="...">
+                        <div class="card-body lower-content">
+                            <a href="#" class="font-montserrat"><strong>Article</strong></a>
+                            <h4><a href="@Url.Action("BlogDetail","Home", new { blogSlug = "define-world-best-it-solution"})">Define World Best IT Solution Technology</a></h4>
+                            <div class="text font-montserrat">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has ...</div>
+                            <strong class="base-color font-montserrat">Mukarram</strong>
+                            <div class="">
+                                <time datetime="April 13th, 2023" class="base-color font-montserrat"> April 13th, 2023</time>
+                                <span aria-hidden="true">·</span>
+                                <a class="read-more" href="@Url.Action("BlogDetail","Home", new { blogSlug = "define-world-best-it-solution"})">Read More<span class="arrow flaticon-long-arrow-pointing-to-the-right"></span></a>
+                            </div>
 
-		</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="news-block col-lg-4 col-md-6 col-sm-12">
+                <div class="inner-box wow fadeInLeft" data-wow-delay="0ms" data-wow-duration="1500ms">
+                    <div class="card">
+                        <img src="images/resource/news-1.jpg" class="card-img-top" alt="...">
+                        <div class="card-body lower-content">
+                            <a href="#" class="font-montserrat"><strong>Article</strong></a>
+                            <h4><a href="@Url.Action("BlogDetail","Home", new { blogSlug = "define-world-best-it-solution"})">Define World Best IT Solution Technology</a></h4>
+                            <div class="text font-montserrat">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has ...</div>
+                            <strong class="base-color font-montserrat">Mukarram</strong>
+                            <div class="">
+                                <time datetime="April 13th, 2023" class="base-color font-montserrat"> April 13th, 2023</time>
+                                <span aria-hidden="true">·</span>
+                                <a class="read-more" href="@Url.Action("BlogDetail","Home", new { blogSlug = "define-world-best-it-solution"})">Read More<span class="arrow flaticon-long-arrow-pointing-to-the-right"></span></a>
+                            </div>
 
-		<!-- Post Share Options -->
-		<div class="styled-pagination text-center">
-			<ul class="clearfix">
-				<li class="prev"><a href="#"><span class="fa fa-angle-left"></span> </a></li>
-				<li><a href="#">1</a></li>
-				<li><a href="#">2</a></li>
-				<li class="active"><a href="#">3</a></li>
-				<li><a href="#">4</a></li>
-				<li><a href="#">5</a></li>
-				<li class="next"><a href="#"><span class="fa fa-angle-right"></span> </a></li>
-			</ul>
-		</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="news-block col-lg-4 col-md-6 col-sm-12">
+                <div class="inner-box wow fadeInLeft" data-wow-delay="0ms" data-wow-duration="1500ms">
+                    <div class="card">
+                        <img src="images/resource/news-1.jpg" class="card-img-top" alt="...">
+                        <div class="card-body lower-content">
+                            <a href="#" class="font-montserrat"><strong>Article</strong></a>
+                            <h4><a href="@Url.Action("BlogDetail","Home", new { blogSlug = "define-world-best-it-solution"})">Define World Best IT Solution Technology</a></h4>
+                            <div class="text font-montserrat">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has ...</div>
+                            <strong class="base-color font-montserrat">Mukarram</strong>
+                            <div class="">
+                                <time datetime="April 13th, 2023" class="base-color font-montserrat"> April 13th, 2023</time>
+                                <span aria-hidden="true">·</span>
+                                <a class="read-more" href="@Url.Action("BlogDetail","Home", new { blogSlug = "define-world-best-it-solution"})">Read More<span class="arrow flaticon-long-arrow-pointing-to-the-right"></span></a>
+                            </div>
 
-	</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="news-block col-lg-4 col-md-6 col-sm-12">
+                <div class="inner-box wow fadeInLeft" data-wow-delay="0ms" data-wow-duration="1500ms">
+                    <div class="card">
+                        <img src="images/resource/news-1.jpg" class="card-img-top" alt="...">
+                        <div class="card-body lower-content">
+                            <a href="#" class="font-montserrat"><strong>Article</strong></a>
+                            <h4><a href="@Url.Action("BlogDetail","Home", new { blogSlug = "define-world-best-it-solution"})">Define World Best IT Solution Technology</a></h4>
+                            <div class="text font-montserrat">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has ...</div>
+                            <strong class="base-color font-montserrat">Mukarram</strong>
+                            <div class="">
+                                <time datetime="April 13th, 2023" class="base-color font-montserrat"> April 13th, 2023</time>
+                                <span aria-hidden="true">·</span>
+                                <a class="read-more" href="@Url.Action("BlogDetail","Home", new { blogSlug = "define-world-best-it-solution"})">Read More<span class="arrow flaticon-long-arrow-pointing-to-the-right"></span></a>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="news-block col-lg-4 col-md-6 col-sm-12">
+                <div class="inner-box wow fadeInRight" data-wow-delay="0ms" data-wow-duration="1500ms">
+                    <div class="card">
+                        <img src="images/resource/news-1.jpg" class="card-img-top" alt="...">
+                        <div class="card-body lower-content">
+                            <a href="#" class="font-montserrat"><strong>Article</strong></a>
+                            <h4><a href="@Url.Action("BlogDetail","Home", new { blogSlug = "define-world-best-it-solution"})">Define World Best IT Solution Technology</a></h4>
+                            <div class="text font-montserrat">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has ...</div>
+                            <strong class="base-color font-montserrat">Mukarram</strong>
+                            <div class="">
+                                <time datetime="April 13th, 2023" class="base-color font-montserrat"> April 13th, 2023</time>
+                                <span aria-hidden="true">·</span>
+                                <a class="read-more" href="@Url.Action("BlogDetail","Home", new { blogSlug = "define-world-best-it-solution"})">Read More<span class="arrow flaticon-long-arrow-pointing-to-the-right"></span></a>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="news-block col-lg-4 col-md-6 col-sm-12">
+                <div class="inner-box wow fadeInRight" data-wow-delay="0ms" data-wow-duration="1500ms">
+                    <div class="card">
+                        <img src="images/resource/news-1.jpg" class="card-img-top" alt="...">
+                        <div class="card-body lower-content">
+                            <a href="#" class="font-montserrat"><strong>Article</strong></a>
+                            <h4><a href="@Url.Action("BlogDetail","Home", new { blogSlug = "define-world-best-it-solution"})">Define World Best IT Solution Technology</a></h4>
+                            <div class="text font-montserrat">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has ...</div>
+                            <strong class="base-color font-montserrat">Mukarram</strong>
+                            <div class="">
+                                <time datetime="April 13th, 2023" class="base-color font-montserrat"> April 13th, 2023</time>
+                                <span aria-hidden="true">·</span>
+                                <a class="read-more" href="@Url.Action("BlogDetail","Home", new { blogSlug = "define-world-best-it-solution"})">Read More<span class="arrow flaticon-long-arrow-pointing-to-the-right"></span></a>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="news-block col-lg-4 col-md-6 col-sm-12">
+                <div class="inner-box wow fadeInRight" data-wow-delay="0ms" data-wow-duration="1500ms">
+                    <div class="card">
+                        <img src="images/resource/news-1.jpg" class="card-img-top" alt="...">
+                        <div class="card-body lower-content">
+                            <a href="#" class="font-montserrat"><strong>Article</strong></a>
+                            <h4><a href="@Url.Action("BlogDetail","Home", new { blogSlug = "define-world-best-it-solution"})">Define World Best IT Solution Technology</a></h4>
+                            <div class="text font-montserrat">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has ...</div>
+                            <strong class="base-color font-montserrat">Mukarram</strong>
+                            <div class="">
+                                <time datetime="April 13th, 2023" class="base-color font-montserrat"> April 13th, 2023</time>
+                                <span aria-hidden="true">·</span>
+                                <a class="read-more" href="@Url.Action("BlogDetail","Home", new { blogSlug = "define-world-best-it-solution"})">Read More<span class="arrow flaticon-long-arrow-pointing-to-the-right"></span></a>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
 </section>
 <!-- End Blog Page Section -->
 
 
 <script>
-	$(document).ready(function () {
-		CTDNav.AddCurrentActiveClass(`blog`)
-	})
+    $(document).ready(function () {
+        CTDNav.AddCurrentActiveClass(`blog`)
+    })
 </script>

@@ -2,7 +2,7 @@
 {
     public static class PortfolioViewsExtensions
     {
-        public static string ToPortfolioViewName(this string source)
+        public static string PortfolioViewName(this string source)
         {
             return source switch
             {
@@ -22,6 +22,16 @@
                 _ => null
             };
         }
-        
+
+        public static string BlogViewName(this string source)
+        {
+            return source switch
+            {
+                "define-world-best-it-solution" => "_DefineWorldBestITSolutions",
+                "why-blogging-is-important-for-sacramento-seo" => "_BloggingIsImportantForSacramentoSEO",
+                _ => null
+            };
+        }
+
     }
 }
