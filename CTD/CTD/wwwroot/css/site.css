@@ -34,10 +34,12 @@ html {
     min-height: 100%;
 }
 
-body {
-    margin-bottom: 60px;
+.main-header .header-upper {
+    box-shadow: 0px 0px 20px rgba(0,0,0,0.15);
 }
-
+/*body {
+    margin-bottom: 60px;
+}*/
 .mt {
     margin-top: 100px
 }
@@ -54,6 +56,20 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.para-text-row {
+    color: #141d38;
+    font-size: 1.3rem;
+    letter-spacing: .01em;
+    line-height: 2.25rem;
+}
+
+.ctd_divider {
+    border: none;
+    height: 1px;
+    background-color: lightgrey;
+    margin: 20px 0;
 }
 
 .project-detail-section .about-project-title h1 {
@@ -109,7 +125,7 @@ body {
 
 .our-solutions-section,
 .our-results-section {
-    margin-top: 50px;
+    margin-top: 150px;
 }
 
     .our-solutions-section .card,
@@ -122,7 +138,8 @@ body {
     }
 
     .our-solutions-section .text-row-title,
-    .our-results-section .text-row-title {
+    .our-results-section .text-row-title,
+    .key-challenges-section .text-row-title {
         color: #141d38;
         font-size: 3.5rem;
         letter-spacing: .01em;
@@ -158,6 +175,7 @@ body {
 
     .technologies-section .center-items img {
         margin: 2rem 0 2rem 1rem;
+        width: 6%
     }
 
 
@@ -180,12 +198,14 @@ body {
         }
 
     .our-solutions-section .mb,
-    .our-results-section .mb {
+    .our-results-section .mb,
+    .key-challenges-section .mb {
         margin-bottom: 40px;
     }
 
     .our-solutions-section .text-row-title,
-    .our-results-section .text-row-title {
+    .our-results-section .text-row-title,
+    .key-challenges-section .text-row-title {
         font-size: 3rem;
     }
 
@@ -197,12 +217,17 @@ body {
 
 @media (max-width: 575.98px) {
     .our-solutions-section .text-row-title,
-    .our-results-section .text-row-title {
+    .our-results-section .text-row-title
+    .key-challenges-section .text-row-title {
         font-size: 2.5rem;
     }
 
     .project-detail-section .about-project-title h1 {
         font-size: 3rem;
+    }
+
+    .technologies-section .center-items img {
+       width:11%
     }
 }
 
@@ -348,6 +373,16 @@ body {
     .services-page-section .left-rail {
         order: 2
     }
+
+    .key-challenges-section,
+    .our-solutions-section,
+    .our-results-section {
+        margin-top: 80px;
+    }
+
+    .technologies-section .center-items img {
+        width: 10%
+    }
 }
 
 @media (max-width: 767px) {
@@ -462,3 +497,9 @@ body {
         .blog-detail-section-wrapper .sidebar-form .sidebar-form-text span {
             font-size: 1.1rem
         }
+
+
+.about-section-two:before,
+.info-section:before {
+    background-color: transparent !important
+}
