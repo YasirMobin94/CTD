@@ -22,6 +22,7 @@
                 "seo-for-admiral-farragut-academy" => "_SEOForAdmiralFarragutAcademy",
                 "seo-for-think-up-themes" => "_SEOForThinkUpThemes",
                 "seo-for-eiksmarka" => "_SEOForEiksmarka",
+                "seo-for-mgbtechnik" => "_SEOForMGbtechnik",
                 _ => null
             };
         }

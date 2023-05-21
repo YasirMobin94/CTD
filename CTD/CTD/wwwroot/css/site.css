@@ -145,6 +145,7 @@ html {
         letter-spacing: .01em;
         line-height: 2.25rem;
         font-weight: 700;
+        text-decoration: underline
     }
 
     .our-solutions-section .card-body,
@@ -217,7 +218,7 @@ html {
 
 @media (max-width: 575.98px) {
     .our-solutions-section .text-row-title,
-    .our-results-section .text-row-title
+    .our-results-section .text-row-title,
     .key-challenges-section .text-row-title {
         font-size: 2.5rem;
     }
@@ -227,7 +228,7 @@ html {
     }
 
     .technologies-section .center-items img {
-       width:11%
+        width: 11%
     }
 }
 
