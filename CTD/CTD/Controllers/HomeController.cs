@@ -52,8 +52,8 @@ namespace CTD.Controllers
             return View();
         }
 
-        [Route("digital-marketing")]
-        public IActionResult DigitalMarketing()
+        [Route("it-staff-augumentation")]
+        public IActionResult ITStaffAugumentation()
         {
             return View();
         }
@@ -70,8 +70,8 @@ namespace CTD.Controllers
             return View();
         }
 
-        [Route("mobile-app-development")]
-        public IActionResult MobileAppDevelopment()
+        [Route("seo")]
+        public IActionResult SEO()
         {
             return View();
         }
@@ -81,6 +81,12 @@ namespace CTD.Controllers
         {
             return View();
         }
+        [Route("{pageUrl}-it-staff-augumentation")]
+        public IActionResult CitywiseITStaffAugumentation(string pageUrl)
+        {
+            return View();
+        }
+
         #endregion
 
         #region Portfolio
