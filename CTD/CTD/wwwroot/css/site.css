@@ -504,3 +504,77 @@ html {
 .info-section:before {
     background-color: transparent !important
 }
+
+
+/* Cities Sitemap Start*/
+.cities__site__map {
+    background: #141D38;
+}
+.item-list {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 2rem;
+}
+
+    .item-list li {
+        width: calc(16.666% - 10px);
+        margin-bottom: 10px;
+        display: flex;
+        align-items: center;
+        padding: 0.5rem;
+    }
+        .item-list li .icon-link {
+            color: #fff;
+        }
+        .item-list li .icon {
+            margin-right: 10px;
+            color: #fff;
+        }
+
+/* Responsive CSS */
+@media (max-width: 768px) {
+    .item-list li {
+        width: calc(33.333% - 10px); /* Adjust the width as needed */
+    }
+}
+
+@media (max-width: 480px) {
+    .item-list li {
+        width: calc(50% - 10px); /* Adjust the width as needed */
+    }
+}
+
+
+/*.item-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+    .item-list li {
+        margin-bottom: 10px;
+        display: flex;
+        align-items: center;
+    }
+
+        .item-list li .icon {
+            margin-right: 10px;
+            color: #141D38;
+        }*/
+
+/* Responsive CSS */
+/*@media (max-width: 768px) {
+    .item-list li {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+        .item-list li .icon {
+            margin-right: 0;
+            margin-bottom: 5px;
+        }
+}*/
+
+/* Cities Sitemap End*/
