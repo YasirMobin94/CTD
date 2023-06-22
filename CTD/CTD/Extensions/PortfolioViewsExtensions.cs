@@ -38,4 +38,24 @@
         }
 
     }
+    public static class ServicesViewsExtensions
+    {
+        public static string ActionName(this string source)
+        {
+            return source switch
+            {
+                "ITStaffAugmentation" => "CitywiseITStaffAugumentation",
+                "WebDevelopment" => "CitywiseWebDevelopment",
+                _ => null
+            };
+        }
+        public static string ServicesViewNameyCity(this string source)
+        {
+            return source switch
+            {
+                "leeds" => "_ITStaffAugumentationInLeeds",
+                _ => null
+            };
+        }
+    }
 }

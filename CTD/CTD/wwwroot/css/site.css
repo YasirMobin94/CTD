@@ -40,6 +40,13 @@ html {
 /*body {
     margin-bottom: 60px;
 }*/
+.pt-1 {
+    padding-top: 1rem !important;
+}
+.mb-1 {
+    margin-bottom: 1rem !important;
+}
+
 .mt {
     margin-top: 100px
 }
@@ -295,8 +302,9 @@ html {
 
     .services-page-section ul {
         margin: 20px 0 0 20px;
-        font-size: 1.35rem;
-        font-weight: 500;
+        font-size: 1.03rem;
+        /* font-weight: 500; */
+        font-family: 'Montserrat', sans-serif !important;
     }
 
         .services-page-section ul li {
@@ -322,6 +330,7 @@ html {
         padding: 0.5rem;
         background: #23304F;
         color: #fff;
+        font-family: 'Montserrat', sans-serif !important;
         border-radius: 0.5rem;
     }
 
@@ -339,7 +348,8 @@ html {
             font-size: 1.1rem;
             line-height: 1.7rem;
             /*text-align: justify;*/
-            margin-bottom: 2rem
+            margin-bottom: 2rem;
+            font-family: 'Montserrat', sans-serif !important;
         }
 
         .services-page-section .service-detail-section .service-detail .detail-with-list ul {
@@ -508,15 +518,17 @@ html {
 
 /* Cities Sitemap Start*/
 .cities__site__map {
-    background: #141D38;
+    background: #f7fafc;
 }
+
 .item-list {
     list-style-type: none;
     padding: 0;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    padding: 2rem;
+    font-family: 'Montserrat', sans-serif !important;
+    /*padding: 2rem;*/
 }
 
     .item-list li {
@@ -526,12 +538,15 @@ html {
         align-items: center;
         padding: 0.5rem;
     }
+
         .item-list li .icon-link {
-            color: #fff;
+            color: #141D38;
+            font-size: 1rem
         }
+
         .item-list li .icon {
             margin-right: 10px;
-            color: #fff;
+            color: #141D38;
         }
 
 /* Responsive CSS */
@@ -540,41 +555,14 @@ html {
         width: calc(33.333% - 10px); /* Adjust the width as needed */
     }
 }
-
+@media (max-width: 876px) {
+    .item-list li {
+        width: calc(33.333% - 8px); /* Adjust the width as needed */
+    }
+}
 @media (max-width: 480px) {
     .item-list li {
         width: calc(50% - 10px); /* Adjust the width as needed */
     }
 }
-
-
-/*.item-list {
-    list-style-type: none;
-    padding: 0;
-}
-
-    .item-list li {
-        margin-bottom: 10px;
-        display: flex;
-        align-items: center;
-    }
-
-        .item-list li .icon {
-            margin-right: 10px;
-            color: #141D38;
-        }*/
-
-/* Responsive CSS */
-/*@media (max-width: 768px) {
-    .item-list li {
-        flex-direction: column;
-        align-items: flex-start;
-    }
-
-        .item-list li .icon {
-            margin-right: 0;
-            margin-bottom: 5px;
-        }
-}*/
-
 /* Cities Sitemap End*/

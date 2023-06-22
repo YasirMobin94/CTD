@@ -1,404 +1,192 @@
 ﻿@{
-	ViewBag.Title = "WebDevelopment";
-	Layout = "~/Views/Shared/_Layout.cshtml";
+
+    ViewBag.Title = "Web Development in UK";
+    ViewBag.Description = "Discover Creative Think Digital, the top graphic designing firm in the UK, dedicated to transforming your ideas into engaging visuals. Specializing in diverse services and boasting unrivaled customer satisfaction, we're your one-stop solution for all your design needs. Explore our innovative approach to graphic design and learn why businesses across the UK choose us as their trusted partner.";
+    ViewData["ServiceName"] = "WebDevelopment";
+    Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
 
-<!--Page Title-->
-<section class="page-title">
-	<div class="pattern-layer-one" style="background-image: url(images/background/pattern-16.png)"></div>
-	<div class="auto-container">
-		<h2>Services</h2>
-		<ul class="page-breadcrumb">
-			<li><a href="@Url.Action("Index","Home")">home</a></li>
-			<li>Web Development</li>
-		</ul>
-	</div>
-</section>
-<!--End Page Title-->
-<!-- Services Page Section -->
+
 <section class="services-page-section">
-	<div class="auto-container">
-		<div class="row clearfix">
+    <div class="auto-container">
+        <div class="row clearfix">
+            <div class="col-lg-8 col-md-6 col-sm-12 col-12 wow fadeInUp" data-wow-delay="0ms" data-wow-duration="2000ms">
+                <div class="inner-column">
+                    <div class="about-service-title">
+                        <h1 class="base-color">Revolutionizing Web Development in the UK with Creative Think Digital</h1>
 
-			<!-- News Block Three -->
-			<div class="news-block-three col-lg-4 col-md-6 col-sm-12">
-				<div class="inner-box">
-					<div class="image">
-						<a href="services-detail.html"><img src="images/resource/news-5.jpg" alt="" /></a>
-					</div>
-					<div class="lower-content">
-						<div class="content">
-							<div class="icon-box">
-								<span class="icon flaticon-coding-1"></span>
-							</div>
-							<h4><a href="services-detail.html">Web Development</a></h4>
-							<div class="text">We carry more than just good coding skills. Our experience makes us stand out from other web development.</div>
-							<a class="read-more" href="services-detail.html">Read More<span class="arrow flaticon-long-arrow-pointing-to-the-right"></span></a>
-						</div>
-					</div>
-				</div>
-			</div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-6 col-md-12 col-sm-12 col-12 left-rail">
+                            <ul class="base-color">
+                                <li>Custom Solutions for Every Businesss</li>
+                                <li>Optimized for Load Speeds and Search Engines</li>
+                                <li>Professional and Polished Custom Design</li>
+                                <li>Functional and Delightful User Experience</li>
+                            </ul>
+                            <div class="reviews-section">
+                                <div class="review-starts">
+                                    <img src="/images/start.png" />
+                                    <img src="/images/start.png" />
+                                    <img src="/images/start.png" />
+                                    <img src="/images/start.png" />
+                                    <img src="/images/start.png" />
+                                </div>
+                                <h6 class="base-color">CTD rated 4.9/5 based on 174 reviews</h6>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-md-12 col-sm-12 col-12 right-form-rail">
+                            <img src="/images/development.svg" alt="text">
+                        </div>
+                    </div>
+                </div>
 
-			<!-- News Block Three -->
-			<div class="news-block-three style-two col-lg-4 col-md-6 col-sm-12">
-				<div class="inner-box">
-					<div class="lower-content">
-						<div class="content">
-							<div class="icon-box">
-								<span class="icon flaticon-mobile-app"></span>
-							</div>
-							<h4><a href="services-detail.html">Web Development</a></h4>
-							<div class="text">We carry more than just good coding skills. Our experience makes us stand out from other web development.</div>
-							<a class="read-more" href="services-detail.html">Read More<span class="arrow flaticon-long-arrow-pointing-to-the-right"></span></a>
-						</div>
-					</div>
-					<div class="image">
-						<a href="services-detail.html"><img src="images/resource/news-6.jpg" alt="" /></a>
-					</div>
-				</div>
-			</div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12 col-12 wow fadeInRight" data-wow-delay="0ms" data-wow-duration="2000ms">
+                <div class="sidebar-form">
+                    <div class="sidebar-form-text">
+                        <h6 class="base-color">Request a Quote For Your Web Development Project</h6>
+                        <span>No Obligation Estimate, Expert Advice</span>
+                    </div>
+                    <form class="row g-3">
+                        <div class="col-md-6">
+                            <label for="first_name" class="form-label"></label>
+                            <input type="text" class="form-control" id="first_name" placeholder="First Name" />
+                        </div>
+                        <div class="col-md-6">
+                            <label for="last_name" class="form-label"></label>
+                            <input type="text" class="form-control" id="last_name" placeholder="Last Name" />
+                        </div>
+                        <div class="col-md-6">
+                            <label for="email" class="form-label"></label>
+                            <input type="email" class="form-control" id="email" placeholder="Email" />
+                        </div>
+                        <div class="col-md-6">
+                            <label for="phone" class="form-label"></label>
+                            <input type="tel" class="form-control" id="phone" placeholder="Phone" />
+                        </div>
+                        <div class="col-12">
+                            <label for="about_project" class="form-label"></label>
+                            <textarea type="text" class="form-control" id="about_project" placeholder="Tell us about your project"></textarea>
+                        </div>
+                        <div class="col-12">
+                            <button type="submit" class="btn btn-block theme-btn btn-style-three">
+                                <span class="txt">Request Free Estimate</span>
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid satis-section">
+        <div class="row center-items">
+            <h4 class="">Top Rated Web Development in UK</h4>
+        </div>
+    </div>
+    <div class="auto-container">
+        <div class="service-detail-section">
+            <div class="row clearfix">
+                <div class="col-lg-8 col-md-12 col-sm-12 col-12 wow slideInLeft" data-wow-delay="0ms" data-wow-duration="1500ms">
+                    <span class="title-label">Web Development</span>
+                    <div class="service-detail base-color">
+                        @*<h2>Pioneering IT Staff Augmentation in the UK with Creative Think Digital</h2>*@
+                        <p>
+                            At Creative Think Digital, we are revolutionizing web development in the UK, by establishing a new standard of creativity, flexibility, and user experience. We are a team of forward-thinking developers, designers, and strategists who challenge the status quo and seek to create digital products that are intuitive, engaging, and impactful. Our innovative methodologies are driven by a deep understanding of the latest technological advancements, emerging trends, and behavioral insights, all geared towards delivering an experience that meets and surpasses the needs and expectations of our diverse clientele. We're not just about coding websites; we are about crafting digital experiences that bring ideas to life, inspire interaction, and drive growth.
+                        </p>
+                        <p>
+                            Our commitment to innovation is central to our operations. We are constantly pushing the boundaries of what's possible in web development, leveraging cutting-edge technologies like AI, VR, and blockchain to redefine the digital landscape. From building AI-powered chatbots for seamless customer service to integrating blockchain for increased security and transparency, our tech-first approach ensures that we provide our clients with a competitive edge. At Creative Think Digital, we believe in harnessing the power of technology not just for the sake of novelty, but to solve real-world challenges, and create digital solutions that are both practical and transformative.
+                        </p>
+                        <p>
+                            Cultivating a culture of collaboration and creativity is at the heart of our ethos at Creative Think Digital. We are a tight-knit team of diverse thinkers who take pride in our ability to bring together different perspectives and skills to create something truly extraordinary. Our holistic approach ensures that every project we undertake benefits from a wide range of expertise, fostering innovation and ensuring the delivery of a product that resonates with the end-user. Above all, our work is rooted in the belief that web development is not a solo act, but a symphony of ideas, technology, and creativity, all harmonizing to compose a web experience that is truly unique and memorable.
+                        </p>
+                    </div>
+                    <div class="service-detail base-color">
+                        <h2>Expansive Scope of Web Development in the UK</h2>
+                        <p>
+                            At Creative Think Digital, we recognize and embrace the expansive scope of web development in the UK, understanding that our work is an integral part of the broader digital ecosystem. It is no longer just about creating websites; it is about crafting seamless, interactive, and intuitive digital experiences. As a collective, we fully acknowledge the complexity of this landscape – a world that includes not only website design and development, but also web applications, e-commerce platforms, content management systems, digital marketing tools, SEO optimization, and data analytics. We are excited by the challenge to stay at the forefront of these fields, and are continually learning, adapting, and refining our approach to ensure we deliver solutions that are as dynamic and diverse as the digital landscape itself.
+                        </p>
+                        <p>
+                            Our work at Creative Think Digital is marked by a deep understanding of the symbiotic relationship between the various aspects of web development. We acknowledge that creating an effective website involves much more than impressive visual design. It's about understanding the user journey, integrating effective SEO strategies, ensuring responsive design for optimal mobile experience, and harnessing the power of analytics to understand user behavior and improve site performance. We also place a strong emphasis on security, understanding that in an increasingly digital world, safeguarding user information is paramount. Our multi-faceted approach allows us to create digital solutions that not only look good but function efficiently, drive engagement, and deliver results. Our collective commitment to exploring the expansive scope of web development is what makes us a forward-thinking and innovative force in the UK's digital landscape.
+                        </p>
+                    </div>
 
-			<!-- News Block Three -->
-			<div class="news-block-three col-lg-4 col-md-6 col-sm-12">
-				<div class="inner-box">
-					<div class="image">
-						<a href="services-detail.html"><img src="images/resource/news-7.jpg" alt="" /></a>
-					</div>
-					<div class="lower-content">
-						<div class="content">
-							<div class="icon-box">
-								<span class="icon flaticon-computer"></span>
-							</div>
-							<h4><a href="services-detail.html">UI/UX Design</a></h4>
-							<div class="text">Build the product you need on time with an experienced team that uses a clear and effective design process.</div>
-							<a class="read-more" href="services-detail.html">Read More<span class="arrow flaticon-long-arrow-pointing-to-the-right"></span></a>
-						</div>
-					</div>
-				</div>
-			</div>
+                    <div class="service-detail base-color">
+                        <h2>Meeting All Your Web Development Needs with Creative Think Digital</h2>
+                        <p>
+                            At Creative Think Digital, we are your one-stop solution for all your web development needs. Our collective expertise spans a broad spectrum of web design and development, digital marketing, and technology integration. This range allows us to address and meet the unique requirements of each client with custom solutions tailored to their specific goals. Whether it's building a simple, yet powerful website for a startup, developing a sophisticated e-commerce platform for a retail giant, or integrating complex AI-driven systems for an innovative tech company, we rise to the challenge. Our passion lies in transforming your vision into a tangible, functional, and visually stunning digital experience.
+                        </p>
+                        <p>
+                            In our quest to serve our clients better, we strive to stay ahead of the curve by continually learning, adapting, and adopting the latest technologies and trends in web development. Our team is well-versed in a variety of programming languages, platforms, and tools, and we are experienced in seamlessly integrating multiple systems to create a cohesive digital environment. More than just developers, we consider ourselves strategic partners who are invested in your success. We work closely with you throughout the process, from initial consultation to post-launch support, ensuring that the final product not only meets but exceeds your expectations. At Creative Think Digital, we're not just about building websites; we're about building relationships based on trust, collaboration, and shared success.
+                        </p>
+                    </div>
 
-			<!-- News Block Three -->
-			<div class="news-block-three col-lg-4 col-md-6 col-sm-12">
-				<div class="inner-box">
-					<div class="image">
-						<a href="services-detail.html"><img src="images/resource/news-11.jpg" alt="" /></a>
-					</div>
-					<div class="lower-content">
-						<div class="content">
-							<div class="icon-box">
-								<span class="icon flaticon-web"></span>
-							</div>
-							<h4><a href="services-detail.html">QA & Testing</a></h4>
-							<div class="text">Turn to our experts to perform comprehensive, multi-stage testing and auditing of your software.</div>
-							<a class="read-more" href="services-detail.html">Read More<span class="arrow flaticon-long-arrow-pointing-to-the-right"></span></a>
-						</div>
-					</div>
-				</div>
-			</div>
-
-			<!-- News Block Three -->
-			<div class="news-block-three col-lg-4 col-md-6 col-sm-12">
-				<div class="inner-box">
-					<div class="image">
-						<a href="services-detail.html"><img src="images/resource/news-12.jpg" alt="" /></a>
-					</div>
-					<div class="lower-content">
-						<div class="content">
-							<div class="icon-box">
-								<span class="icon flaticon-monitor-2"></span>
-							</div>
-							<h4><a href="services-detail.html">IT Consultancy</a></h4>
-							<div class="text">Turn to our experts to perform comprehensive, multi-stage testing and auditing of your software.</div>
-							<a class="read-more" href="services-detail.html">Read More<span class="arrow flaticon-long-arrow-pointing-to-the-right"></span></a>
-						</div>
-					</div>
-				</div>
-			</div>
-
-			<!-- News Block Three -->
-			<div class="news-block-three col-lg-4 col-md-6 col-sm-12">
-				<div class="inner-box">
-					<div class="image">
-						<a href="services-detail.html"><img src="images/resource/news-13.jpg" alt="" /></a>
-					</div>
-					<div class="lower-content">
-						<div class="content">
-							<div class="icon-box">
-								<span class="icon flaticon-human-resources"></span>
-							</div>
-							<h4><a href="services-detail.html">Dedicated Team</a></h4>
-							<div class="text">Over the past decade, our customers succeeded by leveraging Intellectsoft’s process of building, motivating.</div>
-							<a class="read-more" href="services-detail.html">Read More<span class="arrow flaticon-long-arrow-pointing-to-the-right"></span></a>
-						</div>
-					</div>
-				</div>
-			</div>
-
-		</div>
-	</div>
+                    <div class="service-detail base-color">
+                        <h2>Why Choose Creative Think Digital for Web Development in the UK</h2>
+                        <p>
+                            At Creative Think Digital, we're often asked: Why should you choose us for your web development needs in the UK? We believe our uniqueness lies in our collective expertise, innovative approach, and unwavering commitment to our clients.
+                        </p>
+                        <p>
+                            Our team is made up of experienced web developers, creative designers, data analysts, and strategic marketers who come together to create bespoke digital solutions. We combine technical know-how with a keen aesthetic sensibility, ensuring your website is not only functionally robust but visually captivating. Our developers are proficient in the latest programming languages and platforms, allowing us to build websites that are fast, secure, and seamlessly interactive. Our designers, on the other hand, keep their fingers on the pulse of modern design trends to create interfaces that are intuitive and engaging.
+                        </p>
+                        <p>
+                            Innovation is at the heart of what we do. We continually push the boundaries of what's possible in web development, exploring and integrating cutting-edge technologies like AI, VR, and blockchain to create digital experiences that stand out from the crowd. We don't just follow trends, we strive to set them. This commitment to innovation means our clients can benefit from solutions that are not only relevant today but poised to lead tomorrow.
+                        </p>
+                         <p>
+                            But above all, we value the relationships we build with our clients. We view each project as a partnership, working closely with you from conception to completion and beyond. We listen to your needs, understand your objectives, and translate them into a digital strategy that drives results. Our client-centric approach ensures that the final product reflects your brand's vision and values, resonates with your target audience, and contributes to your business goals. We're not satisfied until you are.
+                        </p>
+                        <p>
+                            In a nutshell, choosing Creative Think Digital for your web development needs means choosing a partner committed to your success. With us, you'll receive the benefits of deep technical expertise, creative design, innovative thinking, and a team that truly cares about your project. We look forward to the opportunity to work with you and help you realize your digital aspirations.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-12 col-sm-12 col-12 wow slideInRight" data-wow-delay="0ms" data-wow-duration="1500ms">
+                    <div class="sticky-top">
+                        <div class="sidebar-form">
+                            <div class="sidebar-form-text">
+                                <h6 class="base-color">Start with a FREE Quote!</h6>
+                                <span>No Obligation Estimate, Expert Advice</span>
+                            </div>
+                            <form class="row g-3">
+                                <div class="col-md-6">
+                                    <label for="first_name" class="form-label"></label>
+                                    <input type="text" class="form-control" id="first_name" placeholder="First Name" />
+                                </div>
+                                <div class="col-md-6">
+                                    <label for="last_name" class="form-label"></label>
+                                    <input type="text" class="form-control" id="last_name" placeholder="Last Name" />
+                                </div>
+                                <div class="col-md-6">
+                                    <label for="email" class="form-label"></label>
+                                    <input type="email" class="form-control" id="email" placeholder="Email" />
+                                </div>
+                                <div class="col-md-6">
+                                    <label for="phone" class="form-label"></label>
+                                    <input type="tel" class="form-control" id="phone" placeholder="Phone" />
+                                </div>
+                                <div class="col-12">
+                                    <label for="about_project" class="form-label"></label>
+                                    <textarea type="text" class="form-control" id="about_project" placeholder="Tell us about your project"></textarea>
+                                </div>
+                                <div class="col-12">
+                                    <button type="submit" class="btn btn-block theme-btn btn-style-three">
+                                        <span class="txt">Request Free Estimate</span>
+                                    </button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </section>
-<!-- End Services Page Section -->
-<!-- Featured Section -->
-<section class="featured-section">
-	<div class="auto-container">
-		<div class="row clearfix">
-
-			<!-- Featured Block Two -->
-			<div class="feature-block-two col-lg-6 col-md-12 col-sm-12">
-				<div class="inner-box wow fadeInLeft" data-wow-delay="0ms" data-wow-duration="1500ms" style="background-image: url(images/resource/feature-1.jpg)">
-					<div class="number">35 +</div>
-					<h4>Worldwide Work Pair</h4>
-					<div class="text">To succeed, every software solution must be deeply integrated into the existing tech environment..</div>
-				</div>
-			</div>
-
-			<!-- Featured Block Two -->
-			<div class="feature-block-two col-lg-6 col-md-12 col-sm-12">
-				<div class="inner-box wow fadeInRight" data-wow-delay="0ms" data-wow-duration="1500ms" style="background-image: url(images/resource/feature-2.jpg)">
-					<div class="number">40 k</div>
-					<h4>Happy Clients</h4>
-					<div class="text">To succeed, every software solution must be deeply integrated into the existing tech environment..</div>
-				</div>
-			</div>
-
-		</div>
-	</div>
-</section>
-<!-- End Featured Section -->
-<!-- Services Section -->
-<section class="services-section margin-top">
-	<div class="pattern-layer" style="background-image: url(images/background/pattern-2.png)"></div>
-	<div class="auto-container">
-		<!-- Sec Title -->
-		<div class="sec-title light centered">
-			<div class="title">WHO WE ARE</div>
-			<h2>We deal with the aspects of <br> professional IT Services</h2>
-		</div>
-		<div class="row clearfix">
-
-			<!-- Service Block -->
-			<div class="service-block col-lg-3 col-md-6 col-sm-12">
-				<div class="inner-box">
-					<div class="icon-box">
-						<span class="icon flaticon-responsive"></span>
-					</div>
-					<h5><a href="services-detail.html">IT Soluations</a></h5>
-					<div class="text">Sed ut perspiciatis unde omnis iste natus error volup validate your ideas.</div>
-					<a href="services-detail.html" class="arrow flaticon-long-arrow-pointing-to-the-right"></a>
-				</div>
-			</div>
-
-			<!-- Service Block -->
-			<div class="service-block col-lg-3 col-md-6 col-sm-12">
-				<div class="inner-box">
-					<div class="icon-box">
-						<span class="icon flaticon-monitor"></span>
-					</div>
-					<h5><a href="services-detail.html">Security System</a></h5>
-					<div class="text">Sed ut perspiciatis unde omnis iste natus error volup validate your ideas.</div>
-					<a href="services-detail.html" class="arrow flaticon-long-arrow-pointing-to-the-right"></a>
-				</div>
-			</div>
-
-			<!-- Service Block -->
-			<div class="service-block col-lg-3 col-md-6 col-sm-12">
-				<div class="inner-box">
-					<div class="icon-box">
-						<span class="icon flaticon-coding"></span>
-					</div>
-					<h5><a href="services-detail.html">Web Development</a></h5>
-					<div class="text">Sed ut perspiciatis unde omnis iste natus error volup validate your ideas.</div>
-					<a href="services-detail.html" class="arrow flaticon-long-arrow-pointing-to-the-right"></a>
-				</div>
-			</div>
-
-			<!-- Service Block -->
-			<div class="service-block col-lg-3 col-md-6 col-sm-12">
-				<div class="inner-box">
-					<div class="icon-box">
-						<span class="icon flaticon-laptop"></span>
-					</div>
-					<h5><a href="services-detail.html">Database Security</a></h5>
-					<div class="text">Sed ut perspiciatis unde omnis iste natus error volup validate your ideas.</div>
-					<a href="services-detail.html" class="arrow flaticon-long-arrow-pointing-to-the-right"></a>
-				</div>
-			</div>
-
-		</div>
-	</div>
-</section>
-<!-- End Services Section -->
-<!-- Services Section Two -->
-<section class="services-section-two margin-top">
-	<div class="auto-container">
-		<div class="upper-box">
-			<div class="icon-one" style="background-image: url(images/icons/icon-1.png)"></div>
-			<div class="icon-two" style="background-image: url(images/icons/icon-2.png)"></div>
-			<div class="icon-three" style="background-image: url(images/icons/icon-3.png)"></div>
-			<!-- Sec Title -->
-			<div class="sec-title light centered">
-				<div class="title">WHO WE ARE</div>
-				<h2>We deal with the aspects of <br> professional IT Services</h2>
-			</div>
-		</div>
-		<div class="inner-container">
-			<div class="row clearfix">
-
-				<!-- Service Block Two -->
-				<div class="service-block-two col-lg-4 col-md-6 col-sm-12">
-					<div class="inner-box wow fadeInLeft" data-wow-delay="0ms" data-wow-duration="1500ms">
-						<div class="shape-one"></div>
-						<div class="shape-two"></div>
-						<div class="icon-box">
-							<span class="icon flaticon-coding-1"></span>
-						</div>
-						<h5><a href="services-detail.html">Web Develpment</a></h5>
-						<div class="text">We carry more than just good coding skills. Our experience makes us stand out from other web development.</div>
-					</div>
-				</div>
-
-				<!-- Service Block Two -->
-				<div class="service-block-two col-lg-4 col-md-6 col-sm-12">
-					<div class="inner-box wow fadeInUp" data-wow-delay="0ms" data-wow-duration="1500ms">
-						<div class="shape-one"></div>
-						<div class="shape-two"></div>
-						<div class="icon-box">
-							<span class="icon flaticon-mobile-app"></span>
-						</div>
-						<h5><a href="services-detail.html">Mobile Development</a></h5>
-						<div class="text">Create complex enterprise software, ensure reliable software integration, modernise your legacy system.</div>
-					</div>
-				</div>
-
-				<!-- Service Block Two -->
-				<div class="service-block-two col-lg-4 col-md-6 col-sm-12">
-					<div class="inner-box wow fadeInRight" data-wow-delay="0ms" data-wow-duration="1500ms">
-						<div class="shape-one"></div>
-						<div class="shape-two"></div>
-						<div class="icon-box">
-							<span class="icon flaticon-computer"></span>
-						</div>
-						<h5><a href="services-detail.html">UI/UX Design</a></h5>
-						<div class="text">Build the product you need on time with an experienced team that uses a clear and effective design process.</div>
-					</div>
-				</div>
-
-				<!-- Service Block Two -->
-				<div class="service-block-two col-lg-4 col-md-6 col-sm-12">
-					<div class="inner-box wow fadeInLeft" data-wow-delay="0ms" data-wow-duration="1500ms">
-						<div class="shape-one"></div>
-						<div class="shape-two"></div>
-						<div class="icon-box">
-							<span class="icon flaticon-web"></span>
-						</div>
-						<h5><a href="services-detail.html">QA & Testing</a></h5>
-						<div class="text">Turn to our experts to perform comprehensive, multi-stage testing and auditing of your software.</div>
-					</div>
-				</div>
-
-				<!-- Service Block Two -->
-				<div class="service-block-two col-lg-4 col-md-6 col-sm-12">
-					<div class="inner-box wow fadeInUp" data-wow-delay="0ms" data-wow-duration="1500ms">
-						<div class="shape-one"></div>
-						<div class="shape-two"></div>
-						<div class="icon-box">
-							<span class="icon flaticon-monitor-2"></span>
-						</div>
-						<h5><a href="services-detail.html">IT Counsultancy</a></h5>
-						<div class="text">Trust our top minds to eliminate workflow pain points, implement new tech, and consolidate app portfolios.</div>
-					</div>
-				</div>
-
-				<!-- Service Block Two -->
-				<div class="service-block-two col-lg-4 col-md-6 col-sm-12">
-					<div class="inner-box wow fadeInRight" data-wow-delay="0ms" data-wow-duration="1500ms">
-						<div class="shape-one"></div>
-						<div class="shape-two"></div>
-						<div class="icon-box">
-							<span class="icon flaticon-human-resources"></span>
-						</div>
-						<h5><a href="services-detail.html">Dedicated Team</a></h5>
-						<div class="text">Over the past decade, our customers succeeded by leveraging Intellectsoft’s process of building, motivating.</div>
-					</div>
-				</div>
-
-			</div>
-		</div>
-	</div>
-</section>
-<!-- End Services Section Two -->
-<!-- Appointment Section -->
-<section class="appointment-section style-two">
-	<div class="image-layer" style="background-image: url(images/background/4.jpg)"></div>
-	<div class="auto-container">
-		<!-- Sec Title -->
-		<div class="sec-title light centered">
-			<div class="title">CONTACT US</div>
-			<h2>Join Us To Get IT Free <br> Consultations</h2>
-		</div>
-		<div class="inner-container">
-			<div class="row clearfix">
-
-				<!-- Image Column -->
-				<div class="image-column col-lg-6 col-md-12 col-sm-12">
-					<div class="inner-column wow slideInLeft" data-wow-delay="0ms" data-wow-duration="1500ms">
-						<div class="image">
-							<img src="images/resource/appointment.jpg" alt="" />
-						</div>
-					</div>
-				</div>
-
-				<!-- Form Column -->
-				<div class="form-column col-lg-6 col-md-12 col-sm-12">
-					<div class="inner-column">
-						<h4>You Don't Hesitate To Contact <br> With Us, Now Say Hello......</h4>
-						<!-- Appointment Form -->
-						<div class="appointment-form">
-							<form method="post" action="appointment.html">
-								<div class="row clearfix">
-									<div class="col-lg-6 col-md-6 col-sm-12 form-group">
-										<input type="text" name="username" placeholder="Name" required="">
-										<span class="icon fa fa-user"></span>
-									</div>
-
-									<div class="col-lg-6 col-md-6 col-sm-12 form-group">
-										<input type="email" name="email" placeholder="Email" required="">
-										<span class="icon fa fa-envelope"></span>
-									</div>
-
-									<div class="col-lg-6 col-md-6 col-sm-12 form-group">
-										<input type="tel" name="phone" placeholder="Phone No" required="">
-										<span class="icon fa fa-phone"></span>
-									</div>
-
-									<div class="col-lg-6 col-md-6 col-sm-12 form-group">
-										<input type="text" name="department" placeholder="Department" required="">
-										<span class="icon fa fa-home"></span>
-									</div>
-
-									<div class="col-lg-12 col-md-12 col-sm-12 form-group">
-										<textarea name="message" placeholder="Message"></textarea>
-									</div>
-
-									<div class="col-lg-12 col-md-12 col-sm-12 form-group">
-										<button class="theme-btn btn-style-three" type="submit" name="submit-form"><span class="txt">Send Massage</span></button>
-									</div>
-								</div>
-							</form>
-						</div>
-
-					</div>
-				</div>
-
-			</div>
-		</div>
-	</div>
-</section>
+<partial name="~/Views/Shared/ServicesPages/_CitiesSitemap.cshtml" />
 
 
 <script>
-	$(document).ready(function () {
-		CTDNav.AddCurrentActiveClass(`services`)
-	})
+    $(document).ready(function () {
+        CTDNav.AddCurrentActiveClass(`services`)
+    })
 </script>

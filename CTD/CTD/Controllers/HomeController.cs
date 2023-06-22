@@ -8,6 +8,8 @@ namespace CTD.Controllers
     public class HomeController : Controller
     {
         private readonly ILogger<HomeController> _logger;
+        private readonly string _commingSoonViewPath = "~/Views/Home/CommingSoon.cshtml";
+        private readonly string _servicesViewPath = "~/Views/Shared/ServicesPages";
 
         public HomeController(ILogger<HomeController> logger)
         {
@@ -52,17 +54,50 @@ namespace CTD.Controllers
             return View();
         }
 
+        #region ITStaffAugumentation
+
+
         [Route("it-staff-augumentation")]
         public IActionResult ITStaffAugumentation()
         {
-            return View("~/Views/Shared/ServicesPages/ITStaffAugumentation/_ITStaffAugumentationInLeeds.cshtml");
+            return View();
         }
+
+        [Route("{cityName}-it-staff-augumentation")]
+        public IActionResult CitywiseITStaffAugumentation(string cityName)
+        {
+            if (!string.IsNullOrEmpty(cityName))
+            {
+                string viewName = cityName.ServicesViewNameyCity();
+                if (!string.IsNullOrEmpty(viewName))
+                    return View($"{_servicesViewPath}/ITStaffAugumentation/{viewName}.cshtml");
+                return View(_commingSoonViewPath);
+            }
+            else
+            {
+                return View(_commingSoonViewPath);
+            }
+        }
+
+        #endregion
+
+        #region Web Development
+
 
         [Route("web-development")]
         public IActionResult WebDevelopment()
         {
             return View();
         }
+        [Route("{cityName}-web-development")]
+        public IActionResult CitywiseWebDevelopment(string cityName)
+        {
+            return View("~/Views/Shared/ServicesPages/ITStaffAugumentation/_ITStaffAugumentationInLeeds.cshtml");
+        }
+
+        #endregion
+
+        #region Graphic designing
 
         [Route("graphic-designing")]
         public IActionResult GraphicDesigning()
@@ -70,22 +105,17 @@ namespace CTD.Controllers
             return View();
         }
 
+        #endregion
+
+        #region SEO 
+
         [Route("seo")]
         public IActionResult SEO()
         {
             return View();
         }
 
-        [Route("custom-software-development")]
-        public IActionResult CustomSoftwareDevelopment()
-        {
-            return View();
-        }
-        [Route("{pageUrl}-it-staff-augumentation")]
-        public IActionResult CitywiseITStaffAugumentation(string pageUrl)
-        {
-            return View();
-        }
+        #endregion
 
         #endregion
 
@@ -97,9 +127,9 @@ namespace CTD.Controllers
             return View();
         }
 
-		[Route("portfolio/{portfolioSlug}")]
-		public IActionResult PortfolioDetail(string portfolioSlug)
-		{
+        [Route("portfolio/{portfolioSlug}")]
+        public IActionResult PortfolioDetail(string portfolioSlug)
+        {
             var viewName = portfolioSlug.PortfolioViewName();
             if (!string.IsNullOrEmpty(viewName))
             {
@@ -111,13 +141,13 @@ namespace CTD.Controllers
             {
                 return RedirectToAction(nameof(CommingSoon));
             }
-		}
+        }
 
-		#endregion
+        #endregion
 
-		#region Blogs
+        #region Blogs
 
-		[Route("blogs")]
+        [Route("blogs")]
         public IActionResult Blogs()
         {
             return View();
@@ -138,17 +168,17 @@ namespace CTD.Controllers
         #endregion
 
         [Route("privacy")]
-		public IActionResult Privacy()
-		{
-			return View();
-		}
-		
+        public IActionResult Privacy()
+        {
+            return View();
+        }
+
         [Route("faq")]
         public IActionResult FAQ()
         {
             return View();
         }
-        
+
         [Route("price")]
         public IActionResult Price()
         {
@@ -169,32 +199,32 @@ namespace CTD.Controllers
         {
             return View();
         }
-		
-		[Route("services-detail")]
-		public IActionResult ServicesDetail()
-		{
-			return View();
-		}
+
+        [Route("services-detail")]
+        public IActionResult ServicesDetail()
+        {
+            return View();
+        }
         [Route("projects")]
         public IActionResult Projects()
         {
             return View();
         }
         [Route("projects-detail")]
-		public IActionResult ProjectsDetail()
-		{
-			return View();
-		}
-		[Route("shop")]
-		public IActionResult OurProducts()
-		{
-			return View();
-		}
-		[Route("shop-single")]
-		public IActionResult ProductSingle()
-		{
-			return View();
-		}
+        public IActionResult ProjectsDetail()
+        {
+            return View();
+        }
+        [Route("shop")]
+        public IActionResult OurProducts()
+        {
+            return View();
+        }
+        [Route("shop-single")]
+        public IActionResult ProductSingle()
+        {
+            return View();
+        }
         [Route("shopping-cart")]
         public IActionResult ShoppingCart()
         {
@@ -210,23 +240,23 @@ namespace CTD.Controllers
         {
             return View();
         }
-		[Route("our-blog")]
-		public IActionResult OurBlog()
-		{
-			return View();
-		}
-		[Route("blog-classic")]
-		public IActionResult BlogClassic()
-		{
-			return View();
-		}
-		[Route("blog-single")]
-		public IActionResult BlogSingle()
-		{
-			return View();
-		}
-		
-		[Route("coming-soon")]
+        [Route("our-blog")]
+        public IActionResult OurBlog()
+        {
+            return View();
+        }
+        [Route("blog-classic")]
+        public IActionResult BlogClassic()
+        {
+            return View();
+        }
+        [Route("blog-single")]
+        public IActionResult BlogSingle()
+        {
+            return View();
+        }
+
+        [Route("coming-soon")]
         public IActionResult CommingSoon()
         {
             return View();
