@@ -54,6 +54,7 @@
             return source switch
             {
                 "leeds" => "_ITStaffAugumentationInLeeds",
+                "manchester" => "_ITStaffAugumentationInManchester",
                 _ => null
             };
         }
