@@ -1,4 +1,5 @@
 ﻿using CTD.Extensions;
+using CTD.Helpers;
 using CTD.Models;
 using Microsoft.AspNetCore.Mvc;
 using System.Diagnostics;
@@ -60,15 +61,18 @@ namespace CTD.Controllers
         [Route("it-staff-augumentation")]
         public IActionResult ITStaffAugumentation()
         {
+            //var cc = string.Join(",", CommonHelper.UKCitiesDictionary()
+            //         .Select(x => $"\"{x.Value}\"=>\"_ITStaffAugumentationIn{x.Key}\"").ToList());
             return View();
         }
 
         [Route("{cityName}-it-staff-augumentation")]
         public IActionResult CitywiseITStaffAugumentation(string cityName)
         {
+            
             if (!string.IsNullOrEmpty(cityName))
             {
-                string viewName = cityName.ServicesViewNameyCity();
+                string viewName = cityName.ServicesViewNameByCity();
                 if (!string.IsNullOrEmpty(viewName))
                     return View($"{_servicesViewPath}/ITStaffAugumentation/{viewName}.cshtml");
                 return View(_commingSoonViewPath);

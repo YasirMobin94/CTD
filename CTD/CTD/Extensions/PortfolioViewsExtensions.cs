@@ -49,12 +49,51 @@
                 _ => null
             };
         }
-        public static string ServicesViewNameyCity(this string source)
+        public static string ServicesViewNameByCity(this string source)
         {
             return source switch
             {
+                "aberdeen" => "_ITStaffAugumentationInAberdeen",
+                "armagh" => "_ITStaffAugumentationInArmagh",
+                "bangor" => "_ITStaffAugumentationInBangor",
+                "bath" => "_ITStaffAugumentationInBath",
+                "belfast" => "_ITStaffAugumentationInBelfast",
+                "birmingham" => "_ITStaffAugumentationInBirmingham",
+                "bradford" => "_ITStaffAugumentationInBradford",
+                "brighton-and-hove" => "_ITStaffAugumentationInBrighton",
+                "bristol" => "_ITStaffAugumentationInBristol",
+                "cambridge" => "_ITStaffAugumentationInCambridge",
+                "canterbury" => "_ITStaffAugumentationInCanterbury",
+                "cardiff" => "_ITStaffAugumentationInCardiff",
+                "carlisle" => "_ITStaffAugumentationInCarlisle",
+                "chelmsford" => "_ITStaffAugumentationInChelmsford",
+                "chester" => "_ITStaffAugumentationInChester",
+                "chichester" => "_ITStaffAugumentationInChichester",
+                "colchester" => "_ITStaffAugumentationInColchester",
+                "coventry" => "_ITStaffAugumentationInCoventry",
+                "derby" => "_ITStaffAugumentationInDerby",
+                "doncaster" => "_ITStaffAugumentationInDoncaster",
+                "dundee" => "_ITStaffAugumentationInDundee",
+                "dunfirmline" => "_ITStaffAugumentationInDunfirmline",
+                "durham" => "_ITStaffAugumentationInDurham",
+                "edinburgh" => "_ITStaffAugumentationInEdinburgh",
+                "ely" => "_ITStaffAugumentationInEly",
+                "exeter" => "_ITStaffAugumentationInExeter",
+                "glasgow" => "_ITStaffAugumentationInGlasgow",
+                "gloucester" => "_ITStaffAugumentationInGloucester",
+                "hereford" => "_ITStaffAugumentationInHereford",
+                "inverness" => "_ITStaffAugumentationInInverness",
+                "kingston-upon-hull" => "_ITStaffAugumentationInKingston",
+                "lancaster" => "_ITStaffAugumentationInLancaster",
                 "leeds" => "_ITStaffAugumentationInLeeds",
+                "lichfield" => "_ITStaffAugumentationInLichfield",
+                "lincoln" => "_ITStaffAugumentationInLincoln",
+                "lisburn" => "_ITStaffAugumentationInLisburn",
+                "liverpool" => "_ITStaffAugumentationInLiverpool",
+                "london" => "_ITStaffAugumentationInLondon",
+                "londonderry" => "_ITStaffAugumentationInLondonderry",
                 "manchester" => "_ITStaffAugumentationInManchester",
+                "milton-keynes" => "_ITStaffAugumentationInMilton Keynes",
                 _ => null
             };
         }

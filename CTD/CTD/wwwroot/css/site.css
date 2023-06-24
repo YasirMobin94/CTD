@@ -532,7 +532,7 @@ html {
 }
 
     .item-list li {
-        width: calc(16.666% - 10px);
+        width: 25%;
         margin-bottom: 10px;
         display: flex;
         align-items: center;
@@ -552,17 +552,17 @@ html {
 /* Responsive CSS */
 @media (max-width: 768px) {
     .item-list li {
-        width: calc(33.333% - 10px); /* Adjust the width as needed */
+        width: 33%;
     }
 }
 @media (max-width: 876px) {
     .item-list li {
-        width: calc(33.333% - 8px); /* Adjust the width as needed */
+        width: 33%;
     }
 }
 @media (max-width: 480px) {
     .item-list li {
-        width: calc(50% - 10px); /* Adjust the width as needed */
+        width: 50%;
     }
 }
 /* Cities Sitemap End*/
