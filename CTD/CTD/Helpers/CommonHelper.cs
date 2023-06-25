@@ -45,7 +45,7 @@
                     { "Bristol", "bristol" },
                     { "Bradford", "bradford" },
                     { "Canterbury", "canterbury" },
-                    { "Dunfirmline", "dunfirmline" },
+                    { "Dunfermline", "dunfermline" },
                     { "Londonderry", "londonderry" },
                     { "Carlisle", "carlisle" },
                     { "Inverness", "inverness" },

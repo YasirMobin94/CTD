@@ -74,7 +74,7 @@
                 "derby" => "_ITStaffAugumentationInDerby",
                 "doncaster" => "_ITStaffAugumentationInDoncaster",
                 "dundee" => "_ITStaffAugumentationInDundee",
-                "dunfirmline" => "_ITStaffAugumentationInDunfirmline",
+                "dunfermline" => "_ITStaffAugumentationInDunfermline",
                 "durham" => "_ITStaffAugumentationInDurham",
                 "edinburgh" => "_ITStaffAugumentationInEdinburgh",
                 "ely" => "_ITStaffAugumentationInEly",
@@ -93,7 +93,7 @@
                 "london" => "_ITStaffAugumentationInLondon",
                 "londonderry" => "_ITStaffAugumentationInLondonderry",
                 "manchester" => "_ITStaffAugumentationInManchester",
-                "milton-keynes" => "_ITStaffAugumentationInMilton Keynes",
+                "milton-keynes" => "_ITStaffAugumentationInMiltonKeynes",
                 _ => null
             };
         }
