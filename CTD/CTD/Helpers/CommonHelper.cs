@@ -50,6 +50,7 @@
                     { "Carlisle", "carlisle" },
                     { "Inverness", "inverness" },
                     { "Lichfield", "lichfield" },
+                    { "Oxford", "oxford" }
                     //{ "London", "london" },
                     //{ "Birmingham", "birmingham" },
                     //{ "Glasgow", "glasgow" },

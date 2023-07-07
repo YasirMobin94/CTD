@@ -72,7 +72,7 @@ namespace CTD.Controllers
             
             if (!string.IsNullOrEmpty(cityName))
             {
-                string viewName = cityName.ServicesViewNameByCity();
+                string viewName = cityName.ITStaffServicesViewNameByCity();
                 if (!string.IsNullOrEmpty(viewName))
                     return View($"{_servicesViewPath}/ITStaffAugumentation/{viewName}.cshtml");
                 return View(_commingSoonViewPath);
@@ -96,7 +96,17 @@ namespace CTD.Controllers
         [Route("{cityName}-web-development")]
         public IActionResult CitywiseWebDevelopment(string cityName)
         {
-            return View("~/Views/Shared/ServicesPages/ITStaffAugumentation/_ITStaffAugumentationInLeeds.cshtml");
+            if (!string.IsNullOrEmpty(cityName))
+            {
+                string viewName = cityName.WebDevServicesViewNameByCity();
+                if (!string.IsNullOrEmpty(viewName))
+                    return View($"{_servicesViewPath}/WebDevelopment/{viewName}.cshtml");
+                return View(_commingSoonViewPath);
+            }
+            else
+            {
+                return View(_commingSoonViewPath);
+            }
         }
 
         #endregion

@@ -49,7 +49,7 @@
                 _ => null
             };
         }
-        public static string ServicesViewNameByCity(this string source)
+        public static string ITStaffServicesViewNameByCity(this string source)
         {
             return source switch
             {
@@ -94,6 +94,18 @@
                 "londonderry" => "_ITStaffAugumentationInLondonderry",
                 "manchester" => "_ITStaffAugumentationInManchester",
                 "milton-keynes" => "_ITStaffAugumentationInMiltonKeynes",
+                _ => null
+            };
+        }
+        public static string WebDevServicesViewNameByCity(this string source)
+        {
+            return source switch
+            {
+                "oxford" => "_WebDevelopmentInOxford",
+                "milton-keynes" => "_WebDevelopmentInMiltonKeynes",
+                "bristol" => "_WebDevelopmentInBristol",
+
+
                 _ => null
             };
         }
