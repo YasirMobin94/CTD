@@ -526,7 +526,7 @@ html {
     padding: 0;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    /*justify-content: space-between;*/
     font-family: 'Montserrat', sans-serif !important;
     /*padding: 2rem;*/
 }
