@@ -142,7 +142,21 @@ namespace CTD.Controllers
         {
             return View();
         }
-
+        [Route("{cityName}-seo")]
+        public IActionResult CitywiseSEO(string cityName)
+        {
+            if (!string.IsNullOrEmpty(cityName))
+            {
+                string viewName = cityName.SEOServicesViewNameByCity();
+                if (!string.IsNullOrEmpty(viewName))
+                    return View($"{_servicesViewPath}/SEO/{viewName}.cshtml");
+                return View(_commingSoonViewPath);
+            }
+            else
+            {
+                return View(_commingSoonViewPath);
+            }
+        }
         #endregion
 
         #endregion
