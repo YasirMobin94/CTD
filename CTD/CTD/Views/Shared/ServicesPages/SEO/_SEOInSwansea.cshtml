@@ -1,0 +1,79 @@
+@{
+
+    ViewBag.Title = "Propel Your Business Forward with Search Engine Optimization in Swansea";
+    ViewBag.Description = @"Transform your business's online presence with Creative Think Digital's exceptional SEO services in Swansea. Expand your online reach and unlock opportunities for growth.";
+    ViewData["ServiceName"] = "SEO";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+
+<section class="services-page-section">
+    <div class="auto-container">
+        <div class="row clearfix">
+            <div class="col-lg-8 col-md-6 col-sm-12 col-12 wow fadeInUp" data-wow-delay="0ms" data-wow-duration="2000ms">
+                <div class="inner-column">
+                    <div class="about-service-title">
+                        <h1 class="base-color">@ViewBag.Title</h1>
+
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-6 col-md-12 col-sm-12 col-12 left-rail">
+                            <ul class="base-color">
+                                <li>Custom Solutions for Every Businesss</li>
+                                <li>Optimized for Load Speeds and Search Engines</li>
+                                <li>Professional and Polished Custom Design</li>
+                                <li>Functional and Delightful User Experience</li>
+                            </ul>
+                            <div class="reviews-section">
+                                <div class="review-starts">
+                                    <img src="/images/start.png" />
+                                    <img src="/images/start.png" />
+                                    <img src="/images/start.png" />
+                                    <img src="/images/start.png" />
+                                    <img src="/images/start.png" />
+                                </div>
+                                <h6 class="base-color">CTD rated 4.9/5 based on 174 reviews</h6>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-md-12 col-sm-12 col-12 right-form-rail">
+                            <img src="/images/development.svg" alt="text">
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12 col-12 wow fadeInRight" data-wow-delay="0ms" data-wow-duration="2000ms">
+                <partial name="~/Views/Shared/ServicesPages/_ServiceIntroForm.cshtml" />
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid satis-section">
+        <div class="row center-items">
+            <h4 class="">Top Rated SEO in Swansea</h4>
+        </div>
+    </div>
+    <div class="auto-container">
+        <div class="service-detail-section">
+            <div class="row clearfix">
+                <div class="col-lg-8 col-md-12 col-sm-12 col-12 wow slideInLeft" data-wow-delay="0ms" data-wow-duration="1500ms">
+                    <span class="title-label">SEO</span>
+                    <div class="service-detail base-color">
+                        <h2>Leading the Digital Race with SEO</h2><p>In the competitive digital landscape, carving a niche for your business can be challenging. At Creative Think Digital, we provide the expertise and tools you need to rise above the rest through our expert Search Engine Optimization services in Swansea. Our aim is to increase your online visibility and foster meaningful interactions with your target audience.</p><h2>Understanding the SEO Game Changer</h2><p>As businesses extend their operations online, capturing the attention of potential customers is crucial. Enter Search Engine Optimization, or SEO - a key strategy designed to elevate your website in search engine rankings and make your business the go-to answer for digital queries.</p><h2>SEO Mastery at Creative Think Digital</h2><p>At Creative Think Digital, we pride ourselves on our SEO proficiency. Our unique blend of creativity, technological acumen, and comprehensive SEO knowledge allows us to devise an SEO strategy that boosts your website's rankings and facilitates sustainable business growth. Our SEO services in Swansea are designed to transform your online presence and deliver impactful results.</p><h2>Deciphering SEO with Creative Think Digital</h2><p>Understanding the myriad aspects of SEO, from keyword research to content optimization, can seem like a daunting task. However, at Creative Think Digital, we aim to demystify SEO and turn it into a strategic guide to your business success. We tailor our SEO strategies to your specific business needs, ensuring a solid and relevant online presence.</p><h2>Local Impact, Global Reach with SEO</h2><p>Our SEO services in Swansea are built to optimize both local visibility and international reach. We focus on locally-relevant search terms, making sure your business is highly visible to potential customers in Swansea, while also building a broader, global audience.</p><h2>Our Track Record Speaks Volumes</h2><p>Our successful record in SEO sets us apart. With a history of driving businesses to the top of search engine results, we let our accomplishments showcase our expertise. At Creative Think Digital, we focus on more than just increasing online visibility - we aim to drive business growth and enhance revenue.</p><h2>Reinvent Your Digital Strategy with Creative Think Digital</h2><p>Ready to revamp your digital strategy? Our dedicated SEO services can make this transformation possible. Witness exponential growth and tap into unexplored opportunities with Creative Think Digital's superior Search Engine Optimization in Swansea.</p><h2>Reach Out to Creative Think Digital Today</h2><p>Embrace the untapped potential of your business in the digital domain. Get in touch with us today, and let's work together to steer your business towards digital success. Step into the future of business growth with Creative Think Digital's premier SEO services in Swansea.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-12 col-sm-12 col-12 wow slideInRight" data-wow-delay="0ms" data-wow-duration="1500ms">
+                    <partial name="~/Views/Shared/ServicesPages/_ServiceContentForm.cshtml" />
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<partial name="~/Views/Shared/ServicesPages/_CitiesSitemap.cshtml" />
+
+
+<script>
+    $(document).ready(function () {
+        CTDNav.AddCurrentActiveClass(`services`)
+    })
+</script>
