@@ -1,0 +1,79 @@
+@{
+
+    ViewBag.Title = "Transforming Your Tech Landscape with IT Staff Augmentation in Bristol";
+    ViewBag.Description = @"Propel your business to new heights with Creative Think Digital's unrivalled IT staff augmentation in Bristol. Elevate efficiency and catalyze innovation now!";
+    ViewData["ServiceName"] = "ITStaffAugmentation";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+
+<section class="services-page-section">
+    <div class="auto-container">
+        <div class="row clearfix">
+            <div class="col-lg-8 col-md-6 col-sm-12 col-12 wow fadeInUp" data-wow-delay="0ms" data-wow-duration="2000ms">
+                <div class="inner-column">
+                    <div class="about-service-title">
+                        <h1 class="base-color">@ViewBag.Title</h1>
+
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-6 col-md-12 col-sm-12 col-12 left-rail">
+                            <ul class="base-color">
+                                <li>Custom Solutions for Every Businesss</li>
+                                <li>Optimized for Load Speeds and Search Engines</li>
+                                <li>Professional and Polished Custom Design</li>
+                                <li>Functional and Delightful User Experience</li>
+                            </ul>
+                            <div class="reviews-section">
+                                <div class="review-starts">
+                                    <img src="/images/start.png" />
+                                    <img src="/images/start.png" />
+                                    <img src="/images/start.png" />
+                                    <img src="/images/start.png" />
+                                    <img src="/images/start.png" />
+                                </div>
+                                <h6 class="base-color">CTD rated 4.9/5 based on 174 reviews</h6>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-md-12 col-sm-12 col-12 right-form-rail">
+                            <img src="/images/development.svg" alt="text">
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12 col-12 wow fadeInRight" data-wow-delay="0ms" data-wow-duration="2000ms">
+                <partial name="~/Views/Shared/ServicesPages/_ServiceIntroForm.cshtml" />
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid satis-section">
+        <div class="row center-items">
+            <h4 class="">Top Rated IT Staff Augmentation in Bristol</h4>
+        </div>
+    </div>
+    <div class="auto-container">
+        <div class="service-detail-section">
+            <div class="row clearfix">
+                <div class="col-lg-8 col-md-12 col-sm-12 col-12 wow slideInLeft" data-wow-delay="0ms" data-wow-duration="1500ms">
+                    <span class="title-label">IT Staff Augmentation</span>
+                    <div class="service-detail base-color">
+                        <p>In the rapidly evolving tech landscape, businesses often encounter intricate challenges. As digital transformation becomes an imperative for success, having the right team on your side is vital. For businesses in Bristol dealing with the complexities of managing IT projects, Creative Think Digital presents an effective solution - IT staff augmentation in Bristol.</p><h2>Why IT Staff Augmentation?</h2><p>Staff augmentation is a revolutionary outsourcing strategy that allows you to top-up your team with skilled IT personnel on a contractual basis, bypassing the obligations associated with full-time hiring. This model provides the flexibility and scalability often missed in traditional hiring processes.</p><p>IT staff augmentation is rapidly gaining popularity due to its numerous benefits. It enables you to define what expertise you require and for how long, whether for a short-term project or a long-term venture. But finding the right fit for your project is no easy task, and this is where Creative Think Digital comes into the picture.</p><h2>The Creative Think Digital Advantage</h2><p>At Creative Think Digital, we are not merely filling the skill gap in your IT department. We understand your distinct needs and provide solutions tailor-made for your business. We are proud to offer top-notch IT staff augmentation in Bristol, ensuring businesses like yours have access to the skilled staff needed to drive innovation and growth.</p><p>We believe that every company is unique, with its own set of needs and goals. That's why we steer clear of a one-size-fits-all approach. Our IT staff augmentation strategy is custom-built to align with your business requirements. We offer flexible contracts and competitive pricing to ensure your project progresses seamlessly, without financial constraints.</p><h2>Elevating Business Potential with IT Staff Augmentation</h2><p>Leveraging our services for IT staff augmentation in Bristol, you tap into a host of benefits.</p><p>Cost-Effective Solutions: Save on the expenses related to hiring and training full-time employees. With IT staff augmentation, you pay only for the skills and time you need, significantly reducing your costs.</p><p>Access to Global Talent: We offer you the opportunity to tap into a global talent pool. Our network of IT professionals, boasting diverse skill sets, are prepared to contribute to your project's success.</p><p>Scalability: IT staff augmentation services provide the flexibility to scale your team up or down as per project requirements, offering swift adaptability.</p><p>Faster Project Delivery: Incorporating experienced professionals into your team accelerates project execution, leading to quicker delivery times.</p><p>Maintain Business Control: Unlike traditional outsourcing, IT staff augmentation allows you to retain control over your projects. You manage the team, ensuring the project aligns with your vision.</p><h2>Our Approach</h2><p>Our process begins by understanding your project's needs, your team's capabilities, and the challenges you face. With a clear picture in mind, we initiate the staff augmentation process, helping you choose the best talent for your project. We ensure smooth integration of the augmented staff into your existing team and provide continued support throughout the project, ensuring it moves in the right direction.</p><h2>Opting for Creative Think Digital for IT Staff Augmentation in Bristol</h2><p>The right choice can be the differentiating factor between attaining your business objectives or falling short. With our IT staff augmentation services in Bristol, we are committed to helping you make that crucial choice.</p><p>At Creative Think Digital, we don’t just fill positions; we enable businesses. We provide you with the right people, equipped with the right skills, at the right time to help drive your business forward. So why wait? Let's transform your</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-12 col-sm-12 col-12 wow slideInRight" data-wow-delay="0ms" data-wow-duration="1500ms">
+                    <partial name="~/Views/Shared/ServicesPages/_ServiceContentForm.cshtml" />
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<partial name="~/Views/Shared/ServicesPages/_CitiesSitemap.cshtml" />
+
+
+<script>
+    $(document).ready(function () {
+        CTDNav.AddCurrentActiveClass(`services`)
+    })
+</script>
