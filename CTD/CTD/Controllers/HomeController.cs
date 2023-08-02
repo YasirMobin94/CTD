@@ -61,8 +61,6 @@ namespace CTD.Controllers
         [Route("it-staff-augumentation")]
         public IActionResult ITStaffAugumentation()
         {
-            //var cc = string.Join(",", CommonHelper.UKCitiesDictionary()
-            //         .Select(x => $"\"{x.Value}\"=>\"_ITStaffAugumentationIn{x.Key}\"").ToList());
             return View();
         }
 
