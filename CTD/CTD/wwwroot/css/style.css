@@ -7432,7 +7432,7 @@ img {
 
     .process-block .inner-box {
         position: relative;
-        padding: 0px 30px 40px;
+        padding: 0px 30px 90px;
     }
 
         .process-block .inner-box:before {
@@ -7453,7 +7453,7 @@ img {
         }
 
         .process-block .inner-box:hover::before {
-            bottom: 0px;
+            /*bottom: 0px;*/
         }
 
         .process-block .inner-box .number-box {
@@ -10633,7 +10633,7 @@ img {
 
 .contact-info-section {
     position: relative;
-    padding: 110px 0px 100px;
+    padding: 60px 0px 100px;
 }
 
     .contact-info-section .title-box {
