@@ -207,6 +207,16 @@ namespace CTD.Controllers
         }
         #endregion
 
+        #region Impressum
+
+        [Route("impressum")]
+        public IActionResult Impressum()
+        {
+            return View();
+        }
+
+        #endregion
+
         [Route("privacy")]
         public IActionResult Privacy()
         {

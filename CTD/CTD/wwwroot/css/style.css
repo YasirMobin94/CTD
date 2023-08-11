@@ -10649,7 +10649,8 @@ img {
             text-transform: uppercase;
         }
 
-        .contact-info-section .title-box h2 {
+        .contact-info-section .title-box h2,
+        .contact-info-section .title-box h3 {
             position: relative;
             font-weight: 700;
             color: #141d38;
@@ -10851,7 +10852,7 @@ img {
     position: relative;
     padding: 10px 0px 100px;
 }
-   
+
     .blog-page-section .styled-pagination {
         margin-top: 50px;
     }

@@ -8,64 +8,49 @@
 		<div class="widgets-section">
 			<div class="row clearfix">
 
-				<!-- Column -->
-				<div class="big-column col-lg-6 col-md-12 col-sm-12">
-					<div class="row clearfix">
-
-						<!-- Footer Column -->
-						<div class="footer-column col-lg-7 col-md-6 col-sm-12">
-							<div class="footer-widget logo-widget">
-								<div class="logo">
-									<a href="@Url.Action("Index","Home")"><img src="/images/main_md_wh_header_logo.png" alt="" /></a>
-								</div>
-								<div class="text">Welcome to Creative Think Digital, your one-stop destination for cutting-edge creative solutions and digital excellence. We are a leading digital agency dedicated to helping businesses thrive in the online world.</div>
-								<!-- Social Box -->
-								<ul class="social-box">
-									<partial name="~/Views/Shared/Partials/_Socials.cshtml" />
-
-								</ul>
-							</div>
+				<div class="footer-column col-lg-4 col-md-4 col-sm-12">
+					<div class="footer-widget logo-widget">
+						<div class="logo">
+							<a href="@Url.Action("Index","Home")"><img src="/images/main_md_wh_header_logo.png" alt="" /></a>
 						</div>
+						<div class="text">Welcome to Creative Think Digital, your one-stop destination for cutting-edge creative solutions and digital excellence. We are a leading digital agency dedicated to helping businesses thrive in the online world.</div>
+						<!-- Social Box -->
+						<ul class="social-box">
+							<partial name="~/Views/Shared/Partials/_Socials.cshtml" />
 
-						<!-- Footer Column -->
-						<div class="footer-column col-lg-5 col-md-6 col-sm-12">
-							<div class="footer-widget links-widget">
-								<h5>Quick Links</h5>
-								<ul class="list-link">
-									<partial name="~/Views/Shared/Partials/_ServicesListOptions.cshtml" />
-								</ul>
-							</div>
-						</div>
-
+						</ul>
 					</div>
 				</div>
 
-				<!-- Column -->
-				<div class="big-column col-lg-6 col-md-12 col-sm-12">
-					<div class="row clearfix">
-						<div class="footer-column col-lg-6 col-md-6 col-sm-12">
-							<div class="footer-widget contact-widget">
-								<h5>Contact Us</h5>
-								<ul>
-									<li>
-										<span class="icon flaticon-placeholder-2"></span>
-										<strong>Address</strong>
-										125, Suitland Street, USA
-									</li>
-									<li>
-										<span class="icon flaticon-phone-call"></span>
-										<strong>Phone</strong>
-										<a href="tel:+786-875-864-75">+ 786 875 864 75</a>
-									</li>
-									<li>
-										<span class="icon flaticon-email-1"></span>
-										<strong>E-Mail</strong>
-										<a href="mailto:support@globex.com">support@globex.com</a>
-									</li>
-								</ul>
-							</div>
-						</div>
+				<div class="footer-column col-lg-4 col-md-4 col-sm-12">
+					<div class="footer-widget links-widget">
+						<h5>Quick Links</h5>
+						<ul class="list-link">
+							<partial name="~/Views/Shared/Partials/_ServicesListOptions.cshtml" />
+						</ul>
+					</div>
+				</div>
 
+				<div class="footer-column col-lg-4 col-md-4 col-sm-12">
+					<div class="footer-widget contact-widget">
+						<h5>Contact Us</h5>
+						<ul>
+							<li>
+								<span class="icon flaticon-placeholder-2"></span>
+								<strong>Address</strong>
+								125, Suitland Street, USA
+							</li>
+							<li>
+								<span class="icon flaticon-phone-call"></span>
+								<strong>Phone</strong>
+								<a href="tel:+786-875-864-75">+ 786 875 864 75</a>
+							</li>
+							<li>
+								<span class="icon flaticon-email-1"></span>
+								<strong>E-Mail</strong>
+								<a href="mailto:support@globex.com">support@globex.com</a>
+							</li>
+						</ul>
 					</div>
 				</div>
 
@@ -77,10 +62,14 @@
 			<div class="auto-container">
 				<div class="row clearfix">
 					<!-- Column -->
-					<div class="column col-lg-12 col-md-12 col-sm-12 center-items">
+					<div class="column col-lg-6 col-md-12 col-sm-12">
 						<div class="copyright">Copyright &copy; @DateTime.Now.Year CTD. All Rights Reserved.</div>
 					</div>
-				
+					<div class="column col-lg-6 col-md-12 col-sm-12">
+						<ul class="footer-nav">
+							<li><a href="@Url.Action("Impressum","Home")">Impressum</a></li>
+						</ul>
+					</div>
 				</div>
 			</div>
 		</div>
