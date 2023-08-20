@@ -1,0 +1,67 @@
+@{
+
+    ViewBag.Title = "Professional Search Engine Optimization Services in Newry";
+    ViewBag.Description = @"Unlock the full potential of your online presence with our professional Search Engine Optimization services in Newry. At Creative Think Digital, we specialize in driving targeted traffic to your website, boosting your online visibility, and maximizing your business's growth. Contact us today to take your SEO strategy to new heights!";
+    ViewData["ServiceName"] = "SEO";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+
+<section class="services-page-section">
+    <div class="auto-container">
+        <div class="row clearfix">
+            <div class="col-lg-8 col-md-6 col-sm-12 col-12 wow fadeInUp" data-wow-delay="0ms" data-wow-duration="2000ms">
+                <div class="inner-column">
+                    <div class="about-service-title">
+                        <h1 class="base-color">@ViewBag.Title</h1>
+
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-12 col-md-12 col-sm-12 col-12 left-rail">
+                            <ul class="base-color">
+                                <partial name="~/Views/Shared/ServicesPages/SEO/_ShortDescription.cshtml" />
+                            </ul>
+                            <partial name="~/Views/Shared/ServicesPages/_ServiceRating.cshtml" />
+                        </div>
+                       @* <div class="col-lg-6 col-md-12 col-sm-12 col-12 right-form-rail">
+                            <img src="/images/development.svg" alt="text">
+                        </div>*@
+                    </div>
+                </div>
+
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12 col-12 wow fadeInRight" data-wow-delay="0ms" data-wow-duration="2000ms">
+                <partial name="~/Views/Shared/ServicesPages/_ServiceIntroForm.cshtml" />
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid satis-section">
+        <div class="row center-items">
+            <h4 class="">Top Rated SEO in Newry</h4>
+        </div>
+    </div>
+    <div class="auto-container">
+        <div class="service-detail-section">
+            <div class="row clearfix">
+                <div class="col-lg-8 col-md-12 col-sm-12 col-12 wow slideInLeft" data-wow-delay="0ms" data-wow-duration="1500ms">
+                    <span class="title-label">SEO</span>
+                    <div class="service-detail base-color">
+                        <p>Are you looking to maximize your online visibility and drive targeted traffic to your website? Look no further! Creative Think Digital offers top-notch Search Engine Optimization (SEO) services in Newry. With our expertise and dedication, we help businesses like yours reach their full potential in the digital landscape. Whether you're a small local business or a large enterprise, our tailored SEO solutions will ensure your brand stands out from the competition and attracts the right audience. Discover the power of SEO and take your online presence to new heights!</p><h2>Unlock Your Online Potential</h2><p>In today's digital world, having a strong online presence is crucial for business success. However, simply having a website is not enough. To thrive in the competitive online landscape, you need to optimize your website for search engines. This is where Search Engine Optimization comes into play. By strategically enhancing your website's visibility in search engine results, SEO helps you attract more organic traffic and generate valuable leads.</p><h2>Why Choose Creative Think Digital?</h2><p>Proven Expertise: At Creative Think Digital, we have a team of SEO specialists who possess extensive knowledge and experience in optimizing websites for search engines. We stay up-to-date with the latest SEO trends and algorithms to ensure your website always remains ahead of the curve.</p><p>Tailored Strategies: We understand that every business is unique. That's why we create customized SEO strategies that align with your specific goals and target audience. Our experts conduct thorough research to identify the most effective keywords and optimize your website accordingly.</p><p>Ethical Approach: We believe in ethical SEO practices that adhere to search engine guidelines. We never resort to spammy techniques that can harm your website's reputation. Our strategies focus on providing long-term, sustainable results that withstand algorithm changes.</p><p>Comprehensive SEO Services: From on-page optimization and content creation to link building and technical SEO, we offer a comprehensive range of services to cover all aspects of your SEO needs. Our holistic approach ensures that your website performs at its best across various search engines.</p><h2>Drive Targeted Traffic to Your Website</h2><p>Our primary goal is to drive targeted traffic to your website, increasing your chances of converting visitors into customers. By implementing advanced SEO strategies, we optimize your website's structure, content, and backlink profile, making it more appealing to search engines. As a result, your website will rank higher in search engine results pages (SERPs), leading to increased visibility and organic traffic.</p><h2>Boost Your Online Visibility</h2><p>With the help of our SEO experts, you can improve your website's visibility across search engines like Google, Bing, and Yahoo. By appearing on the first page of relevant search results, your business gains credibility and attracts more potential customers. We focus on enhancing your website's visibility for local searches in Newry, ensuring you reach the right audience at the right time.</p><h2>Maximize Business Growth</h2><p>By investing in our SEO services, you're investing in the growth of your business. Increased visibility, targeted traffic, and improved conversion rates all contribute to maximizing your business's growth potential. With Creative Think Digital as your SEO partner, you can expect tangible results that translate into increased revenue and a strong return on investment (ROI).</p><h2>Contact Creative Think Digital Today!</h2><p>Ready to take your SEO strategy to new heights? Contact Creative Think Digital today to discuss your business's SEO needs. Our team of experts is dedicated to helping businesses in Newry succeed online. Let us unlock the full potential of your online presence through our professional Search Engine Optimization services.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-12 col-sm-12 col-12 wow slideInRight" data-wow-delay="0ms" data-wow-duration="1500ms">
+                    <partial name="~/Views/Shared/ServicesPages/_ServiceContentForm.cshtml" />
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<partial name="~/Views/Shared/ServicesPages/_CitiesSitemap.cshtml" />
+
+
+<script>
+    $(document).ready(function () {
+        CTDNav.AddCurrentActiveClass(`services`)
+    })
+</script>

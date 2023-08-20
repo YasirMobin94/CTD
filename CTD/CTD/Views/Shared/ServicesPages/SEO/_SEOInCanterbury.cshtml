@@ -1,0 +1,67 @@
+@{
+
+    ViewBag.Title = "Dominate the Digital Landscape with Search Engine Optimization in Canterbury";
+    ViewBag.Description = @"Boost your online presence with Creative Think Digital's expert SEO services in Canterbury. Gain higher search rankings, increased website traffic, and enhanced brand visibility.";
+    ViewData["ServiceName"] = "SEO";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+
+<section class="services-page-section">
+    <div class="auto-container">
+        <div class="row clearfix">
+            <div class="col-lg-8 col-md-6 col-sm-12 col-12 wow fadeInUp" data-wow-delay="0ms" data-wow-duration="2000ms">
+                <div class="inner-column">
+                    <div class="about-service-title">
+                        <h1 class="base-color">@ViewBag.Title</h1>
+
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-12 col-md-12 col-sm-12 col-12 left-rail">
+                            <ul class="base-color">
+                                <partial name="~/Views/Shared/ServicesPages/SEO/_ShortDescription.cshtml" />
+                            </ul>
+                            <partial name="~/Views/Shared/ServicesPages/_ServiceRating.cshtml" />
+                        </div>
+                       @* <div class="col-lg-6 col-md-12 col-sm-12 col-12 right-form-rail">
+                            <img src="/images/development.svg" alt="text">
+                        </div>*@
+                    </div>
+                </div>
+
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12 col-12 wow fadeInRight" data-wow-delay="0ms" data-wow-duration="2000ms">
+                <partial name="~/Views/Shared/ServicesPages/_ServiceIntroForm.cshtml" />
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid satis-section">
+        <div class="row center-items">
+            <h4 class="">Top Rated SEO in Canterbury</h4>
+        </div>
+    </div>
+    <div class="auto-container">
+        <div class="service-detail-section">
+            <div class="row clearfix">
+                <div class="col-lg-8 col-md-12 col-sm-12 col-12 wow slideInLeft" data-wow-delay="0ms" data-wow-duration="1500ms">
+                    <span class="title-label">SEO</span>
+                    <div class="service-detail base-color">
+                        <p>In the digital age, establishing a strong online presence is vital for business success. Creative Think Digital is here to help. We offer exceptional Search Engine Optimization in Canterbury, meticulously designed to elevate your online visibility and propel your brand to the top of search engine rankings.</p><h2>Empower Your Digital Identity</h2><p>In the bustling digital landscape, standing out is crucial. Our SEO services empower your brand to not only survive but thrive in Canterbury's digital realm.</p><h2>Data-Driven Success</h2><p>Data is at the core of effective SEO strategies. By analyzing your business, researching your competitors, and understanding your target audience, we develop an SEO plan that maximizes your online visibility and drives tangible results.</p><h2>Engaging Content for Superior Rankings</h2><p>Compelling content is key to SEO success. Our team of skilled content creators produces engaging, SEO-optimized content that captivates your audience and boosts your search engine rankings.</p><h2>Elevating User Experience</h2><p>Providing a seamless user experience is paramount in SEO. We optimize your website to ensure intuitive navigation, fast load times, and mobile responsiveness, resulting in high user satisfaction and increased conversions.</p><h2>Local SEO: Connect with Canterbury</h2><p>Having a strong local presence is crucial in Canterbury. Our expertise in local SEO techniques helps you connect with your local audience, driving local traffic to your website and increasing footfall to your physical location.</p><h2>Ethical SEO Practices for Sustainable Growth</h2><p>At Creative Think Digital, we uphold ethical SEO practices. Our strategies align with search engine guidelines, ensuring your website's rankings improve organically and sustainably over time.</p><h2>Transparent Reporting and Analytics</h2><p>Transparency is a core value of our SEO services. We provide comprehensive reporting and analytics, allowing you to track your SEO performance and make data-driven decisions to further enhance your digital strategy.</p><h2>Start Your SEO Journey Today</h2><p>Search Engine Optimization in Canterbury is the catalyst for your digital success. Partner with Creative Think Digital for an SEO journey that promises improved online visibility, higher search rankings, and continuous digital growth. Contact us today to begin your SEO journey.</p><p>With Creative Think Digital as your SEO partner, you can unlock the full potential of your brand in Canterbury's digital landscape. Our bespoke, data-driven SEO strategies will position your brand at the forefront, ensuring increased online visibility, higher search engine rankings, and sustainable digital growth. Let's embark on this transformative SEO journey together. Contact us today to get started.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-12 col-sm-12 col-12 wow slideInRight" data-wow-delay="0ms" data-wow-duration="1500ms">
+                    <partial name="~/Views/Shared/ServicesPages/_ServiceContentForm.cshtml" />
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<partial name="~/Views/Shared/ServicesPages/_CitiesSitemap.cshtml" />
+
+
+<script>
+    $(document).ready(function () {
+        CTDNav.AddCurrentActiveClass(`services`)
+    })
+</script>

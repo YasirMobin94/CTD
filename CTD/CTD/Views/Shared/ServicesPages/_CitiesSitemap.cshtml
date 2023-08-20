@@ -1,0 +1,24 @@
+﻿@using CTD.Extensions;
+@using CTD.Helpers;
+@{
+    Layout = null;
+    var ukCities = CommonHelper.UKCitiesDictionary();
+    string serviceName = ViewData["ServiceName"] as string;
+    serviceName = serviceName.ActionName();
+}
+<div class="cities__site__map">
+    <div class="auto-container">
+        <h3 class="base-color font-semibold mb-1 pt-1">Other Areas Served</h3>
+        <ul class="item-list">
+            @foreach (var c in ukCities)
+            {
+                <li>
+                    <a href="@Url.Action(serviceName,"Home", new {cityName = c.Value})" class="icon-link font-semibold">
+                        <i class="fa fa-check-circle icon"></i>
+                        @c.Key
+                    </a>
+                </li>
+            }
+        </ul>
+    </div>
+</div>

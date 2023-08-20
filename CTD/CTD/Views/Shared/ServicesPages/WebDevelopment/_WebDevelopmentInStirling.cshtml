@@ -1,0 +1,136 @@
+﻿@{
+
+    ViewBag.Title = @"Leading Web Development in Stirling - Creative Think Digital";
+    ViewBag.Description = @"Creative Think Digital brings world-class web development services to
+      Stirling, offering engaging, user-friendly, and SEO-optimized websites
+      designed to enhance your online business presence and propel growth.";
+    ViewData["ServiceName"] = "WebDevelopment";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<section class="services-page-section">
+    <div class="auto-container">
+        <div class="row clearfix">
+            <div class="col-lg-8 col-md-6 col-sm-12 col-12 wow fadeInUp" data-wow-delay="0ms" data-wow-duration="2000ms">
+                <div class="inner-column">
+                    <div class="about-service-title">
+                        <h1 class="base-color">@ViewBag.Title</h1>
+
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-12 col-md-12 col-sm-12 col-12 left-rail">
+                            <ul class="base-color">
+                                <partial name="~/Views/Shared/ServicesPages/WebDevelopment/_ShortDescription.cshtml" />
+                            </ul>
+                            <partial name="~/Views/Shared/ServicesPages/_ServiceRating.cshtml" />
+                        </div>
+                        @*<div class="col-lg-6 col-md-12 col-sm-12 col-12 right-form-rail">
+                            <img src="/images/development.svg" alt="text">
+                        </div>*@
+                    </div>
+                </div>
+
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12 col-12 wow fadeInRight" data-wow-delay="0ms" data-wow-duration="2000ms">
+                <partial name="~/Views/Shared/ServicesPages/_ServiceIntroForm.cshtml" />
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid satis-section">
+        <div class="row center-items">
+            <h4 class="">Top Rated Web Development in Sterling</h4>
+        </div>
+    </div>
+    <div class="auto-container">
+        <div class="service-detail-section">
+            <div class="row clearfix">
+                <div class="col-lg-8 col-md-12 col-sm-12 col-12 wow slideInLeft" data-wow-delay="0ms" data-wow-duration="1500ms">
+                    <span class="title-label">Web Development</span>
+                    <div class="service-detail base-color">
+                        <h2>
+                            Elevate Your Online Presence with Creative Think Digital in Stirling
+                        </h2>
+                        <p>
+                            Embark on a transformative digital journey with Creative Think Digital,
+                            the premier web development service in Stirling. Our dedicated team of
+                            professionals brings a wealth of knowledge and creativity, crafting
+                            exceptional web solutions that boost your online footprint.
+                        </p>
+                        <h2>Unleashing the Power of Cutting-Edge Web Development</h2>
+                        <p>
+                            A website is more than just a digital storefront; it's a powerful tool to
+                            engage with your audience and achieve business objectives. Our team
+                            leverages state-of-the-art technology and forward-thinking design
+                            principles to create websites that not only look stunning but are also
+                            primed for Search Engine Optimization.
+                        </p>
+                        <h2>Tailoring Web Development Solutions to Your Unique Needs</h2>
+                        <p>
+                            At Creative Think Digital, we appreciate the uniqueness of your business.
+                            Our Stirling web development team immerses themselves in your vision,
+                            translating it into a digital masterpiece that perfectly resonates with
+                            your brand's ethos and appeals to your target audience.
+                        </p>
+                        <h2>Driving Digital Innovation through Our Web Development Services</h2>
+
+                        <p>
+                            Innovation lies at the core of everything we do at Creative Think Digital.
+                            Harnessing the power of the latest advancements in web development, we
+                            design and deliver websites that are responsive, intuitive, and
+                            trend-setting. Experience the digital future with our Stirling web
+                            development services.
+                        </p>
+                        <h2>
+                            Dedicated to Delivering Excellence in Stirling's Web Development Sector
+                        </h2>
+                        <p>
+                            As a leader in Sterling’s web development industry, Creative Think Digital is committed to
+                            maintaining a high standard of quality and excellence. Your business
+                            success drives us to go the extra mile, ensuring your website stands as a
+                            true reflection of your brand and captivates your audience.
+                        </p>
+                        <h2>Embark on a Successful Web Development Journey with Us</h2>
+                        <p>
+                            Your digital transformation starts here. Trust Creative Think Digital for
+                            your web development needs in Stirling. Our combination of industry
+                            expertise, innovative strategies, and commitment to your success makes us
+                            the ideal partner for businesses ready to shine online.
+                        </p>
+                        <h2>Propelling Business Growth with Our Web Development Expertise</h2>
+                        <p>
+                            At Creative Think Digital, we are more than just your web development
+                            service provider - we are your digital growth allies. Let us join forces
+                            to steer your business towards online success. Our web development
+                            services in Stirling are poised to help you create a captivating,
+                            high-performing website that exceeds your expectations.
+                        </p>
+                        <h2>Experience the Creative Think Digital Advantage in Stirling</h2>
+                        <p>
+                            Selecting the right web development partner can significantly influence
+                            your business's digital journey. Make the smart choice - opt for Creative
+                            Think Digital. Witness the transformative impact of our stellar web
+                            development services in Stirling, helping you to elevate your online
+                            profile and engage your audience like never before.
+                        </p>
+                        <p>
+                            Remember, at Creative Think Digital, we don't just create websites - we
+                            shape digital destinies. Connect with our team today to commence your
+                            journey towards online triumph.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-12 col-sm-12 col-12 wow slideInRight" data-wow-delay="0ms" data-wow-duration="1500ms">
+                    <partial name="~/Views/Shared/ServicesPages/_ServiceContentForm.cshtml" />
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<partial name="~/Views/Shared/ServicesPages/_CitiesSitemap.cshtml" />
+
+
+<script>
+    $(document).ready(function () {
+        CTDNav.AddCurrentActiveClass(`services`)
+    })
+</script>

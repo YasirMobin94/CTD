@@ -1,0 +1,103 @@
+﻿@{
+    ViewBag.Title = "AboutUs";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="about__us__section">
+
+    <!-- About Section -->
+    <section class="about-section">
+        <div class="auto-container">
+            <!-- Sec Title -->
+            <div class="sec-title">
+                <div class="title">ABOUT COMPANY</div>
+                @*<h2>You Can not Use Up <br> Creativity.</h2>*@
+            </div>
+            <div class="row clearfix">
+
+                <!-- Content Column -->
+                <div class="content-column col-lg-6 col-md-12 col-sm-12">
+                    <div class="inner-column">
+                        <div class="text">Welcome to Creative Think Digital, your one-stop destination for cutting-edge creative solutions and digital excellence. We are a leading digital agency dedicated to helping businesses thrive in the online world. With our expertise in graphic designing, IT staff augmentation, search engine optimization, and web development, we provide unparalleled services tailored to meet your unique needs and drive exceptional results.</div>
+                        <div class="blocks-outer">
+
+                            <div class="feature-block">
+                                <div class="inner-box">
+                                    <div class="icon flaticon-loupe"></div>
+                                    <h6>Our Mission</h6>
+                                    <div class="feature-text">
+                                        At Creative Think Digital, our mission is simple yet powerful - to empower businesses and individuals with top-notch digital solutions that elevate their online presence and accelerate their success. We are driven by a passion for creativity, innovation, and a commitment to delivering results that exceed expectations.
+                                    </div>
+                                </div>
+                            </div>
+
+                        @*    <div class="feature-block">
+                                <div class="inner-box">
+                                    <div class="icon flaticon-hand-shake"></div>
+                                    <h6>Our Approach</h6>
+                                    <div class="feature-text">At Creative Think Digital, we believe in a collaborative approach to every project we undertake. We take the time to understand your goals, values, and target audience, allowing us to craft customized solutions that align perfectly with your vision. Our process is built on open communication, transparency, and a focus on delivering measurable outcomes.</div>
+                                </div>
+                            </div>*@
+
+                            <div class="feature-block">
+                                <div class="inner-box">
+                                    <div class="icon flaticon-hand-shake"></div>
+                                    <h6>Our Commitment</h6>
+                                    <div class="feature-text">
+                                        When you choose Creative Think Digital, you are partnering with a team of passionate experts who are committed to your success. We stay at the forefront of industry trends, embrace innovation, and continually refine our strategies to deliver the best possible outcomes for your business.
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="feature-block">
+                                <div class="inner-box">
+                                    <div class="icon flaticon-technical-support"></div>
+                                    <h6>Get in Touch</h6>
+                                    <div class="feature-text">
+                                        Ready to take your digital presence to the next level? Contact us today for a free consultation and let our team of experts tailor a bespoke solution that propels your business towards unprecedented success. Join Creative Think Digital and embark on an inspiring journey of creativity, innovation, and digital excellence. Together, let's make your online dreams a reality.
+
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+              @*          <a href="https://www.youtube.com/watch?v=kxPCFljwJws" class="lightbox-image theme-btn btn-style-one"><span class="txt"><i class="play-icon"><img src="images/icons/play-icon.png" alt="" /></i>&ensp; intro Video</span></a>*@
+
+                    </div>
+                </div>
+
+                <!-- Images Column -->
+                <div class="images-column col-lg-6 col-md-12 col-sm-12">
+                    <div class="inner-column" style="background-image: url(images/icons/globe.png)">
+                        <div class="pattern-layer" style="background-image: url(images/background/pattern-1.png)"></div>
+                        <div class="images-outer parallax-scene-1">
+                            <div class="image" data-depth="0.10">
+                                <img src="/images/about/seo-300x420.jpg" alt="" />
+                            </div>
+                            <div class="image-two" data-depth="0.30">
+                                <img src="/images/about/graphics-designing-153x194.jpg" alt="" />
+                            </div>
+                            <div class="image-three" data-depth="0.20">
+                                <img src="/images/about/web-dev-198x53.jpg" alt="" />
+                            </div>
+                            <div class="image-four" data-depth="0.30">
+                                <img src="/images/about/soft-dev-115x145.jpg" alt="" />
+                            </div>
+                        </div>
+                    </div>
+                    @*<a href="about.html" class="learn"><span class="arrow flaticon-long-arrow-pointing-to-the-right"></span>Learn More About Company</a>*@
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!-- End About Section -->
+
+</div>
+
+<script>
+    $(document).ready(function () {
+        CTDNav.AddCurrentActiveClass(`about`)
+    })
+</script>
