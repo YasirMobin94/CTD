@@ -1,4 +1,4 @@
-<Project Sdk="Microsoft.NET.Sdk.Web">
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
 
   <PropertyGroup>
     <TargetFramework>net7.0</TargetFramework>
@@ -17,6 +17,10 @@
     <Folder Include="Views\Shared\ServicesPages\GraphicDesigning\" />
     <Folder Include="Views\Shared\ServicesPages\ITStaffAugumentation\" />
     <Folder Include="Views\Shared\ServicesPages\SEO\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\CTD.BussinessOperations\CTD.BussinessOperations.csproj" />
   </ItemGroup>
 
 </Project>

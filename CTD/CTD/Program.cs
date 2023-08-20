@@ -1,7 +1,25 @@
+using CTD.BussinessOperations.Data;
+using Microsoft.EntityFrameworkCore;
+
 var builder = WebApplication.CreateBuilder(args);
+
+var connStr = builder.Configuration["Database:CTDStr"];
+var autoMigrate = Convert.ToBoolean(builder.Configuration["Database:AutoMigrate"]);
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
+
+builder.Services.AddDbContext<CTDContext>((p, options) =>
+{
+    options.UseSqlServer(connStr);
+    if (!builder.Environment.IsProduction())
+    {
+        options.EnableSensitiveDataLogging();
+        options.EnableDetailedErrors();
+    }
+});
+
+
 
 var app = builder.Build();
 
@@ -10,6 +28,13 @@ if (!app.Environment.IsDevelopment())
 {
     app.UseExceptionHandler("/Home/Error");
 }
+
+if (autoMigrate)
+{
+    using var scope = app.Services.GetService<IServiceScopeFactory>()?.CreateScope();
+    scope?.ServiceProvider?.GetRequiredService<CTDContext>()?.Database?.Migrate();
+}
+
 app.UseStaticFiles();
 
 app.UseRouting();
