@@ -1,4 +1,6 @@
-﻿using CTD.Extensions;
+﻿using CTD.BussinessOperations.Models.ViewModels;
+using CTD.BussinessOperations.Services;
+using CTD.Extensions;
 using CTD.Helpers;
 using CTD.Models;
 using Microsoft.AspNetCore.Mvc;
@@ -11,10 +13,12 @@ namespace CTD.Controllers
         private readonly ILogger<HomeController> _logger;
         private readonly string _commingSoonViewPath = "~/Views/Home/CommingSoon.cshtml";
         private readonly string _servicesViewPath = "~/Views/Shared/ServicesPages";
+        private readonly IUserService _userService;
 
-        public HomeController(ILogger<HomeController> logger)
+        public HomeController(ILogger<HomeController> logger, IUserService userService)
         {
             _logger = logger;
+            _userService = userService;
         }
 
         #region Home
@@ -29,10 +33,25 @@ namespace CTD.Controllers
 
         #region Contact
 
+        [HttpGet]
         [Route("contact-us")]
         public IActionResult ContactUs()
         {
-            return View();
+            ViewBag.ThankYouMessage = null;
+            return View(new UserViewModel());
+        }
+
+        [HttpPost]
+        [Route("contact-us")]
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> ContactUs(UserViewModel user)
+        {
+            if (ModelState.IsValid)
+            {
+                await _userService.SaveUserEmailMessageAsync(user);
+                ViewBag.ThankYouMessage = null;
+            }
+            return View(new UserViewModel());
         }
 
         #endregion
@@ -67,7 +86,7 @@ namespace CTD.Controllers
         [Route("{cityName}-it-staff-augumentation")]
         public IActionResult CitywiseITStaffAugumentation(string cityName)
         {
-            
+
             if (!string.IsNullOrEmpty(cityName))
             {
                 string viewName = cityName.ITStaffServicesViewNameByCity();

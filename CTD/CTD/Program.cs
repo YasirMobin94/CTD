@@ -1,4 +1,5 @@
 using CTD.BussinessOperations.Data;
+using CTD.BussinessOperations.Services;
 using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -8,7 +9,7 @@ var autoMigrate = Convert.ToBoolean(builder.Configuration["Database:AutoMigrate"
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
-
+builder.Services.AddScoped<IUserService, UserService>();
 builder.Services.AddDbContext<CTDContext>((p, options) =>
 {
     options.UseSqlServer(connStr);
