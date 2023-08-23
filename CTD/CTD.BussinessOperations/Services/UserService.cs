@@ -1,4 +1,5 @@
 ﻿using CTD.BussinessOperations.Data;
+using CTD.BussinessOperations.Models.CustomModels;
 using CTD.BussinessOperations.Models.Entities;
 using CTD.BussinessOperations.Models.ViewModels;
 using System;
@@ -16,9 +17,11 @@ namespace CTD.BussinessOperations.Services
     public class UserService : IUserService
     {
         private readonly CTDContext _context;
-        public UserService(CTDContext context)
+        private readonly IEmailSendService _emailSendService;
+        public UserService(CTDContext context, IEmailSendService emailSendService)
         {
             _context = context;
+            _emailSendService = emailSendService;
         }
         public async Task<UserViewModel> SaveUserEmailMessageAsync(UserViewModel userVM)
         {
@@ -37,6 +40,8 @@ namespace CTD.BussinessOperations.Services
                 await _context.SaveChangesAsync();
 
                 userVM.Id = dbModel.Id;
+
+                await _emailSendService.SendEmailAsync(new Message(new string[] { userVM.Email }, "CTD Info", userVM.Message));
             }
             catch (Exception)
             {

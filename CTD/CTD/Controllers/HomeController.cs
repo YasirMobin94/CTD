@@ -14,11 +14,12 @@ namespace CTD.Controllers
         private readonly string _commingSoonViewPath = "~/Views/Home/CommingSoon.cshtml";
         private readonly string _servicesViewPath = "~/Views/Shared/ServicesPages";
         private readonly IUserService _userService;
-
-        public HomeController(ILogger<HomeController> logger, IUserService userService)
+        private readonly IEmailSendService _emailSender;
+        public HomeController(ILogger<HomeController> logger, IUserService userService, IEmailSendService emailSender)
         {
             _logger = logger;
             _userService = userService;
+            _emailSender = emailSender;
         }
 
         #region Home
@@ -37,7 +38,7 @@ namespace CTD.Controllers
         [Route("contact-us")]
         public IActionResult ContactUs()
         {
-            ViewBag.ThankYouMessage = null;
+            ViewBag.ThankYouMessage = false;
             return View(new UserViewModel());
         }
 
@@ -49,7 +50,7 @@ namespace CTD.Controllers
             if (ModelState.IsValid)
             {
                 await _userService.SaveUserEmailMessageAsync(user);
-                ViewBag.ThankYouMessage = null;
+                ViewBag.ThankYouMessage = true;
             }
             return View(new UserViewModel());
         }

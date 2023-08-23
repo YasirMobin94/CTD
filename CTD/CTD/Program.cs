@@ -1,4 +1,5 @@
 using CTD.BussinessOperations.Data;
+using CTD.BussinessOperations.Models.CustomModels;
 using CTD.BussinessOperations.Services;
 using Microsoft.EntityFrameworkCore;
 
@@ -8,8 +9,13 @@ var connStr = builder.Configuration["Database:CTDStr"];
 var autoMigrate = Convert.ToBoolean(builder.Configuration["Database:AutoMigrate"]);
 
 // Add services to the container.
+var emailConfig = builder.Configuration
+        .GetSection("EmailConfiguration")
+        .Get<EmailConfiguration>();
+builder.Services.AddSingleton(emailConfig);
 builder.Services.AddControllersWithViews();
 builder.Services.AddScoped<IUserService, UserService>();
+builder.Services.AddScoped<IEmailSendService, EmailSendService>();
 builder.Services.AddDbContext<CTDContext>((p, options) =>
 {
     options.UseSqlServer(connStr);
