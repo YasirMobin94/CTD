@@ -18,20 +18,29 @@
 <section class="contact-map-section">
     <div class="auto-container">
         <!-- Sec Title -->
-        <div class="sec-title">
-            <div class="clearfix center-items">
-                <div class="pull-left">
-                    <h2>Send Your Message</h2>
+        @if (!ViewBag.ThankYouMessage)
+        {
+            <div class="sec-title">
+                <div class="clearfix center-items">
+                    <div class="pull-left">
+                        <h2>Send Your Message</h2>
+                    </div>
                 </div>
             </div>
-        </div>
 
-        <!-- Contact Form -->
-        <div class="contact-form">
+            <!-- Contact Form -->
+            <div class="contact-form">
+                <partial name="~/Views/Shared/Partials/_ContactForm.cshtml" />
+            </div>
 
-            <partial name="~/Views/Shared/Partials/_ContactForm.cshtml"/>
-           
-        </div>
+        }
+        else
+        {
+            <div class="center-items sec-title">
+                <h2>Thank you for your message. We will contact to you soon :)</h2>
+            </div>
+        }
+
         <!-- End Contact Form -->
 
     </div>
