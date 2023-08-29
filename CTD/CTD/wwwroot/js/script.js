@@ -254,7 +254,7 @@
 			margin:0,
 			nav:true,
 			autoHeight: true,
-			smartSpeed: 500,
+			smartSpeed: 2000,
 			autoplay: 6000,
 			navText: [ '<span class="flaticon-back-1"></span>', '<span class="flaticon-arrow-pointing-to-right"></span>' ],
 			responsive:{

@@ -11,7 +11,7 @@ namespace CTD.BussinessOperations.Services
 {
     public interface IEmailSendService
     {
-        Task SendEmailAsync(Message message);
+        Task<bool> SendEmailAsync(Message message);
     }
     public class EmailSendService : IEmailSendService
     {
@@ -20,12 +20,12 @@ namespace CTD.BussinessOperations.Services
         {
             _emailConfig = emailConfig;
         }
-        public async Task SendEmailAsync(Message message)
+        public async Task<bool> SendEmailAsync(Message message)
         {
             var emailMessage = CreateEmailMessage(message);
-            await SendAsync(emailMessage);
+            return await SendAsync(emailMessage);
         }
-        private async Task SendAsync(MimeMessage mailMessage)
+        private async Task<bool> SendAsync(MimeMessage mailMessage)
         {
             using (var client = new SmtpClient())
             {
@@ -35,12 +35,14 @@ namespace CTD.BussinessOperations.Services
                     client.AuthenticationMechanisms.Remove("XOAUTH2");
                     await client.AuthenticateAsync(_emailConfig.UserName, _emailConfig.Password);
                     await client.SendAsync(mailMessage);
+                    return true;
                 }
                 catch (Exception ex)
                 {
                     Console.ForegroundColor = ConsoleColor.Red;
                     Console.WriteLine(ex.Message.ToString());
                     Console.ForegroundColor = ConsoleColor.White;
+                    return false;
                 }
                 finally
                 {
@@ -52,7 +54,7 @@ namespace CTD.BussinessOperations.Services
         private MimeMessage CreateEmailMessage(Message message)
         {
             var emailMessage = new MimeMessage();
-            emailMessage.From.Add(new MailboxAddress(_emailConfig.UserName, _emailConfig.From));
+            emailMessage.From.AddRange(message.From);
             emailMessage.To.AddRange(message.To);
             emailMessage.Subject = message.Subject;
             emailMessage.Body = new TextPart(MimeKit.Text.TextFormat.Html) { Text = message.Content };

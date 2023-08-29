@@ -23,5 +23,6 @@ namespace CTD.BussinessOperations.Models.ViewModels
 
         [Required]
         public string Message { get; set; }
+        public string FilePath { get; set; }
     }
 }

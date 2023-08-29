@@ -15,11 +15,13 @@ namespace CTD.Controllers
         private readonly string _servicesViewPath = "~/Views/Shared/ServicesPages";
         private readonly IUserService _userService;
         private readonly IEmailSendService _emailSender;
-        public HomeController(ILogger<HomeController> logger, IUserService userService, IEmailSendService emailSender)
+        private readonly IWebHostEnvironment _env;
+        public HomeController(ILogger<HomeController> logger, IUserService userService, IEmailSendService emailSender, IWebHostEnvironment env)
         {
             _logger = logger;
             _userService = userService;
             _emailSender = emailSender;
+            _env = env;
         }
 
         #region Home
@@ -49,10 +51,12 @@ namespace CTD.Controllers
         {
             if (ModelState.IsValid)
             {
+                user.FilePath = $"{_env.WebRootPath}/{Path.Combine("HtmlTemplates", "EmailResponse.html")}";
                 await _userService.SaveUserEmailMessageAsync(user);
                 ViewBag.ThankYouMessage = true;
+                user = new();
             }
-            return View(new UserViewModel());
+            return View(user);
         }
 
         #endregion

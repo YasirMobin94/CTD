@@ -9,19 +9,18 @@ namespace CTD.BussinessOperations.Models.CustomModels
 {
     public class Message
     {
-        private string email;
-        private string v;
-        private string message;
-
         public List<MailboxAddress> To { get; set; }
+        public List<MailboxAddress> From { get; set; }
         public string Subject { get; set; }
         public string Content { get; set; }
-        public Message(IEnumerable<string> to, string subject, string content)
+        public Message(IEnumerable<string> to, string subject, string content, IEnumerable<string> from)
         {
             To = new List<MailboxAddress>();
+            From = new List<MailboxAddress>();
             To.AddRange(to.Select(x => new MailboxAddress(x, x)));
             Subject = subject;
             Content = content;
+            From.AddRange(from.Select(x => new MailboxAddress(x, x)));
         }
     }
 }
