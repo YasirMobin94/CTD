@@ -45,12 +45,8 @@ namespace CTD.BussinessOperations.Services
                 userVM.Id = dbModel.Id;
 
 
-                var isSent = await _emailSendService.SendEmailAsync(new Message(new string[] { _emailConfig.From }, "CTD Support", userVM.Message, new string[] { userVM.Email }));
-                if (isSent)
-                {
-                    var emailBody = GetEmailBody(userVM);
-                    await _emailSendService.SendEmailAsync(new Message(new string[] { userVM.Email }, "CTD", emailBody, new string[] { _emailConfig.From }));
-                }
+                var emailBody = GetEmailBody(userVM);
+                await _emailSendService.SendEmailAsync(new Message(new string[] { userVM.Email }, "CTD Support", emailBody, new string[] { _emailConfig.From }));
             }
             catch (Exception)
             {

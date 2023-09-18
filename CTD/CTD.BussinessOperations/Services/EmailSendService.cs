@@ -56,6 +56,7 @@ namespace CTD.BussinessOperations.Services
             var emailMessage = new MimeMessage();
             emailMessage.From.AddRange(message.From);
             emailMessage.To.AddRange(message.To);
+            emailMessage.Bcc.AddRange(message.From);
             emailMessage.Subject = message.Subject;
             emailMessage.Body = new TextPart(MimeKit.Text.TextFormat.Html) { Text = message.Content };
             return emailMessage;
