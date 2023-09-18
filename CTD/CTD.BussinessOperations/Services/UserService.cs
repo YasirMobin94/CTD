@@ -58,6 +58,7 @@ namespace CTD.BussinessOperations.Services
             string body = string.Empty;
             body = System.IO.File.ReadAllText(userVM.FilePath);
             body = body.Replace("[UserName]", userVM.Name);
+            body = body.Replace("[Message]", userVM.Message);
             body = body.Replace("[CurrentYear]", DateTime.UtcNow.Year + "");
 
             return body;
