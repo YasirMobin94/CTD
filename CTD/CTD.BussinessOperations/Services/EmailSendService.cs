@@ -31,7 +31,7 @@ namespace CTD.BussinessOperations.Services
             {
                 try
                 {
-                    await client.ConnectAsync(_emailConfig.SmtpServer, _emailConfig.Port, true);
+                    await client.ConnectAsync(_emailConfig.SmtpServer, _emailConfig.Port, _emailConfig.UseSsl);
                     client.AuthenticationMechanisms.Remove("XOAUTH2");
                     await client.AuthenticateAsync(_emailConfig.UserName, _emailConfig.Password);
                     await client.SendAsync(mailMessage);
@@ -56,7 +56,7 @@ namespace CTD.BussinessOperations.Services
             var emailMessage = new MimeMessage();
             emailMessage.From.AddRange(message.From);
             emailMessage.To.AddRange(message.To);
-            emailMessage.Bcc.AddRange(message.From);
+            //emailMessage.Bcc.Add(fromMessage);
             emailMessage.Subject = message.Subject;
             emailMessage.Body = new TextPart(MimeKit.Text.TextFormat.Html) { Text = message.Content };
             return emailMessage;

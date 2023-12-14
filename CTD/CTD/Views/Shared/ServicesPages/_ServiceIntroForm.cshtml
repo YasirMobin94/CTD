@@ -3,26 +3,26 @@
         <h6 class="base-color">Request a Quote For Your Web Development Project</h6>
         <span>No Obligation Estimate, Expert Advice</span>
     </div>
-    <form class="row g-3">
+    <form class="row g-3" id="intro-form" method="post">
         <div class="col-md-6">
-            <label for="first_name" class="form-label"></label>
-            <input type="text" class="form-control" id="first_name" placeholder="First Name" />
+            <label for="Name" class="form-label"></label>
+            <input type="text" name="Name" placeholder="Name" class="form-control" required>
         </div>
         <div class="col-md-6">
-            <label for="last_name" class="form-label"></label>
-            <input type="text" class="form-control" id="last_name" placeholder="Last Name" />
+            <label for="Email" class="form-label"></label>
+            <input type="email" name="Email" placeholder="Email" class="form-control" required>
         </div>
         <div class="col-md-6">
-            <label for="email" class="form-label"></label>
-            <input type="email" class="form-control" id="email" placeholder="Email" />
+            <label for="Phone" class="form-label"></label>
+            <input type="tel" name="Phone" placeholder="Phone" class="form-control" required>
         </div>
         <div class="col-md-6">
-            <label for="phone" class="form-label"></label>
-            <input type="tel" class="form-control" id="phone" placeholder="Phone" />
+            <label for="Website" class="form-label"></label>
+            <input type="text" name="Website" placeholder="Website" class="form-control">
         </div>
         <div class="col-12">
-            <label for="about_project" class="form-label"></label>
-            <textarea type="text" class="form-control" id="about_project" placeholder="Tell us about your project"></textarea>
+            <label for="Message" class="form-label"></label>
+            <textarea type="text" class="form-control" id="Message" name="Message" placeholder="Tell us about your project"></textarea>
         </div>
         <div class="col-12">
             <button type="submit" class="btn btn-block theme-btn btn-style-three">
@@ -31,3 +31,13 @@
         </div>
     </form>
 </div>
+
+
+<script>
+    $("#intro-form").submit(function (e) {
+        console.log('intro-form', e)
+        e.preventDefault();
+        let form = $("#intro-form")
+        HttpService.postDataOfEmail("@Url.Action("ContactUsFromSubmit", "Home")", form)
+    })
+</script>

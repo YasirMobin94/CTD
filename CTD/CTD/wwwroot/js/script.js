@@ -687,31 +687,63 @@
 	
 	
 	//Contact Form Validation
-	if($('#contact-form').length){
+	if ($('#contact-form').length){
 		$('#contact-form').validate({
 			rules: {
-				username: {
+				Name: {
 					required: true
 				},
-				email: {
+				Email: {
 					required: true,
 					email: true
 				},
-				phone: {
+				Phone: {
 					required: true
 				},
-				subject: {
-					required: true
-				},
-				message: {
+				Message: {
 					required: true
 				}
 			}
 		});
 	}
-	
-	
-	
+	if ($('#intro-form').length) {
+		$('#intro-form').validate({
+			rules: {
+				Name: {
+					required: true
+				},
+				Email: {
+					required: true,
+					email: true
+				},
+				Phone: {
+					required: true
+				},
+				Message: {
+					required: true
+				}
+			}
+		});
+	}
+	if ($('#content-form').length) {
+		$('#content-form').validate({
+			rules: {
+				Name: {
+					required: true
+				},
+				Email: {
+					required: true,
+					email: true
+				},
+				Phone: {
+					required: true
+				},
+				Message: {
+					required: true
+				}
+			}
+		});
+	}
 	// Scroll to a Specific Div
 	if($('.scroll-to-target').length){
 		$(".scroll-to-target").on('click', function() {

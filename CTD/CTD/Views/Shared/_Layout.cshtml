@@ -2,8 +2,19 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- Google Tag Manager -->
+    <script>
+        (function (w, d, s, l, i) {
+            w[l] = w[l] || []; w[l].push({
+                'gtm.start':
+                    new Date().getTime(), event: 'gtm.js'
+            }); var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+                    'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-M7WFFHSH');
+    </script>
+    <!-- End Google Tag Manager -->
     <meta charset="utf-8">
-    <!-- Responsive -->
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1.0, maximum-scale=5.0">
     <!--[if lt IE 9]><script src="js/respond.js"></script><![endif]-->
@@ -11,7 +22,7 @@
     <title>@ViewBag.Title | Creative Think Digital</title>
     <meta name="title" content="@ViewBag.Title" />
     <meta name="description" content="@ViewBag.Description" />
-    <!-- Stylesheets -->
+
     <link href="~/css/bootstrap.css" rel="stylesheet" asp-append-version="true">
     <link href="~/css/style.css" rel="stylesheet" asp-append-version="true">
     <link href="~/css/responsive.css" rel="stylesheet" asp-append-version="true">
@@ -19,17 +30,21 @@
 
     <link rel="canonical" href="@(Context.Request.GetDisplayUrl().StartsWith("https") ? Context.Request.GetDisplayUrl() : Context.Request.GetDisplayUrl().Replace("http", "https"))">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&family=Nunito+Sans:wght@300;600;700;800;900&display=swap" rel="stylesheet">
-
-    <!-- Color Themes -->
-    <link id="theme-color-file" href="~/css/color-themes/default-theme.css" rel="stylesheet" asp-append-version="true">
-
     <link rel="shortcut icon" href="~/images/favicon.png" type="image/x-icon" asp-append-version="true">
     <link rel="icon" href="~/images/favicon.png" type="image/x-icon" asp-append-version="true">
+
+
+
     <script src="~/js/jquery.js" asp-append-version="true"></script>
 </head>
 
 <body class="hidden-bar-wrapper">
-
+    <!-- Google Tag Manager (noscript) -->
+    <noscript>
+        <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-M7WFFHSH"
+                height="0" width="0" style="display:none;visibility:hidden"></iframe>
+    </noscript>
+    <!-- End Google Tag Manager (noscript) -->
     <div class="page-wrapper">
 
         <!-- Preloader -->
@@ -65,6 +80,7 @@
     <script src="~/js/script.js" asp-append-version="true"></script>
     <script src="~/js/color-settings.js" asp-append-version="true"></script>
     <script src="~/js/site.js" asp-append-version="true"></script>
+    <script src="~/js/sweetalert2.js" asp-append-version="true"></script>
 
 
 </body>

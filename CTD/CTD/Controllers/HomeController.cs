@@ -5,6 +5,7 @@ using CTD.Helpers;
 using CTD.Models;
 using Microsoft.AspNetCore.Mvc;
 using System.Diagnostics;
+using System.Dynamic;
 
 namespace CTD.Controllers
 {
@@ -44,19 +45,32 @@ namespace CTD.Controllers
             return View(new UserViewModel());
         }
 
-        [HttpPost]
-        [Route("contact-us")]
-        [ValidateAntiForgeryToken]
-        public async Task<IActionResult> ContactUs(UserViewModel user)
+        [HttpPost("sent-request-data")]
+        public async Task<IActionResult> ContactUsFromSubmit(UserViewModel user)
         {
-            if (ModelState.IsValid)
+            var response = new ResponseModel();
+            try
             {
-                user.FilePath = $"{_env.WebRootPath}/{Path.Combine("HtmlTemplates", "EmailResponse.html")}";
-                await _userService.SaveUserEmailMessageAsync(user);
-                ViewBag.ThankYouMessage = true;
-                user = new();
+                if (ModelState.IsValid)
+                {
+                    user.FilePath = $"{_env.WebRootPath}/{Path.Combine("HtmlTemplates")}";
+                    await _userService.SaveUserEmailMessageAsync(user);
+                    response.Message = "Email has been sent.";
+                }
+                else
+                {
+                    response.Success = false;
+                    //response.Error = ModelState.Values;
+                    response.Message = "Please fill all fields.";
+                }
             }
-            return View(user);
+            catch (Exception ex)
+            {
+                response.Success = false;
+                response.Message = ex?.Message;
+            }
+            
+            return Json(response);
         }
 
         #endregion

@@ -6407,7 +6407,7 @@ img {
         }
 
             .list-link li a:hover {
-                text-decoration: line-through;
+                /*text-decoration: line-through;*/
             }
 
             .list-link li a:before {

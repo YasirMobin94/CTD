@@ -7,6 +7,14 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Content Remove="wwwroot\js\sweetalert2.js" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <_ContentIncludedByDefault Remove="wwwroot\js\sweetalert2.js" />
+  </ItemGroup>
+
+  <ItemGroup>
     <Content Update="Views\Home\Blogs - Copy.cshtml">
       <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
@@ -17,6 +25,10 @@
     <Folder Include="Views\Shared\ServicesPages\GraphicDesigning\" />
     <Folder Include="Views\Shared\ServicesPages\ITStaffAugumentation\" />
     <Folder Include="Views\Shared\ServicesPages\SEO\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="wwwroot\js\sweetalert2.js" />
   </ItemGroup>
 
   <ItemGroup>
