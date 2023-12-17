@@ -1,7 +1,9 @@
 ﻿using CTD.BussinessOperations.Data;
+using CTD.BussinessOperations.Extensions;
 using CTD.BussinessOperations.Models.CustomModels;
 using CTD.BussinessOperations.Models.Entities;
 using CTD.BussinessOperations.Models.ViewModels;
+using Serilog;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -18,20 +20,20 @@ namespace CTD.BussinessOperations.Services
     {
         private readonly CTDContext _context;
         private readonly IEmailSendService _emailSendService;
-        private readonly EmailConfiguration _emailConfig;
+        private readonly ISmtpService _smtpService;
+        private readonly ClientEmailConfiguration _emailConfig;
 
-        public UserService(CTDContext context, IEmailSendService emailSendService, EmailConfiguration emailConfig)
+        public UserService(CTDContext context, IEmailSendService emailSendService, ClientEmailConfiguration emailConfig, ISmtpService smtpService)
         {
             _context = context;
             _emailSendService = emailSendService;
             _emailConfig = emailConfig;
-
+            _smtpService = smtpService;
         }
         public async Task<UserViewModel> SaveUserEmailMessageAsync(UserViewModel userVM)
         {
             try
             {
-                var users = _context.UserEmails.ToList();
                 var dbModel = new UserEmail
                 {
                     Name = userVM.Name,
@@ -45,19 +47,27 @@ namespace CTD.BussinessOperations.Services
                 await _context.SaveChangesAsync();
                 userVM.Id = dbModel.Id;
 
-
-                var emailBody = GetEmailBody(userVM);
                 var isUserSentMail = await _emailSendService.SendEmailAsync(
-                                        new Message(new EmailNameModel(userVM.Name, userVM.Email), _emailConfig.Subject, emailBody, new EmailNameModel(_emailConfig.FromName, _emailConfig.FromEmail)));
+                                         message: new Message(
+                                             to: new EmailNameModel(userVM.Name, userVM.Email),
+                                             subject: _emailConfig.Subject,
+                                             content: GetEmailBody(userVM),
+                                             from: new EmailNameModel(_emailConfig.FromName, _emailConfig.FromEmail)),
+                                         isSentToAdminFromUser: false);
                 if (isUserSentMail)
                 {
-                    var adminMailBody = GetEmailBodyForAdmin(userVM);
                     await _emailSendService.SendEmailAsync(
-                                new Message(new EmailNameModel(_emailConfig.FromName, _emailConfig.FromEmail), _emailConfig.Subject, adminMailBody, new EmailNameModel(userVM.Name, userVM.Email)));
+                                message: new Message(
+                                                to: new EmailNameModel(_emailConfig.AdminName, _emailConfig.AdminEmail),
+                                                subject: $"New Message from {userVM.Name}",
+                                                content: GetEmailBodyForAdmin(userVM),
+                                                from: new EmailNameModel(_emailConfig.FromName, _emailConfig.FromEmail)),
+                                isSentToAdminFromUser: true);
                 }
             }
             catch (Exception ex)
             {
+                Log.Error(exception: ex, messageTemplate: "User: {0}", userVM.ToJson());
                 throw new Exception(ex?.Message);
             }
             return userVM;
@@ -67,6 +77,8 @@ namespace CTD.BussinessOperations.Services
             string body = string.Empty;
             body = System.IO.File.ReadAllText(Path.Combine(userVM.FilePath, "AdminEmailMessage.html"));
             body = body.Replace("[UserName]", userVM.Name);
+            body = body.Replace("[Phone]", userVM.Phone);
+            body = body.Replace("[Website]", userVM.Website);
             body = body.Replace("[Message]", userVM.Message);
             body = body.Replace("[CurrentYear]", DateTime.UtcNow.Year + "");
 

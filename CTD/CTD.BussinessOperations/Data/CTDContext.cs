@@ -24,7 +24,7 @@ namespace CTD.BussinessOperations.Data
                 e.Property(x => x.Email).HasMaxLength(30).IsRequired();
                 e.Property(x => x.Phone).HasMaxLength(30).IsRequired();
                 e.Property(x => x.Name).HasMaxLength(30).IsRequired();
-                e.Property(x => x.Website).HasMaxLength(30);
+                e.Property(x => x.Website).HasMaxLength(200);
                 e.Property(x => x.Message).IsRequired();
             });
         }

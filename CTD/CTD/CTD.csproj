@@ -32,6 +32,11 @@
   </ItemGroup>
 
   <ItemGroup>
+    <PackageReference Include="Serilog" Version="3.1.1" />
+    <PackageReference Include="Serilog.AspNetCore" Version="7.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
     <ProjectReference Include="..\CTD.BussinessOperations\CTD.BussinessOperations.csproj" />
   </ItemGroup>
 

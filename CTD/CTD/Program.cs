@@ -1,6 +1,7 @@
 using CTD.BussinessOperations.Data;
 using CTD.BussinessOperations.Models.CustomModels;
 using CTD.BussinessOperations.Services;
+using CTD.Extensions;
 using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -9,13 +10,14 @@ var connStr = builder.Configuration["Database:CTDStr"];
 var autoMigrate = Convert.ToBoolean(builder.Configuration["Database:AutoMigrate"]);
 
 // Add services to the container.
-var emailConfig = builder.Configuration
+var clientEmailConfig = builder.Configuration
         .GetSection("EmailConfiguration")
-        .Get<EmailConfiguration>();
-builder.Services.AddSingleton(emailConfig);
+        .Get<ClientEmailConfiguration>();
+builder.Services.AddSingleton(clientEmailConfig);
 builder.Services.AddControllersWithViews();
 builder.Services.AddScoped<IUserService, UserService>();
 builder.Services.AddScoped<IEmailSendService, EmailSendService>();
+builder.Services.AddScoped<ISmtpService, SmtpService>();
 builder.Services.AddDbContext<CTDContext>((p, options) =>
 {
     options.UseSqlServer(connStr);
@@ -25,7 +27,7 @@ builder.Services.AddDbContext<CTDContext>((p, options) =>
         options.EnableDetailedErrors();
     }
 });
-
+builder.Services.AddSerilogService(builder.Configuration);
 
 
 var app = builder.Build();

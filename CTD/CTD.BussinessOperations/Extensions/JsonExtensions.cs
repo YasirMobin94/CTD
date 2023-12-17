@@ -1,8 +1,19 @@
-﻿using System.Globalization;
-using System.Runtime.CompilerServices;
+﻿using System;
+using System.Collections.Generic;
+using System.Globalization;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 
-namespace CTD.Extensions
+namespace CTD.BussinessOperations.Extensions
 {
+    public static class JsonExtensions
+    {
+        public static string ToJson(this object obj)
+        {
+            return System.Text.Json.JsonSerializer.Serialize(obj);
+        }
+    }
     public static class StringExtensions
     {
         public static string ToReplaceString(this string str)

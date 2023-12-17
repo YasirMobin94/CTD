@@ -1,4 +1,6 @@
-﻿namespace CTD.Helpers
+﻿using Microsoft.AspNetCore.Mvc.ModelBinding;
+
+namespace CTD.Helpers
 {
     public class CommonHelper
     {
@@ -130,6 +132,16 @@
                 ukCitiesDict = ukCitiesDict.OrderBy(x => x.Key).ToDictionary(x => x.Key, x => x.Value);
             }
             return ukCitiesDict;
+        }
+
+        public static List<string> GetModelErrros(ModelStateDictionary modelState)
+        {
+            var errors = modelState.Values.Where(E => E.Errors.Count > 0)
+                         .SelectMany(E => E.Errors)
+                         .Select(E => E.ErrorMessage)
+                         .ToList();
+
+            return errors;
         }
     }
 }

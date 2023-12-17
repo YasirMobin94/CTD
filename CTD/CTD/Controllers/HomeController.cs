@@ -1,9 +1,12 @@
-﻿using CTD.BussinessOperations.Models.ViewModels;
+﻿using CTD.BussinessOperations.Extensions;
+using CTD.BussinessOperations.Models.ViewModels;
 using CTD.BussinessOperations.Services;
 using CTD.Extensions;
 using CTD.Helpers;
 using CTD.Models;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.ModelBinding;
+using Serilog;
 using System.Diagnostics;
 using System.Dynamic;
 
@@ -41,7 +44,6 @@ namespace CTD.Controllers
         [Route("contact-us")]
         public IActionResult ContactUs()
         {
-            ViewBag.ThankYouMessage = false;
             return View(new UserViewModel());
         }
 
@@ -51,9 +53,11 @@ namespace CTD.Controllers
             var response = new ResponseModel();
             try
             {
+                Log.Information(user.ToJson());
                 if (ModelState.IsValid)
                 {
                     user.FilePath = $"{_env.WebRootPath}/{Path.Combine("HtmlTemplates")}";
+                    user.CleanUserModel(user);
                     await _userService.SaveUserEmailMessageAsync(user);
                     response.Message = "Email has been sent.";
                 }
@@ -69,7 +73,7 @@ namespace CTD.Controllers
                 response.Success = false;
                 response.Message = ex?.Message;
             }
-            
+
             return Json(response);
         }
 
