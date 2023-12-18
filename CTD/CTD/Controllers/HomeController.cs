@@ -48,6 +48,7 @@ namespace CTD.Controllers
         }
 
         [HttpPost("sent-request-data")]
+        [ValidateAntiForgeryToken]
         public async Task<IActionResult> ContactUsFromSubmit(UserViewModel user)
         {
             var response = new ResponseModel();

@@ -34,19 +34,7 @@ namespace CTD.BussinessOperations.Services
         {
             try
             {
-                var dbModel = new UserEmail
-                {
-                    Name = userVM.Name,
-                    Email = userVM.Email,
-                    Website = userVM.Website,
-                    Phone = userVM.Phone,
-                    Message = userVM.Message,
-                    CreatedTimestamp = DateTime.UtcNow
-                };
-                await _context.UserEmails.AddAsync(dbModel);
-                await _context.SaveChangesAsync();
-                userVM.Id = dbModel.Id;
-
+                await SaveUserAsync(userVM);
                 var isUserSentMail = await _emailSendService.SendEmailAsync(
                                          message: new Message(
                                              to: new EmailNameModel(userVM.Name, userVM.Email),
@@ -71,6 +59,29 @@ namespace CTD.BussinessOperations.Services
                 throw new Exception(ex?.Message);
             }
             return userVM;
+        }
+
+        private async Task SaveUserAsync(UserViewModel userVM)
+        {
+            try
+            {
+                var dbModel = new UserEmail
+                {
+                    Name = userVM.Name,
+                    Email = userVM.Email,
+                    Website = userVM.Website,
+                    Phone = userVM.Phone,
+                    Message = userVM.Message,
+                    CreatedTimestamp = DateTime.UtcNow
+                };
+                await _context.UserEmails.AddAsync(dbModel);
+                await _context.SaveChangesAsync();
+                userVM.Id = dbModel.Id;
+            }
+            catch (Exception ex)
+            {
+                Log.Error(exception: ex, messageTemplate: "SaveUserAsync: {0}", userVM.ToJson());
+            }
         }
         private string GetEmailBodyForAdmin(UserViewModel userVM)
         {

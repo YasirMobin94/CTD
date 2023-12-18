@@ -40,8 +40,8 @@
     }
 }
 <script>
+
     $("#contact-form").submit(function (e) {
-        console.log(e)
         e.preventDefault();
         let form = $("#contact-form")
         HttpService.postDataOfEmail("@Url.Action("ContactUsFromSubmit", "Home")", form);

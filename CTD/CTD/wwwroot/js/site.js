@@ -29,34 +29,45 @@ let SweetAlert = {
 
 let HttpService = {
     postDataOfEmail: function (url, form) {
-        debugger
-        let formValue = form.serializeArray();
-        let model = {};
-        for (let item of formValue) {
-            model[item.name] = item.value;
-        }
-        let spinner = $(".preloader");
-        spinner.show();
-        console.log(model)
+        if (form.valid()) {
+            let token = '';
+            let formValue = form.serializeArray();
+            let model = {};
+            for (let item of formValue) {
+                if (item.name === '__RequestVerificationToken') {
+                    token = item.value
+                } else {
+                    model[item.name] = item.value;
+                }
+            }
+            let spinner = $(".preloader");
+            spinner.show();
+            console.log(model)
 
-        $.ajax({
-            url: url,
-            type: "POST",
-            data: { user: model },
-        }).done(function (data) {
-            spinner.hide();
-            console.log(data)
-            if (data.success) {
-                form[0].reset();
-                SweetAlert.Success("Request has been sent successfully!");
-            }
-            else {
-                SweetAlert.Error(data.message);
-            }
-        }).fail(function (error) {
-            spinner.hide();
-            SweetAlert.Error()
-            console.error(error)
-        });
+            $.ajax({
+                url: url,
+                type: "POST",
+                data: {
+                    __RequestVerificationToken: token,
+                    user: model
+                },
+                dataType: 'json',
+                contentType: 'application/x-www-form-urlencoded; charset=utf-8',
+            }).done(function (data) {
+                spinner.hide();
+                console.log(data)
+                if (data.success) {
+                    form[0].reset();
+                    SweetAlert.Success("Request has been sent successfully!");
+                }
+                else {
+                    SweetAlert.Error(data.message);
+                }
+            }).fail(function (error) {
+                spinner.hide();
+                SweetAlert.Error()
+                console.error(error)
+            });
+        }
     }
 }

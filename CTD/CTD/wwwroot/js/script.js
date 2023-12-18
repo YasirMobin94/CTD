@@ -712,6 +712,31 @@
             }
         });
     }
+    if ($('#home-contact-form').length) {
+        $('#home-contact-form').validate({
+            rules: {
+                Name: {
+                    required: true,
+                    maxlength: 30
+                },
+                Email: {
+                    required: true,
+                    email: true,
+                    maxlength: 30
+                },
+                Phone: {
+                    required: true,
+                    maxlength: 30
+                },
+                Website: {
+                    maxlength: 200
+                },
+                Message: {
+                    required: true
+                }
+            }
+        });
+    }
     if ($('#intro-form').length) {
         $('#intro-form').validate({
             rules: {
