@@ -7,10 +7,19 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="wwwroot\archive\**" />
+    <Content Remove="wwwroot\archive\**" />
+    <EmbeddedResource Remove="wwwroot\archive\**" />
+    <None Remove="wwwroot\archive\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Remove="bundleconfig.json" />
     <Content Remove="wwwroot\js\sweetalert2.js" />
   </ItemGroup>
 
   <ItemGroup>
+    <_ContentIncludedByDefault Remove="bundleconfig.json" />
     <_ContentIncludedByDefault Remove="wwwroot\js\sweetalert2.js" />
   </ItemGroup>
 
@@ -25,9 +34,11 @@
     <Folder Include="Views\Shared\ServicesPages\GraphicDesigning\" />
     <Folder Include="Views\Shared\ServicesPages\ITStaffAugumentation\" />
     <Folder Include="Views\Shared\ServicesPages\SEO\" />
+    <Folder Include="wwwroot\bundles\" />
   </ItemGroup>
 
   <ItemGroup>
+    <None Include="bundleconfig.json" />
     <None Include="wwwroot\js\sweetalert2.js" />
   </ItemGroup>
 

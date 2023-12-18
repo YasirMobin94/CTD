@@ -72,7 +72,7 @@ namespace CTD.Controllers
             catch (Exception ex)
             {
                 response.Success = false;
-                response.Message = ex?.Message;
+                response.Message = "An error occurred. Please Try later.";
             }
 
             return Json(response);

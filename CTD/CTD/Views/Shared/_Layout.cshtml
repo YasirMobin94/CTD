@@ -23,19 +23,40 @@
     <meta name="title" content="@ViewBag.Title" />
     <meta name="description" content="@ViewBag.Description" />
 
-    <link href="~/css/bootstrap.css" rel="stylesheet" asp-append-version="true">
-    <link href="~/css/style.css" rel="stylesheet" asp-append-version="true">
-    <link href="~/css/responsive.css" rel="stylesheet" asp-append-version="true">
-    <link href="~/css/site.css" rel="stylesheet" asp-append-version="true">
+
+
+
+    <environment include="Development">
+        <link href="~/css/bootstrap.css" rel="stylesheet" asp-append-version="true">
+        <link href="~/css/font-awesome.css" rel="stylesheet" asp-append-version="true">
+        <link href="~/css/flaticon.css" rel="stylesheet" asp-append-version="true">
+        <link href="~/css/animate.css" rel="stylesheet" asp-append-version="true">
+        <link href="~/css/owl.css" rel="stylesheet" asp-append-version="true">
+        <link href="~/css/animation.css" rel="stylesheet" asp-append-version="true">
+        <link href="~/css/jquery-ui.css" rel="stylesheet" asp-append-version="true">
+        <link href="~/css/custom-animate.css" rel="stylesheet" asp-append-version="true">
+        <link href="~/css/jquery.bootstrap-touchspin.css" rel="stylesheet" asp-append-version="true">
+        <link href="~/css/jquery.fancybox.min.css" rel="stylesheet" asp-append-version="true">
+        <link href="~/css/jquery.mCustomScrollbar.min.css" rel="stylesheet" asp-append-version="true">
+        <link href="~/css/style.css" rel="stylesheet" asp-append-version="true">
+        <link href="~/css/responsive.css" rel="stylesheet" asp-append-version="true">
+        <link href="~/css/site.css" rel="stylesheet" asp-append-version="true">
+    </environment>
+
+    <environment exclude="Development">
+        <link href="~/bundles/css/bootstrap.min.css" rel="stylesheet" asp-append-version="true">
+        @*<link href="~/bundles/css/utils.min.css" rel="stylesheet" asp-append-version="true">*@
+        <link href="~/bundles/css/style.min.css" rel="stylesheet" asp-append-version="true">
+        @*<link href="~/bundles/css/responsive.min.css" rel="stylesheet" asp-append-version="true">*@
+        @*<link href="~/bundles/css/site.min.css" rel="stylesheet" asp-append-version="true">*@
+    </environment>
 
     <link rel="canonical" href="@(Context.Request.GetDisplayUrl().StartsWith("https") ? Context.Request.GetDisplayUrl() : Context.Request.GetDisplayUrl().Replace("http", "https"))">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&family=Nunito+Sans:wght@300;600;700;800;900&display=swap" rel="stylesheet">
     <link rel="shortcut icon" href="~/images/favicon.png" type="image/x-icon" asp-append-version="true">
     <link rel="icon" href="~/images/favicon.png" type="image/x-icon" asp-append-version="true">
-
-
-
-    <script src="~/js/jquery.js" asp-append-version="true"></script>
+    <script src="~/bundles/js/jquery.min.js" asp-append-version="true"></script>
+    @*<script src="~/js/jquery.js" asp-append-version="true"></script>*@
 </head>
 
 <body class="hidden-bar-wrapper">
@@ -61,27 +82,30 @@
     </div>
     <div class="scroll-to-top scroll-to-target" data-target="html"><span class="fa fa-arrow-up"></span></div>
 
+    <environment exclude="Development">
+        <script src="~/bundles/js/utils.min.js" asp-append-version="true" defer></script>
+    </environment>
 
-    <script src="~/js/popper.min.js" asp-append-version="true"></script>
-    <script src="~/js/bootstrap.min.js" asp-append-version="true"></script>
-    <script src="~/js/jquery.mCustomScrollbar.concat.min.js" asp-append-version="true"></script>
-    <script src="~/js/jquery.fancybox.js" asp-append-version="true"></script>
-    <script src="~/js/appear.js" asp-append-version="true"></script>
-    <script src="~/js/mixitup.js" asp-append-version="true"></script>
-    <script src="~/js/parallax.min.js" asp-append-version="true"></script>
-    <script src="~/js/tilt.jquery.min.js" asp-append-version="true"></script>
-    <script src="~/js/jquery.paroller.min.js" asp-append-version="true"></script>
-    <script src="~/js/owl.js" asp-append-version="true"></script>
-    <script src="~/js/wow.js" asp-append-version="true"></script>
-    <script src="~/js/validate.js" asp-append-version="true"></script>
-    <script src="~/js/nav-tool.js" asp-append-version="true"></script>
-    <script src="~/js/jquery-ui.js" asp-append-version="true"></script>
-    <script src="~/js/jquery.bootstrap-touchspin.js" asp-append-version="true"></script>
-    <script src="~/js/script.js" asp-append-version="true"></script>
-    <script src="~/js/color-settings.js" asp-append-version="true"></script>
-    <script src="~/js/site.js" asp-append-version="true"></script>
-    <script src="~/js/sweetalert2.js" asp-append-version="true"></script>
-
-
+    <environment include="Development">
+         <script src="~/js/popper.min.js" asp-append-version="true"></script>
+        <script src="~/js/bootstrap.min.js" asp-append-version="true"></script>
+        <script src="~/js/jquery.mCustomScrollbar.concat.min.js" asp-append-version="true"></script>
+        <script src="~/js/jquery.fancybox.js" asp-append-version="true"></script>
+        <script src="~/js/appear.js" asp-append-version="true"></script>
+        <script src="~/js/mixitup.js" asp-append-version="true"></script>
+        <script src="~/js/parallax.min.js" asp-append-version="true"></script>
+        <script src="~/js/tilt.jquery.min.js" asp-append-version="true"></script>
+        <script src="~/js/jquery.paroller.min.js" asp-append-version="true"></script>
+        <script src="~/js/owl.js" asp-append-version="true"></script>
+        <script src="~/js/wow.js" asp-append-version="true"></script>
+        <script src="~/js/validate.js" asp-append-version="true"></script>
+        <script src="~/js/nav-tool.js" asp-append-version="true"></script>
+        <script src="~/js/jquery-ui.js" asp-append-version="true"></script>
+        <script src="~/js/jquery.bootstrap-touchspin.js" asp-append-version="true"></script>
+        <script src="~/js/script.js" asp-append-version="true"></script>
+        <script src="~/js/color-settings.js" asp-append-version="true"></script>
+        <script src="~/js/site.js" asp-append-version="true"></script>
+        <script src="~/js/sweetalert2.js" asp-append-version="true"></script>
+    </environment>
 </body>
 </html>

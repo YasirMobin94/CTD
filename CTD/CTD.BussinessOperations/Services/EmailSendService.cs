@@ -42,8 +42,9 @@ namespace CTD.BussinessOperations.Services
                 }
                 catch (Exception ex)
                 {
-                    Log.Error(exception: ex, messageTemplate: "Mail Content: {0}, IsSentToAdmin:{1} ,FromAddress: {2}, ToAddress: {3}", mailMessage.ToJson(), isSentToAdminFromUser, mailMessage.From.ToJson(), mailMessage.To.ToJson());
-                    return false;
+                    Log.Error(exception: ex, messageTemplate: "Mail Body: {0}, IsSentToAdmin:{1} ,FromAddress: {2}, ToAddress: {3}", message.Content.ToJson(), isSentToAdminFromUser, message.From.Address.ToJson(), message.To.Address.ToJson());
+                    throw new Exception(ex?.Message);
+                    //return false;
                 }
                 finally
                 {
