@@ -88,6 +88,7 @@ namespace CTD.BussinessOperations.Services
             string body = string.Empty;
             body = System.IO.File.ReadAllText(Path.Combine(userVM.FilePath, "AdminEmailMessage.html"));
             body = body.Replace("[UserName]", userVM.Name);
+            body = body.Replace("[Email]", userVM.Email);
             body = body.Replace("[Phone]", userVM.Phone);
             body = body.Replace("[Website]", userVM.Website);
             body = body.Replace("[Message]", userVM.Message);

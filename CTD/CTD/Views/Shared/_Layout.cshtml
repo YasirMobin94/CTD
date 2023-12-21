@@ -44,19 +44,50 @@
     </environment>
 
     <environment exclude="Development">
-        <link href="~/bundles/css/bootstrap.min.css" rel="stylesheet" asp-append-version="true">
-        @*<link href="~/bundles/css/utils.min.css" rel="stylesheet" asp-append-version="true">*@
-        <link href="~/bundles/css/style.min.css" rel="stylesheet" asp-append-version="true">
-        @*<link href="~/bundles/css/responsive.min.css" rel="stylesheet" asp-append-version="true">*@
-        @*<link href="~/bundles/css/site.min.css" rel="stylesheet" asp-append-version="true">*@
+        <link rel="preload" href="~/bundles/css/bootstrap.min.css" asp-append-version="true" as="style">
+        <link href="~/bundles/css/bootstrap.min.css" rel="stylesheet" asp-append-version="true" async>
+
+        <link href="~/bundles/css/font-icon.min.css" rel="preload" asp-append-version="true" as="style">
+        <link href="~/bundles/css/font-icon.min.css" rel="stylesheet" asp-append-version="true" async>
+
+        <link href="~/bundles/css/animate.min.css" rel="preload" asp-append-version="true" as="style">
+        <link href="~/bundles/css/animate.min.css" rel="stylesheet" asp-append-version="true" async>
+
+        <link href="~/bundles/css/owl.min.css" rel="preload" asp-append-version="true" as="style">
+        <link href="~/bundles/css/owl.min.css" rel="stylesheet" asp-append-version="true" async>
+
+        <link href="~/bundles/css/animation.min.css" rel="preload" asp-append-version="true" as="style">
+        <link href="~/bundles/css/animation.min.css" rel="stylesheet" asp-append-version="true" async>
+
+        <link href="~/bundles/css/custom-animate.min.css" rel="preload" asp-append-version="true" as="style">
+        <link href="~/bundles/css/custom-animate.min.css" rel="stylesheet" asp-append-version="true" async>
+
+        <link href="~/bundles/css/jquery-ui.min.css" rel="preload" asp-append-version="true" as="style">
+        <link href="~/bundles/css/jquery-ui.min.css" rel="stylesheet" asp-append-version="true" async>
+
+        <link href="~/bundles/css/jquery-plugins.min.css" rel="preload" asp-append-version="true" as="style">
+        <link href="~/bundles/css/jquery-plugins.min.css" rel="stylesheet" asp-append-version="true" async>
+
+        <link href="~/bundles/css/style.min.css" rel="preload" asp-append-version="true" as="style">
+        <link href="~/bundles/css/style.min.css" rel="stylesheet" asp-append-version="true" async>
+
+        <link href="~/bundles/css/responsive.min.css" rel="preload" asp-append-version="true" as="style">
+        <link href="~/bundles/css/responsive.min.css" rel="stylesheet" asp-append-version="true" async>
+
+        <link href="~/bundles/css/site.min.css" rel="preload" asp-append-version="true" as="style">
+        <link href="~/bundles/css/site.min.css" rel="stylesheet" asp-append-version="true" async>
+
+        <link href="~/bundles/css/site.min.css" rel="preload" asp-append-version="true" as="style">
+        <link href="~/bundles/css/site.min.css" rel="stylesheet" asp-append-version="true" async>
     </environment>
 
     <link rel="canonical" href="@(Context.Request.GetDisplayUrl().StartsWith("https") ? Context.Request.GetDisplayUrl() : Context.Request.GetDisplayUrl().Replace("http", "https"))">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&family=Nunito+Sans:wght@300;600;700;800;900&display=swap" rel="stylesheet">
     <link rel="shortcut icon" href="~/images/favicon.png" type="image/x-icon" asp-append-version="true">
     <link rel="icon" href="~/images/favicon.png" type="image/x-icon" asp-append-version="true">
-    <script src="~/bundles/js/jquery.min.js" asp-append-version="true"></script>
-    @*<script src="~/js/jquery.js" asp-append-version="true"></script>*@
+
+    <link rel="preload" src="~/bundles/js/jquery.min.js" asp-append-version="true" as="script">
+    <script type="text/javascript" src="~/bundles/js/jquery.min.js" asp-append-version="true"></script>
 </head>
 
 <body class="hidden-bar-wrapper">
@@ -83,11 +114,42 @@
     <div class="scroll-to-top scroll-to-target" data-target="html"><span class="fa fa-arrow-up"></span></div>
 
     <environment exclude="Development">
-        <script src="~/bundles/js/utils.min.js" asp-append-version="true" defer></script>
+        <link rel="preload" src="~/bundles/js/popper-bootstrap.min.js" asp-append-version="true" as="script">
+        <script type="text/javascript" src="~/bundles/js/popper-bootstrap.min.js" asp-append-version="true" defer></script>
+
+        <link rel="preload" src="~/bundles/js/jquery-scroll-appear.min.js" asp-append-version="true" as="script">
+        <script type="text/javascript" src="~/bundles/js/jquery-scroll-appear.min.js" asp-append-version="true" defer></script>
+
+        <link rel="preload" src="~/bundles/js/mixitup-parallax.min.js" asp-append-version="true" as="script">
+        <script type="text/javascript" src="~/bundles/js/mixitup-parallax.min.js" asp-append-version="true" defer></script>
+        
+        <link rel="preload" src="~/bundles/js/jquery-tilt-paroller.min.js" asp-append-version="true" as="script">
+        <script type="text/javascript" src="~/bundles/js/jquery-tilt-paroller.min.js" asp-append-version="true" defer></script>
+        
+        <link rel="preload" src="~/bundles/js/owl-wow.min.js" asp-append-version="true" as="script">
+        <script type="text/javascript" src="~/bundles/js/owl-wow.min.js" asp-append-version="true" defer></script>
+        
+        <link rel="preload" src="~/bundles/js/validate-nav-tool.min.js" asp-append-version="true" as="script">
+        <script type="text/javascript" src="~/bundles/js/validate-nav-tool.min.js" asp-append-version="true" defer></script>
+        
+        <link rel="preload" src="~/bundles/js/jquery-ui.min.js" asp-append-version="true" as="script">
+        <script type="text/javascript" src="~/bundles/js/jquery-ui.min.js" asp-append-version="true" defer></script>
+        
+        <link rel="preload" src="~/bundles/js/jquery-bootstrap-touchspin.min.js" asp-append-version="true" as="script">
+        <script type="text/javascript" src="~/bundles/js/jquery-bootstrap-touchspin.min.js" asp-append-version="true" defer></script>
+        
+        <link rel="preload" src="~/bundles/js/sweetalert.min.js" asp-append-version="true" as="script">
+        <script type="text/javascript" src="~/bundles/js/sweetalert.min.js" asp-append-version="true" defer></script>
+        
+        <link rel="preload" src="~/bundles/js/script.min.js" asp-append-version="true" as="script">
+        <script type="text/javascript" src="~/bundles/js/script.min.js" asp-append-version="true" defer></script>
+        
+        <link rel="preload" src="~/bundles/js/site.min.js" asp-append-version="true" as="script">
+        <script type="text/javascript" src="~/bundles/js/site.min.js" asp-append-version="true" defer></script>
     </environment>
 
     <environment include="Development">
-         <script src="~/js/popper.min.js" asp-append-version="true"></script>
+        <script src="~/js/popper.min.js" asp-append-version="true"></script>
         <script src="~/js/bootstrap.min.js" asp-append-version="true"></script>
         <script src="~/js/jquery.mCustomScrollbar.concat.min.js" asp-append-version="true"></script>
         <script src="~/js/jquery.fancybox.js" asp-append-version="true"></script>
