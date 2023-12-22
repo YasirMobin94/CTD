@@ -2,7 +2,7 @@
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.AspNetCore.Mvc.ViewFeatures;
 
-namespace CTD.ViewsExtensions
+namespace CTD.Extensions
 {
     public static class ViewsExtensionMethods
     {
@@ -10,7 +10,7 @@ namespace CTD.ViewsExtensions
         {
             var context = html.ViewContext.ActionDescriptor as ControllerActionDescriptor;
 
-            return (context.ActionName.Equals(actionName) && context.ControllerName.Equals(controller)) ? "current" : null;
+            return context.ActionName.Equals(actionName) && context.ControllerName.Equals(controller) ? "current" : null;
         }
         public static string HomeLayoutClass(this HtmlHelper html, string controller, string actionName)
         {
