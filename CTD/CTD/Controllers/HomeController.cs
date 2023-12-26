@@ -44,7 +44,7 @@ namespace CTD.Controllers
         [Route("contact-us")]
         public IActionResult ContactUs()
         {
-            return View(new UserViewModel());
+            return View();
         }
 
         [HttpPost("sent-request-data")]
