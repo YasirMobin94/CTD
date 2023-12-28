@@ -1,0 +1,134 @@
+@{
+
+    ViewBag.Title = "Graphic Designing Company in Bath";
+    ViewBag.Description = @"Reinvent your brand's visual strategy with Creative Think Digital's
+      bespoke graphic design solutions in Bath. Witness your brand's digital
+      transformation today!";
+    ViewData["ServiceName"] = "GraphicDesigning";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+
+<section class="services-page-section">
+    <div class="auto-container">
+        <div class="row clearfix">
+            <div class="col-lg-8 col-md-6 col-sm-12 col-12 wow fadeInUp" data-wow-delay="0ms" data-wow-duration="2000ms">
+                <div class="inner-column">
+                    <div class="about-service-title">
+                        <h1 class="base-color">@ViewBag.Title</h1>
+
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-12 col-md-12 col-sm-12 col-12 left-rail">
+                            <ul class="base-color">
+                                 <partial name="~/Views/Shared/ServicesPages/GraphicDesigning/_ShortDescription.cshtml" />
+                            </ul>
+                            <partial name="~/Views/Shared/ServicesPages/_ServiceRating.cshtml" />
+                        </div>
+                        @*<div class="col-lg-6 col-md-12 col-sm-12 col-12 right-form-rail">
+                            <img src="/images/development.svg" alt="text">
+                        </div>*@
+                    </div>
+                </div>
+
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12 col-12 wow fadeInRight" data-wow-delay="0ms" data-wow-duration="2000ms">
+                <partial name="~/Views/Shared/ServicesPages/_ServiceIntroForm.cshtml" />
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid satis-section">
+        <div class="row center-items">
+            <h4 class="">Top Rated Graphic Designing in Bath</h4>
+        </div>
+    </div>
+    <div class="auto-container">
+        <div class="service-detail-section">
+            <div class="row clearfix">
+                <div class="col-lg-8 col-md-12 col-sm-12 col-12 wow slideInLeft" data-wow-delay="0ms" data-wow-duration="1500ms">
+                    <span class="title-label">Graphic Designing</span>
+                    <div class="service-detail base-color">
+                        <h2>Dive into the World of Graphic Designing in Bath</h2>
+                        <p>
+                            Welcome to Creative Think Digital, where we redefine the norm and shape
+                            the future of your brand with innovative graphic designs. As specialists
+                            in Graphic Designing in Bath, we have a burning passion for creating
+                            unique visual narratives that bring your brand to life in the digital
+                            realm.
+                        </p>
+                        <h2>Creative Think Digital: A Canvas of Innovative Solutions</h2>
+                        <p>
+                            At Creative Think Digital, we believe in the power of disruptive thinking.
+                            We envision and deliver creative solutions that transform the way your
+                            brand communicates. Our team combines their rich experience, technical
+                            know-how, and deep understanding of design's influence on consumer
+                            perceptions, ensuring your brand shines through the bustling business
+                            environment in Bath.
+                        </p>
+                        <h2>Handcrafted Designs to Tell Your Story</h2>
+                        <p>
+                            Our mission at Creative Think Digital is to craft a visual representation
+                            of your brand's unique journey. Through gaining a deep understanding of
+                            your business objectives, target demographics, and industry trends, we
+                            deliver bespoke graphic design solutions that captivate your audience and
+                            align with your brand's ethos.
+                        </p>
+                        <h2>Leading the Charge in Design Innovation</h2>
+                        <p>
+                            At Creative Think Digital, our finger is always on the pulse of the
+                            ever-changing graphic design landscape. Our dedicated team of designers in
+                            Bath uses cutting-edge tools and stays updated
+                        </p>
+                        <p>
+                            with the latest trends to deliver captivating and functionally optimized
+                            designs for all digital platforms. Explore the realm of design that
+                            elevates your brand messaging and values.
+                        </p>
+                        <h2>The Power of Design: Beyond Aesthetics</h2>
+                        <p>
+                            We understand that impactful design serves a purpose beyond simply looking
+                            good. A truly exceptional design can amplify brand visibility, stimulate
+                            customer engagement, and influence business success. We ensure our designs
+                            act as an influential communication medium, strengthening customer
+                            relationships and promoting business growth.
+                        </p>
+                        <h2>Blending Design with Search Engine Optimization</h2>
+                        <p>
+                            In today's digital era, the integration of Search Engine Optimization
+                            (SEO) into graphic design is vital. We create designs that are visually
+                            appealing and SEO-friendly, thereby enhancing your online visibility,
+                            increasing web traffic, and improving conversion rates.
+                        </p>
+                        <h2>Our Pledge: Delivering Beyond Expectations</h2>
+                        <p>
+                            At Creative Think Digital, client satisfaction is our topmost priority.
+                            Our team of talented graphic designers in Bath is committed to surpassing
+                            your expectations and delivering stellar results. We value the trust you
+                            invest in us and reciprocate it by providing top-tier graphic design
+                            services that revolutionize your brand and catalyze your business growth.
+                        </p>
+                        <h2>Charting the Course to Success: Connect With Us</h2>
+                        <p>
+                            Experience the magic of bespoke graphic design in Bath with Creative Think
+                            Digital. Partner with us and let's chart your brand's success story
+                            together. Reach out today to learn how our graphic design solutions can
+                            take your business to new heights. Let's paint your vision into reality, one design at a time!
+                        </p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-12 col-sm-12 col-12 wow slideInRight" data-wow-delay="0ms" data-wow-duration="1500ms">
+                    <partial name="~/Views/Shared/ServicesPages/_ServiceContentForm.cshtml" />
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<partial name="~/Views/Shared/ServicesPages/_CitiesSitemap.cshtml" />
+
+
+<script>
+    $(document).ready(function () {
+        CTDNav.AddCurrentActiveClass(`services`)
+    })
+</script>

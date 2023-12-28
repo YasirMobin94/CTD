@@ -1,0 +1,132 @@
+@{
+
+    ViewBag.Title = "Web Development Company in Manchester";
+    ViewBag.Description = @"Propel your digital growth with Creative Think Digital, the top choice
+      for web development in Manchester. Experience the perfect blend of
+      creativity and technical prowess.";
+    ViewData["ServiceName"] = "WebDevelopment";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<section class="services-page-section">
+    <div class="auto-container">
+        <div class="row clearfix">
+            <div class="col-lg-8 col-md-6 col-sm-12 col-12 wow fadeInUp" data-wow-delay="0ms" data-wow-duration="2000ms">
+                <div class="inner-column">
+                    <div class="about-service-title">
+                        <h1 class="base-color">@ViewBag.Title</h1>
+
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-12 col-md-12 col-sm-12 col-12 left-rail">
+                            <ul class="base-color">
+                                <partial name="~/Views/Shared/ServicesPages/WebDevelopment/_ShortDescription.cshtml" />
+                            </ul>
+                            <partial name="~/Views/Shared/ServicesPages/_ServiceRating.cshtml" />
+                        </div>
+                        @*<div class="col-lg-6 col-md-12 col-sm-12 col-12 right-form-rail">
+                            <img src="/images/development.svg" alt="text">
+                        </div>*@
+                    </div>
+                </div>
+
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12 col-12 wow fadeInRight" data-wow-delay="0ms" data-wow-duration="2000ms">
+                <partial name="~/Views/Shared/ServicesPages/_ServiceIntroForm.cshtml" />
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid satis-section">
+        <div class="row center-items">
+            <h4 class="">Top Rated Web Development in Manchester</h4>
+        </div>
+    </div>
+    <div class="auto-container">
+        <div class="service-detail-section">
+            <div class="row clearfix">
+                <div class="col-lg-8 col-md-12 col-sm-12 col-12 wow slideInLeft" data-wow-delay="0ms" data-wow-duration="1500ms">
+                    <span class="title-label">Web Development</span>
+                    <div class="service-detail base-color">
+                        <h2>Unveiling Digital Excellence</h2>
+                        <p>
+                            In the dynamic world of online businesses, a distinctive and
+                            high-performing website sets you apart. As Creative Think Digital, we
+                            deliver top-notch web development in Manchester, creating online platforms
+                            that not only represent your business but also captivate your audience.
+                        </p>
+                        <h2>Custom-Crafted Web Solutions</h2>
+                        <p>
+                            Understanding your unique business needs, we engineer bespoke web
+                            solutions that resonate with your brand image. From intriguing design
+                            elements to smooth functionalities, our custom solutions ensure a
+                            captivating online presence that your visitors can't ignore. With our
+                            command over the latest technologies and programming languages, we craft a
+                            digital experience that leaves a lasting impression.
+                        </p>
+                        <h2>Exceptional User Experience Design</h2>
+                        <p>
+                            An impactful website is more than an online brochure—it's a user-oriented
+                            platform that guides your audience through a meaningful journey. We put
+                            your audience at the forefront, ensuring swift loading, easy navigation,
+                            and an immersive visual appeal. Our ultimate goal is to inspire your
+                            visitors to engage, explore, and take action.
+                        </p>
+                        <h2>Blend of Artistry and Technical Skill</h2>
+                        <p>
+                            Our team of experienced developers and creative designers use their
+                            deep-rooted understanding of web architecture and algorithms to deliver
+                            technically robust, secure websites. They merge artistic vision with
+                            technical expertise, crafting a site that functions impeccably while
+                            embodying your brand's ethos.
+                        </p>
+                        <h2>Search Engine Optimization</h2>
+                        <p>
+                            A visually appealing website needs to be visible on search engines to
+                            truly make an impact. With our specialized Search Engine Optimization
+                            skills, we ensure your website is not only engaging but also visible to your target audience. We strategically embed
+                            relevant keywords, produce high-quality content, and design
+                            mobile-friendly layouts to enhance your site's visibility, driving organic
+                            traffic and boosting your online presence.
+                        </p>
+                        <h2>Comprehensive Web Support and Maintenance</h2>
+                        <p>
+                            Our commitment doesn't end with the delivery of a striking website. We
+                            provide ongoing support and maintenance, keeping your site updated and
+                            performing at its optimal level. From troubleshooting issues to
+                            incorporating the latest updates, we work tirelessly to ensure your
+                            website remains a cut above the rest.
+                        </p>
+                        <h2>Facilitating Digital Evolution</h2>
+                        <p>
+                            At Creative Think Digital, we believe in inspiring change. Our web
+                            development services in Manchester are tailored to facilitate your
+                            transition into the digital world, enabling you to seize online
+                            opportunities and drive your growth.
+                        </p>
+                        <h2>Join Creative Think Digital's Vision</h2>
+                        <p>
+                            Give your online presence the lift it deserves with Creative Think
+                            Digital, your partner in transformative web development in Manchester. Let
+                            us collaborate to build a digital platform that truly mirrors your
+                            business vision and engages your audience like never before. Embrace the
+                            potential of your business with a website that is designed to impress,
+                            engage, and convert. Contact us today to embark on an extraordinary
+                            digital journey.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-12 col-sm-12 col-12 wow slideInRight" data-wow-delay="0ms" data-wow-duration="1500ms">
+                    <partial name="~/Views/Shared/ServicesPages/_ServiceContentForm.cshtml" />
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<partial name="~/Views/Shared/ServicesPages/_CitiesSitemap.cshtml" />
+
+
+<script>
+    $(document).ready(function () {
+        CTDNav.AddCurrentActiveClass(`services`)
+    })
+</script>

@@ -1,0 +1,81 @@
+﻿@{
+
+    ViewBag.Title = "Building Digital Success: Superior Web Development in Milton Keynes";
+    ViewBag.Description = "Accelerate your digital success with Creative Think Digital, your trusted partner for exceptional web development in Milton Keynes. Experience the transformation today.";
+    ViewData["ServiceName"] = "WebDevelopment";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<section class="services-page-section">
+    <div class="auto-container">
+        <div class="row clearfix">
+            <div class="col-lg-8 col-md-6 col-sm-12 col-12 wow fadeInUp" data-wow-delay="0ms" data-wow-duration="2000ms">
+                <div class="inner-column">
+                    <div class="about-service-title">
+                        <h1 class="base-color">@ViewBag.Title</h1>
+
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-12 col-md-12 col-sm-12 col-12 left-rail">
+                            <ul class="base-color">
+                                <partial name="~/Views/Shared/ServicesPages/WebDevelopment/_ShortDescription.cshtml" />
+                            </ul>
+                            <partial name="~/Views/Shared/ServicesPages/_ServiceRating.cshtml" />
+                        </div>
+                        @*<div class="col-lg-6 col-md-12 col-sm-12 col-12 right-form-rail">
+                            <img src="/images/development.svg" alt="text">
+                        </div>*@
+                    </div>
+                </div>
+
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12 col-12 wow fadeInRight" data-wow-delay="0ms" data-wow-duration="2000ms">
+                <partial name="~/Views/Shared/ServicesPages/_ServiceIntroForm.cshtml" />
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid satis-section">
+        <div class="row center-items">
+            <h4 class="">Top Rated Web Development in Milton Keynes</h4>
+        </div>
+    </div>
+    <div class="auto-container">
+        <div class="service-detail-section">
+            <div class="row clearfix">
+                <div class="col-lg-8 col-md-12 col-sm-12 col-12 wow slideInLeft" data-wow-delay="0ms" data-wow-duration="1500ms">
+                    <span class="title-label">Web Development</span>
+                    <div class="service-detail base-color">
+                        <h2>Crafting the Future of Digital</h2>
+                        <p>In a world driven by digital innovation, a compelling website is the cornerstone of any successful business. At Creative Think Digital, we go beyond the basics to deliver superior web development in Milton Keynes, establishing a standout online presence for your brand.</p>
+                        <h2>Tailor-Made Web Solutions</h2>
+                        <p>We understand that your business is unique. Our expert developers create bespoke web solutions designed to showcase your brand's unique qualities and meet your specific business goals. From engaging design to seamless functionality, our tailored solutions create a memorable online experience for your visitors.</p>
+                        <h2>Fostering User-Centric Experiences</h2>
+                        <p>A truly effective website is one that places the user at the core of its design. We focus on creating an effortless user journey with swift load times, intuitive navigation, and visually appealing design. Our goal is to inspire your audience, encouraging them to explore and connect with your brand.</p>
+                        <h2>Harmony of Creativity and Technical Mastery</h2>
+                        <p>Our team of skilled developers and talented designers combine their understanding of web architecture and creativity to create technically sound and aesthetically pleasing websites. Their knack for merging technical expertise with creative vision results in a website that is both robust and aligned with your brand ethos.</p>
+                        <h2>Search Engine Optimization</h2>
+                        <p>An eye-catching website is only as effective as its visibility on search engines. Our specialized Search Engine Optimization techniques ensure that your website is not just beautiful, but also easily discoverable. By strategically incorporating relevant keywords, producing engaging </p>
+                        <p>content, and designing a mobile-friendly layout, we enhance your site's visibility, attracting organic traffic and improving your online stature.</p>
+                        <h2>End-to-End Web Support and Maintenance</h2>
+                        <p>Our relationship with our clients extends beyond the development phase. We offer comprehensive web support and maintenance services to ensure that your website stays updated and continues to deliver an unparalleled user experience. Whether it's regular troubleshooting or the implementation of new updates, we remain dedicated to keeping your website performing at its best.</p>
+                        <h2>Driving Digital Transformation</h2>
+                        <p>We don't just build websites at Creative Think Digital; we enable businesses to leap into the digital age. Through our outstanding web development services in Milton Keynes, we help you harness the power of online platforms, paving the way for unprecedented growth and success.</p>
+                        <h2>Embark on a Journey with Creative Think Digital</h2>
+                        <p>Reimagine your online presence with Creative Think Digital, a leader in web development in Milton Keynes. Together, let's create a digital platform that embodies your brand's ethos, captivates your audience, and turns them into loyal customers. Discover the potential of your business with a website designed to impress, engage, and convert. Get in touch with us today for an extraordinary digital makeover.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-12 col-sm-12 col-12 wow slideInRight" data-wow-delay="0ms" data-wow-duration="1500ms">
+                    <partial name="~/Views/Shared/ServicesPages/_ServiceContentForm.cshtml" />
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<partial name="~/Views/Shared/ServicesPages/_CitiesSitemap.cshtml" />
+
+
+<script>
+    $(document).ready(function () {
+        CTDNav.AddCurrentActiveClass(`services`)
+    })
+</script>

@@ -1,0 +1,46 @@
+﻿@{
+    ViewBag.Title = "Portfolio";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<!-- Gallery Section -->
+<section class="gallery-section">
+	<div class="auto-container">
+		<!-- Sec Title -->
+		<div class="sec-title centered">
+			<div class="title">LATEST CASE STUDIES</div>
+			<h2>Reads Now Our Recent <br> Projects Studies</h2>
+		</div>
+		<!--MixitUp Galery-->
+		<div class="mixitup-gallery">
+
+			<!--Filter-->
+			<div class="filters clearfix">
+
+				<ul class="filter-tabs filter-btns text-center clearfix">
+					<li class="active filter" data-role="button" data-filter="all">All</li>
+					@*<li class="filter" data-role="button" data-filter=".graphic-designing">Graphic Designing</li>*@
+					@*<li class="filter" data-role="button" data-filter=".search-engine-marketing">SEM - Search Engine Marketing</li>*@
+					<li class="filter" data-role="button" data-filter=".search-engine-optimization">SEO - Search Engine Optimization</li>
+					@*<li class="filter" data-role="button" data-filter=".social-media-marketing">SMM - Social Media Marketing</li>*@
+					@*<li class="filter" data-role="button" data-filter=".web-and-mobile-design">Web & Mobile Design</li>*@
+					<li class="filter" data-role="button" data-filter=".web-development">Web Development</li>
+				</ul>
+
+			</div>
+
+			<div class="filter-list row clearfix">
+
+				<partial name="~/Views/Shared/Portfolio/_AllProjects.cshtml"/>
+
+			</div>
+
+		</div>
+	</div>
+</section>
+
+<script>
+    $(document).ready(function () {
+        CTDNav.AddCurrentActiveClass(`portfolio`)
+    })
+</script>

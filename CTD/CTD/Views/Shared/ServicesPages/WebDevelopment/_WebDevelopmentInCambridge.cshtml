@@ -1,0 +1,138 @@
+@{
+
+    ViewBag.Title = "Web Development Services in Cambridge";
+    ViewBag.Description = @"Discover how Creative Think Digital can transform your online presence
+      with expert web development services in Cambridge. We specialize in
+      creating visually stunning and high-performing websites that drive organic
+      traffic to your business. Contact us today to take your online success to
+      new heights!";
+    ViewData["ServiceName"] = "WebDevelopment";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<section class="services-page-section">
+    <div class="auto-container">
+        <div class="row clearfix">
+            <div class="col-lg-8 col-md-6 col-sm-12 col-12 wow fadeInUp" data-wow-delay="0ms" data-wow-duration="2000ms">
+                <div class="inner-column">
+                    <div class="about-service-title">
+                        <h1 class="base-color">@ViewBag.Title</h1>
+
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-12 col-md-12 col-sm-12 col-12 left-rail">
+                            <ul class="base-color">
+                                <partial name="~/Views/Shared/ServicesPages/WebDevelopment/_ShortDescription.cshtml" />
+                            </ul>
+                            <partial name="~/Views/Shared/ServicesPages/_ServiceRating.cshtml" />
+                        </div>
+                        @*<div class="col-lg-6 col-md-12 col-sm-12 col-12 right-form-rail">
+                            <img src="/images/development.svg" alt="text">
+                        </div>*@
+                    </div>
+                </div>
+
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12 col-12 wow fadeInRight" data-wow-delay="0ms" data-wow-duration="2000ms">
+                <partial name="~/Views/Shared/ServicesPages/_ServiceIntroForm.cshtml" />
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid satis-section">
+        <div class="row center-items">
+            <h4 class="">Top Rated Web Development in Cambridge</h4>
+        </div>
+    </div>
+    <div class="auto-container">
+        <div class="service-detail-section">
+            <div class="row clearfix">
+                <div class="col-lg-8 col-md-12 col-sm-12 col-12 wow slideInLeft" data-wow-delay="0ms" data-wow-duration="1500ms">
+                    <span class="title-label">Web Development</span>
+                    <div class="service-detail base-color">
+                        <h2>Introduction</h2>
+                        <p>
+                            Welcome to Creative Think Digital, your trusted partner for unlocking the
+                            true potential of web development in Cambridge. Our dedicated team of
+                            experts is committed to delivering innovative solutions that help
+                            businesses thrive in the digital landscape. With a perfect blend of
+                            creativity and technical expertise, we craft visually stunning and
+                            user-friendly websites that make a lasting impression on your audience. By
+                            leveraging the power of Search Engine Optimization (SEO), we ensure that
+                            your website not only stands out but also ranks high in search engine
+                            results, maximizing your online visibility and driving qualified traffic
+                            to your business.
+                        </p>
+                        <h2>Our Web Development Services</h2>
+                        <p></p>
+                        <h2>Tailored Web Design Solutions</h2>
+                        <p>
+                            Our web design solutions are tailored to meet the unique requirements of
+                            your business. We understand that your website is a reflection of your
+                            brand identity, and our team of designers works closely with you to create a visually captivating and engaging
+                            online presence. By incorporating intuitive user interfaces and
+                            eye-catching visuals, we ensure that your website leaves a lasting
+                            impression on your visitors.
+                        </p>
+                        <h2>Responsive and Mobile-First Approach</h2>
+                        <p>
+                            In today's mobile-centric world, having a responsive website is crucial.
+                            We prioritize mobile-first design principles to ensure that your website
+                            looks flawless and functions seamlessly across all devices and screen
+                            sizes. By providing an optimal user experience, we help you capture and
+                            retain the attention of your mobile audience, ultimately driving more
+                            conversions and revenue.
+                        </p>
+                        <h2>Custom Web Development</h2>
+                        <p>
+                            Our custom web development services are designed to bring your unique
+                            ideas to life. We leverage the latest technologies and frameworks to build
+                            scalable and secure websites that cater to your specific business needs.
+                            Whether you require a simple brochure website or a complex e-commerce
+                            platform, our skilled developers have the expertise to deliver exceptional
+                            results.
+                        </p>
+                        <h2>E-commerce Solutions</h2>
+                        <p>
+                            If you're looking to establish an online store, our e-commerce solutions
+                            are tailored to meet your business goals. We specialize in creating robust
+                            and feature-rich e-commerce platforms that maximize conversions and
+                            enhance user experience. By integrating secure payment gateways and
+                            intuitive shopping carts, we empower you to provide a seamless online
+                            shopping experience for your customers.
+                        </p>
+                        <h2>Content Management Made Easy</h2>
+                        <p>
+                            We understand the importance of having control over your website's
+                            content. Our content management solutions provide you with user-friendly
+                            platforms that allow you to effortlessly update and manage your website's
+                            content. With our intuitive CMS systems, such as WordPress, Joomla, and
+                            Drupal, you can make real-time changes without any technical expertise,
+                            ensuring that your website is always up-to-date and relevant.
+                        </p>
+                        <h2>Conclusion</h2>
+                        <p>
+                            At Creative Think Digital, we are passionate about helping businesses in
+                            Cambridge unleash the true potential of web development. Our expert team
+                            is committed to delivering exceptional results that drive organic traffic,
+                            increase conversions, and boost your online success. With our innovative
+                            solutions, mobile-first approach, and focus on Search Engine Optimization
+                            (SEO), we ensure that your website stands out from the competition and
+                            captivates your audience. Get in touch with us today and let us take your online presence to new heights!
+                        </p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-12 col-sm-12 col-12 wow slideInRight" data-wow-delay="0ms" data-wow-duration="1500ms">
+                    <partial name="~/Views/Shared/ServicesPages/_ServiceContentForm.cshtml" />
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<partial name="~/Views/Shared/ServicesPages/_CitiesSitemap.cshtml" />
+
+
+<script>
+    $(document).ready(function () {
+        CTDNav.AddCurrentActiveClass(`services`)
+    })
+</script>

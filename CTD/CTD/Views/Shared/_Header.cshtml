@@ -1,0 +1,165 @@
+﻿     <!-- Main Header-->
+<header class="main-header header-style-one">
+
+    <!-- Header Top -->
+    <div class="header-top">
+        <div class="auto-container">
+            <div class="clearfix">
+                <!-- Top Left -->
+                <div class="top-left">
+                    <!-- Info List -->
+                    <ul class="info-list">
+                        <li><a href="mailto:info@creativethinkdigital.co.uk"><span class="icon flaticon-email"></span> info@creativethinkdigital.co.uk</a></li>
+                        <li><a href="tel:+447480808961"><span class="icon flaticon-telephone"></span> +447480808961</a></li>
+                    </ul>
+                </div>
+
+                <!-- Top Right -->
+                <div class="top-right pull-right">
+                    <!-- Social Box -->
+                    <ul class="social-box">
+                        <partial name="~/Views/Shared/Partials/_Socials.cshtml" />
+
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!--Header-Upper-->
+    <div class="header-upper">
+        <div class="auto-container clearfix">
+
+            <div class="pull-left logo-box">
+                <div class="logo"><a href="@Url.Action("Index","Home")"><img src="/images/main_md_header_logo.svg" alt="" title=""></a></div>
+            </div>
+
+            <div class="nav-outer clearfix">
+                <!--Mobile Navigation Toggler-->
+                <div class="mobile-nav-toggler"><span class="icon flaticon-menu"></span></div>
+                <!-- Main Menu -->
+                <nav class="main-menu navbar-expand-md">
+                    <div class="navbar-header">
+                        <!-- Toggle Button -->
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                    </div>
+
+                    <div class="navbar-collapse collapse clearfix" id="navbarSupportedContent">
+                        <partial name="~/Views/Shared/Partials/_HeaderOptions.cshtml" />
+                    </div>
+                </nav>
+
+                <!-- Main Menu End-->
+                <div class="outer-box clearfix">
+
+                    <!-- Search Btn -->
+                    @* <div class="search-box-btn search-box-outer"><span class="icon fa fa-search"></span></div>*@
+
+                    <!-- Nav Btn -->
+                   @* <div class="nav-btn navSidebar-button"><span class="icon flaticon-menu-2"></span></div>*@
+
+                    <!-- Quote Btn -->
+                    <div class="btn-box">
+                        <a href="@Url.Action("ContactUs","Home")" class="theme-btn btn-style-one"><span class="txt">Free Consultation</span></a>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <!--End Header Upper-->
+    <!-- Sticky Header  -->
+    <div class="sticky-header">
+        <div class="auto-container clearfix">
+            <!--Logo-->
+            <div class="logo pull-left">
+                <a href="@Url.Action("Index","Home")" title=""><img src="/images/main_sm_header_logo.svg" alt="" title=""></a>
+            </div>
+            <!--Right Col-->
+            <div class="pull-right">
+                <!-- Main Menu -->
+                <nav class="main-menu">
+                    <!--Keep This Empty / Menu will come through Javascript-->
+                </nav><!-- Main Menu End-->
+                <!-- Main Menu End-->
+                <div class="outer-box clearfix">
+                    <!-- Search Btn -->
+                    @*<div class="search-box-btn search-box-outer"><span class="icon fa fa-search"></span></div>*@
+
+                    <!-- Nav Btn -->
+                    <div class="nav-btn navSidebar-button"><span class="icon flaticon-menu"></span></div>
+
+                </div>
+
+            </div>
+        </div>
+    </div><!-- End Sticky Menu -->
+    <!-- Mobile Menu  -->
+    <div class="mobile-menu">
+        <div class="menu-backdrop"></div>
+        <div class="close-btn"><span class="icon flaticon-multiply"></span></div>
+
+        <nav class="menu-box">
+            <div class="nav-logo"><a href="@Url.Action("Index","Home")"><img src="/images/main_md_header_logo.svg" alt="" title=""></a></div>
+            <div class="menu-outer"><!--Here Menu Will Come Automatically Via Javascript / Same Menu as in Header--></div>
+        </nav>
+    </div><!-- End Mobile Menu -->
+
+</header>
+<!-- End Main Header -->
+<!-- Sidebar Cart Item -->
+<div class="xs-sidebar-group info-group">
+    <div class="xs-overlay xs-bg-black"></div>
+    <div class="xs-sidebar-widget">
+        <div class="sidebar-widget-container">
+            <div class="widget-heading">
+                <a href="#" class="close-side-widget">
+                    X
+                </a>
+            </div>
+            <div class="sidebar-textwidget">
+
+                <!-- Sidebar Info Content -->
+                <div class="sidebar-info-contents">
+                    <div class="content-inner">
+                        <div class="logo">
+                            <a href="@Url.Action("Index","Home")"><img src="/images/main_md_wh_header_logo.png" asp-append-version="true" alt="" /></a>
+                        </div>
+                        <div class="content-box">
+                            <h2>About Us</h2>
+                            <p class="text">
+                                Welcome to Creative Think Digital, your one-stop destination for cutting-edge creative solutions and digital excellence. We are a leading digital agency dedicated to helping businesses thrive in the online world.
+                            </p>
+                            <a href="@Url.Action("ContactUs","Home")" class="theme-btn btn-style-three"><span class="txt">Free Consultation</span></a>
+                        </div>
+                        <div class="contact-info">
+                            <h2>Contact Info</h2>
+                            <ul class="list-style-one">
+                                <li><span class="icon fa fa-location-arrow"></span>71-75, Shellon Sireet. CoventGarden London, WC2H 9JQ, UK</li>
+                                <li><span class="icon fa fa-phone"></span>(+44) 7480808961</li>
+                                <li><span class="icon fa fa-envelope"></span>info@creativethinkdigital.co.uk</li>
+                                @*<li><span class="icon fa fa-clock-o"></span>Week Days: 09.00 to 18.00 Sunday: Closed</li>*@
+                            </ul>
+                        </div>
+                        <!-- Social Box -->
+                        <ul class="social-box">
+                            <li class="facebook"><a href="https://www.facebook.com/creativethinkdigital" class="fa fa-facebook-f"></a></li>
+                            <li class="twitter"><a href="https://twitter.com/CreativeThinkD2" class="fa fa-twitter"></a></li>
+                            <li class="linkedin"><a href="https://www.linkedin.com/company/creative-think-digital/" class="fa fa-linkedin"></a></li>
+                            <li class="instagram"><a href="https://www.instagram.com/creativethinkdigital/" class="fa fa-instagram"></a></li>
+                            @*<li class="youtube"><a href="#" class="fa fa-youtube"></a></li>*@
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+<!-- END sidebar widget item -->

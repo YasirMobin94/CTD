@@ -1,0 +1,180 @@
+﻿@using Microsoft.AspNetCore.Http.Extensions;
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Google Tag Manager -->
+    <script>
+        (function (w, d, s, l, i) {
+            w[l] = w[l] || []; w[l].push({
+                'gtm.start':
+                    new Date().getTime(), event: 'gtm.js'
+            }); var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+                    'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-M7WFFHSH');
+    </script>
+    <!-- End Google Tag Manager -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1.0, maximum-scale=5.0">
+    <!--[if lt IE 9]><script src="js/respond.js"></script><![endif]-->
+
+    <title>@ViewBag.Title | Creative Think Digital</title>
+    <meta name="title" content="@ViewBag.Title" />
+    <meta name="description" content="@ViewBag.Description" />
+
+
+
+
+    <environment include="Development">
+        <link href="~/css/bootstrap.css" rel="stylesheet" asp-append-version="true">
+        <link href="~/css/font-awesome.css" rel="stylesheet" asp-append-version="true">
+        <link href="~/css/flaticon.css" rel="stylesheet" asp-append-version="true">
+        <link href="~/css/animate.css" rel="stylesheet" asp-append-version="true">
+        <link href="~/css/owl.css" rel="stylesheet" asp-append-version="true">
+        <link href="~/css/animation.css" rel="stylesheet" asp-append-version="true">
+        <link href="~/css/jquery-ui.css" rel="stylesheet" asp-append-version="true">
+        <link href="~/css/custom-animate.css" rel="stylesheet" asp-append-version="true">
+        <link href="~/css/jquery.bootstrap-touchspin.css" rel="stylesheet" asp-append-version="true">
+        <link href="~/css/jquery.fancybox.min.css" rel="stylesheet" asp-append-version="true">
+        <link href="~/css/jquery.mCustomScrollbar.min.css" rel="stylesheet" asp-append-version="true">
+        <link href="~/css/style.css" rel="stylesheet" asp-append-version="true">
+        <link href="~/css/responsive.css" rel="stylesheet" asp-append-version="true">
+        <link href="~/css/site.css" rel="stylesheet" asp-append-version="true">
+    </environment>
+
+    <environment exclude="Development">
+        <link rel="preload" href="~/bundles/css/bootstrap.min.css" asp-append-version="true" as="style">
+        <link href="~/bundles/css/bootstrap.min.css" rel="stylesheet" asp-append-version="true" async>
+
+        <link href="~/bundles/css/font-icon.min.css" rel="preload" asp-append-version="true" as="style">
+        <link href="~/bundles/css/font-icon.min.css" rel="stylesheet" asp-append-version="true" async>
+
+        <link href="~/bundles/css/animate.min.css" rel="preload" asp-append-version="true" as="style">
+        <link href="~/bundles/css/animate.min.css" rel="stylesheet" asp-append-version="true" async>
+
+        <link href="~/bundles/css/owl.min.css" rel="preload" asp-append-version="true" as="style">
+        <link href="~/bundles/css/owl.min.css" rel="stylesheet" asp-append-version="true" async>
+
+        <link href="~/bundles/css/animation.min.css" rel="preload" asp-append-version="true" as="style">
+        <link href="~/bundles/css/animation.min.css" rel="stylesheet" asp-append-version="true" async>
+
+        <link href="~/bundles/css/custom-animate.min.css" rel="preload" asp-append-version="true" as="style">
+        <link href="~/bundles/css/custom-animate.min.css" rel="stylesheet" asp-append-version="true" async>
+
+        <link href="~/bundles/css/jquery-ui.min.css" rel="preload" asp-append-version="true" as="style">
+        <link href="~/bundles/css/jquery-ui.min.css" rel="stylesheet" asp-append-version="true" async>
+
+        <link href="~/bundles/css/jquery-plugins.min.css" rel="preload" asp-append-version="true" as="style">
+        <link href="~/bundles/css/jquery-plugins.min.css" rel="stylesheet" asp-append-version="true" async>
+
+        <link href="~/bundles/css/style.min.css" rel="preload" asp-append-version="true" as="style">
+        <link href="~/bundles/css/style.min.css" rel="stylesheet" asp-append-version="true" async>
+
+        <link href="~/bundles/css/responsive.min.css" rel="preload" asp-append-version="true" as="style">
+        <link href="~/bundles/css/responsive.min.css" rel="stylesheet" asp-append-version="true" async>
+
+        <link href="~/bundles/css/site.min.css" rel="preload" asp-append-version="true" as="style">
+        <link href="~/bundles/css/site.min.css" rel="stylesheet" asp-append-version="true" async>
+
+        <link href="~/bundles/css/site.min.css" rel="preload" asp-append-version="true" as="style">
+        <link href="~/bundles/css/site.min.css" rel="stylesheet" asp-append-version="true" async>
+    </environment>
+
+    <link rel="canonical" href="@(Context.Request.GetDisplayUrl().StartsWith("https") ? Context.Request.GetDisplayUrl() : Context.Request.GetDisplayUrl().Replace("http", "https"))">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&family=Nunito+Sans:wght@300;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="~/images/favicon.png" type="image/x-icon" asp-append-version="true">
+    <link rel="icon" href="~/images/favicon.png" type="image/x-icon" asp-append-version="true">
+
+    <link rel="preload" src="~/bundles/js/jquery.min.js" asp-append-version="true" as="script">
+    <script type="text/javascript" src="~/bundles/js/jquery.min.js" asp-append-version="true"></script>
+</head>
+
+<body class="hidden-bar-wrapper">
+    <!-- Google Tag Manager (noscript) -->
+    <noscript>
+        <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-M7WFFHSH"
+                height="0" width="0" style="display:none;visibility:hidden"></iframe>
+    </noscript>
+    <!-- End Google Tag Manager (noscript) -->
+    <div class="page-wrapper">
+
+        <!-- Preloader -->
+        <div class="preloader"></div>
+
+
+        <partial name="~/Views/Shared/_Header.cshtml" />
+
+        @RenderBody()
+        <!-- End News Section Two -->
+        <partial name="~/Views/Shared/_Footer.cshtml" />
+
+        <div class="modal fade" id="services-modal" tabindex="-1" role="dialog" aria-labelledby="servicesModal" aria-hidden="true">
+            <div class="modal-dialog modal-lg" role="document">
+                <div class="modal-content modal-dialog-centered">
+                    <div class="modal-body services-modal-body">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="scroll-to-top scroll-to-target" data-target="html"><span class="fa fa-arrow-up"></span></div>
+
+    <environment exclude="Development">
+        <link rel="preload" src="~/bundles/js/popper-bootstrap.min.js" asp-append-version="true" as="script">
+        <script type="text/javascript" src="~/bundles/js/popper-bootstrap.min.js" asp-append-version="true" defer></script>
+
+        <link rel="preload" src="~/bundles/js/jquery-scroll-appear.min.js" asp-append-version="true" as="script">
+        <script type="text/javascript" src="~/bundles/js/jquery-scroll-appear.min.js" asp-append-version="true" defer></script>
+
+        <link rel="preload" src="~/bundles/js/mixitup-parallax.min.js" asp-append-version="true" as="script">
+        <script type="text/javascript" src="~/bundles/js/mixitup-parallax.min.js" asp-append-version="true" defer></script>
+
+        <link rel="preload" src="~/bundles/js/jquery-tilt-paroller.min.js" asp-append-version="true" as="script">
+        <script type="text/javascript" src="~/bundles/js/jquery-tilt-paroller.min.js" asp-append-version="true" defer></script>
+
+        <link rel="preload" src="~/bundles/js/owl-wow.min.js" asp-append-version="true" as="script">
+        <script type="text/javascript" src="~/bundles/js/owl-wow.min.js" asp-append-version="true" defer></script>
+
+        <link rel="preload" src="~/bundles/js/validate-nav-tool.min.js" asp-append-version="true" as="script">
+        <script type="text/javascript" src="~/bundles/js/validate-nav-tool.min.js" asp-append-version="true" defer></script>
+
+        <link rel="preload" src="~/bundles/js/jquery-ui.min.js" asp-append-version="true" as="script">
+        <script type="text/javascript" src="~/bundles/js/jquery-ui.min.js" asp-append-version="true" defer></script>
+
+        <link rel="preload" src="~/bundles/js/jquery-bootstrap-touchspin.min.js" asp-append-version="true" as="script">
+        <script type="text/javascript" src="~/bundles/js/jquery-bootstrap-touchspin.min.js" asp-append-version="true" defer></script>
+
+        <link rel="preload" src="~/bundles/js/sweetalert.min.js" asp-append-version="true" as="script">
+        <script type="text/javascript" src="~/bundles/js/sweetalert.min.js" asp-append-version="true" defer></script>
+
+        <link rel="preload" src="~/bundles/js/script.min.js" asp-append-version="true" as="script">
+        <script type="text/javascript" src="~/bundles/js/script.min.js" asp-append-version="true" defer></script>
+
+        <link rel="preload" src="~/bundles/js/site.min.js" asp-append-version="true" as="script">
+        <script type="text/javascript" src="~/bundles/js/site.min.js" asp-append-version="true" defer></script>
+    </environment>
+
+    <environment include="Development">
+        <script src="~/js/popper.min.js" asp-append-version="true"></script>
+        <script src="~/js/bootstrap.min.js" asp-append-version="true"></script>
+        <script src="~/js/jquery.mCustomScrollbar.concat.min.js" asp-append-version="true"></script>
+        <script src="~/js/jquery.fancybox.js" asp-append-version="true"></script>
+        <script src="~/js/appear.js" asp-append-version="true"></script>
+        <script src="~/js/mixitup.js" asp-append-version="true"></script>
+        <script src="~/js/parallax.min.js" asp-append-version="true"></script>
+        <script src="~/js/tilt.jquery.min.js" asp-append-version="true"></script>
+        <script src="~/js/jquery.paroller.min.js" asp-append-version="true"></script>
+        <script src="~/js/owl.js" asp-append-version="true"></script>
+        <script src="~/js/wow.js" asp-append-version="true"></script>
+        <script src="~/js/validate.js" asp-append-version="true"></script>
+        <script src="~/js/nav-tool.js" asp-append-version="true"></script>
+        <script src="~/js/jquery-ui.js" asp-append-version="true"></script>
+        <script src="~/js/jquery.bootstrap-touchspin.js" asp-append-version="true"></script>
+        <script src="~/js/script.js" asp-append-version="true"></script>
+        <script src="~/js/color-settings.js" asp-append-version="true"></script>
+        <script src="~/js/site.js" asp-append-version="true"></script>
+        <script src="~/js/sweetalert2.js" asp-append-version="true"></script>
+    </environment>
+</body>
+</html>

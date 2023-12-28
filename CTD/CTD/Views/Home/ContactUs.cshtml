@@ -1,0 +1,39 @@
+﻿@{
+    ViewBag.Title = "Contact Us";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<section class="contact-info-section">
+    <div class="auto-container">
+        <!-- Sec Title -->
+        <div class="title-box">
+            <h2>Get in Touch</h2>
+            <div class="text">
+                Thank you for considering Creative Think Digital for your digital needs. Whether you have a question about our services, want to collaborate, or simply want to say hello, we'd love to hear from you. Please use the contact form or any of the methods below to get in touch with us.
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="contact-map-section">
+    <div class="auto-container">
+        <div class="sec-title">
+            <div class="clearfix center-items">
+                <div class="pull-left">
+                    <h2>Send Your Message</h2>
+                </div>
+            </div>
+        </div>
+
+        <!-- Contact Form -->
+        <div class="contact-form">
+            <partial name="~/Views/Shared/Partials/_ContactForm.cshtml" />
+        </div>
+    </div>
+</section>
+
+<script>
+    $(document).ready(function () {
+        CTDNav.AddCurrentActiveClass(`contact`)
+    })
+</script>

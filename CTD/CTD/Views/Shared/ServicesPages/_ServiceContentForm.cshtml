@@ -1,0 +1,50 @@
+﻿@{
+    Layout = null;
+}
+
+<input type="hidden" value="@ViewBag.ServicePlan" class="servicePlan" />
+<div class="">
+    <div class="sidebar-form">
+        <div class="sidebar-form-text">
+            <h6 class="base-color">Start with a FREE Quote!</h6>
+            <span>No Obligation Estimate, Expert Advice</span>
+        </div>
+        <form class="row g-3" id="content-form" method="post">
+            <div class="col-md-6">
+                <label for="Name" class="form-label"></label>
+                <input type="text" name="Name" placeholder="Name" class="form-control" required>
+            </div>
+            <div class="col-md-6">
+                <label for="Email" class="form-label"></label>
+                <input type="email" name="Email" placeholder="Email" class="form-control" required>
+            </div>
+            <div class="col-md-6">
+                <label for="Phone" class="form-label"></label>
+                <input type="tel" name="Phone" placeholder="Phone" class="form-control" required>
+            </div>
+            <div class="col-md-6">
+                <label for="Website" class="form-label"></label>
+                <input type="text" name="Website" placeholder="Website" class="form-control">
+            </div>
+            <div class="col-12">
+                <label for="Message" class="form-label"></label>
+                <textarea type="text" class="form-control" id="Message" name="Message" placeholder="Tell us about your project"></textarea>
+            </div>
+            <div class="col-12">
+                <button type="submit" class="btn btn-block theme-btn btn-style-three">
+                    <span class="txt">Send Request</span>
+                </button>
+            </div>
+        </form>
+    </div>
+</div>
+
+
+<script>
+    $("#content-form").submit(function (e) {
+        console.log('content', e)
+        e.preventDefault();
+        let form = $("#content-form")
+        HttpService.postDataOfEmail("@Url.Action("ContactUsFromSubmit", "Home")", form)
+    })
+</script>

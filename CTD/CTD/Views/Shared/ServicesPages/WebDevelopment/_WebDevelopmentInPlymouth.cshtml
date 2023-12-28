@@ -1,0 +1,131 @@
+@{
+
+    ViewBag.Title = "Web Development Company in Plymouth";
+    ViewBag.Description = "Join forces with Creative Think Digital - your local web development experts in Plymouth.Transform your online vision into a thriving digital reality with us!";
+    ViewData["ServiceName"] = "WebDevelopment";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<section class="services-page-section">
+    <div class="auto-container">
+        <div class="row clearfix">
+            <div class="col-lg-8 col-md-6 col-sm-12 col-12 wow fadeInUp" data-wow-delay="0ms" data-wow-duration="2000ms">
+                <div class="inner-column">
+                    <div class="about-service-title">
+                        <h1 class="base-color">@ViewBag.Title</h1>
+
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-12 col-md-12 col-sm-12 col-12 left-rail">
+                            <ul class="base-color">
+                                <partial name="~/Views/Shared/ServicesPages/WebDevelopment/_ShortDescription.cshtml" />
+                            </ul>
+                            <partial name="~/Views/Shared/ServicesPages/_ServiceRating.cshtml" />
+                        </div>
+                        @*<div class="col-lg-6 col-md-12 col-sm-12 col-12 right-form-rail">
+                            <img src="/images/development.svg" alt="text">
+                        </div>*@
+                    </div>
+                </div>
+
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12 col-12 wow fadeInRight" data-wow-delay="0ms" data-wow-duration="2000ms">
+                <partial name="~/Views/Shared/ServicesPages/_ServiceIntroForm.cshtml" />
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid satis-section">
+        <div class="row center-items">
+            <h4 class="">Top Rated Web Development in Plymouth</h4>
+        </div>
+    </div>
+    <div class="auto-container">
+        <div class="service-detail-section">
+            <div class="row clearfix">
+                <div class="col-lg-8 col-md-12 col-sm-12 col-12 wow slideInLeft" data-wow-delay="0ms" data-wow-duration="1500ms">
+                    <span class="title-label">Web Development</span>
+                    <div class="service-detail base-color">
+                        <h2>Experience Digital Innovation in Plymouth</h2>
+                        <p>
+                            Where can you find the pulse of digital innovation in Plymouth? The answer
+                            is Creative Think Digital, the region's premier web development company.
+                            With every line of code, we strive to redefine the online experience,
+                            enabling businesses to engage, captivate and grow their customer base.
+                        </p>
+                        <h2>Custom-Crafted Digital Solutions at Creative Think Digital</h2>
+                        <p>
+                            We, at Creative Think Digital, take pride in offering a web development
+                            experience like no other. Our philosophy revolves around a business’s
+                            uniqueness. Every solution we provide is custom-designed, ensuring that
+                            your digital platform is as unique as your business and aligns perfectly
+                            with your vision.
+                        </p>
+                        <h2>Revolutionizing Plymouth's Digital Landscape</h2>
+                        <p>
+                            Creative Think Digital is not just another web development company. We are
+                            pioneers leading the charge in Plymouth's digital revolution. Our
+                            creations are more than mere websites - they are digital gateways
+                            fostering seamless interactions between businesses and their customers.
+                        </p>
+                        <h2>Weaving Your Vision into the Web</h2>
+                        <p>
+                            Our approach to web development at Creative Think Digital is truly
+                            collaborative. We put our clients at the helm, creating a website that
+                            embodies their vision and meets their expectations. Utilizing our deep
+                            industry knowledge and top-of-the-line tools, we transform ideas into
+                            functional, dynamic and engaging websites.
+                        </p>
+                        <h2>Empowering Your Website with Search Engine Optimization</h2>
+                        <p>
+                            Harnessing the power of Search Engine Optimization, we ensure that your
+                            website gains optimal visibility on search engine results. This potent
+                            strategy not only brings your business into the limelight but also
+                            increases lead generation, making your website a powerful business tool.
+                        </p>
+                        <h2>Building Powerful Digital Brands</h2>
+                        <p>
+                            Our web development services extend beyond the creation of stunning
+                            websites. Our aim is to help you establish a strong digital brand. Our
+                            team combines aesthetics with functionality to enhance your brand's online
+                            reputation in Plymouth's bustling digital marketplace.
+                        </p>
+                        <h2>Comprehensive Support and Maintenance</h2>
+                        <p>
+                            Our association doesn't end with the launch of your website. Creative
+                            Think Digital offers continuous support and maintenance to ensure your
+                            digital platform remains updated, safe, and pertinent. Our dedicated team
+                            is always on standby, ensuring smooth sailing for your website at all
+                            times.
+                        </p>
+                        <h2>Choose Creative Think Digital: Your Digital Ally</h2>
+                        <p>
+                            Uplift your digital game with our top-notch web development services in
+                            Plymouth. Whether you're a fledgling startup or an industry stalwart,
+                            Creative Think Digital is your trusted partner for a prosperous digital
+                            journey. Reach out to us today and make your mark in the digital world
+                            with supreme confidence.
+                        </p>
+                        <p>
+                            At Creative Think Digital, your trusted partner for web development in
+                            Plymouth, we believe every successful digital journey begins with a single
+                            step. Let us guide you on this exciting path, opening new doors of
+                            opportunities for your business in the digital world. Join us, and let's
+                            shape your digital future together.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-12 col-sm-12 col-12 wow slideInRight" data-wow-delay="0ms" data-wow-duration="1500ms">
+                    <partial name="~/Views/Shared/ServicesPages/_ServiceContentForm.cshtml" />
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<partial name="~/Views/Shared/ServicesPages/_CitiesSitemap.cshtml" />
+
+
+<script>
+    $(document).ready(function () {
+        CTDNav.AddCurrentActiveClass(`services`)
+    })
+</script>

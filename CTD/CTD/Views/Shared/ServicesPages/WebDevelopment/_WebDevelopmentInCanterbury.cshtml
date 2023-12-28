@@ -1,0 +1,143 @@
+@{
+
+    ViewBag.Title = "Web Development Company in Canterbury";
+    ViewBag.Description = @"Creative Think Digital offers expert web development services in
+      Canterbury that will help your business thrive in the digital world.From
+      stunning website designs to seamless user experiences, our solutions are
+      tailored to drive organic traffic and maximize conversions. Contact us
+      today to take your online success to new heights!";
+    ViewData["ServiceName"] = "WebDevelopment"; 
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<section class="services-page-section">
+    <div class="auto-container">
+        <div class="row clearfix">
+            <div class="col-lg-8 col-md-6 col-sm-12 col-12 wow fadeInUp" data-wow-delay="0ms" data-wow-duration="2000ms">
+                <div class="inner-column">
+                    <div class="about-service-title">
+                        <h1 class="base-color">@ViewBag.Title</h1>
+
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-12 col-md-12 col-sm-12 col-12 left-rail">
+                            <ul class="base-color">
+                                <partial name="~/Views/Shared/ServicesPages/WebDevelopment/_ShortDescription.cshtml" />
+                            </ul>
+                            <partial name="~/Views/Shared/ServicesPages/_ServiceRating.cshtml" />
+                        </div>
+                        @*<div class="col-lg-6 col-md-12 col-sm-12 col-12 right-form-rail">
+                            <img src="/images/development.svg" alt="text">
+                        </div>*@
+                    </div>
+                </div>
+
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12 col-12 wow fadeInRight" data-wow-delay="0ms" data-wow-duration="2000ms">
+                <partial name="~/Views/Shared/ServicesPages/_ServiceIntroForm.cshtml" />
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid satis-section">
+        <div class="row center-items">
+            <h4 class="">Top Rated Web Development in Canterbury</h4>
+        </div>
+    </div>
+    <div class="auto-container">
+        <div class="service-detail-section">
+            <div class="row clearfix">
+                <div class="col-lg-8 col-md-12 col-sm-12 col-12 wow slideInLeft" data-wow-delay="0ms" data-wow-duration="1500ms">
+                    <span class="title-label">Web Development</span>
+                    <div class="service-detail base-color">
+                        <h2>Introduction</h2>
+                        <p>
+                            Welcome to Creative Think Digital, your trusted partner for elevating your
+                            online presence through expert web development services in Canterbury. Our
+                            team of experienced professionals is dedicated to creating exceptional
+                            websites that not only captivate your audience but also drive organic
+                            traffic and boost conversions. With a focus on delivering cutting-edge
+                            solutions and incorporating Search Engine Optimization (SEO) strategies,
+                            we help businesses in Canterbury establish a strong online presence and
+                            stay ahead of the competition.
+                        </p>
+                        <h2>Tailored Web Design Solutions</h2>
+                        <p>
+                            At Creative Think Digital, we understand that your website serves as the
+                            digital face of your business. Our talented team of designers works
+                            closely with you to create visually stunning websites that embody your
+                            brand identity and resonate with your target audience. By seamlessly
+                            blending aesthetics and functionality, we ensure that your website stands
+                            out from the crowd, leaving a lasting impression on visitors.
+                        </p>
+                        <h2>Responsive and Mobile-First Approach</h2>
+                        <p>
+                            In an increasingly mobile world, having a responsive website is crucial.
+                            Our web development solutions in Canterbury prioritize a mobile-first
+                            approach to ensure that your website looks and functions flawlessly across
+                            all devices and screen sizes. By providing an optimal user experience, we
+                            not only engage and retain your mobile audience but also drive higher
+                            conversions and revenue.
+                        </p>
+                        <h2>Custom Web Development</h2>
+                        <p>
+                            Every business has unique needs, and our custom web development services
+                            are designed to address precisely that. Our team of skilled developers
+                            leverages the latest technologies and frameworks to create tailored web
+                            solutions that align with your specific requirements. From simple brochure
+                            websites to complex e-commerce platforms, we have the expertise to deliver
+                            exceptional results that empower your business to thrive online.
+                        </p>
+                        <h2>E-commerce Solutions</h2>
+                        <p>
+                            If you're looking to establish an online store in Canterbury, our
+                            e-commerce solutions are here to help. We specialize in developing robust
+                            and feature-rich e-commerce platforms that drive conversions and enhance
+                            user experience. By seamlessly integrating secure payment gateways,
+                            intuitive shopping carts, and personalized product catalogs, we create a
+                            seamless online shopping experience that encourages repeat purchases and
+                            boosts customer loyalty.
+                        </p>
+                        <h2>User-Friendly Content Management</h2>
+                        <p>
+                            Managing and updating your website should be effortless. Our user-friendly
+                            content management solutions empower you to take control of your website's
+                            content without the need for technical expertise. With platforms like
+                            WordPress, Joomla, and Drupal, you can easily make real-time changes,
+                            ensuring that your website stays up-to-date, relevant, and optimized for
+                            search engines.
+                        </p>
+                        <h2>Enhance Your Online Success with Creative Think Digital</h2>
+                        <p>
+                            At Creative Think Digital, we are passionate about helping businesses in
+                            Canterbury elevate their online presence through our expert web
+                            development services. Our solutions are not just aesthetically pleasing
+                            but also strategically designed to drive organic traffic, maximize
+                            conversions, and generate tangible results for your business. With our
+                            focus on Search Engine Optimization (SEO) and a commitment to delivering
+                            engaging and selling experiences, we
+                        </p>
+                        <p>
+                            ensure that your website stands out, captivates your audience, and brings
+                            you closer to your online goals.
+                        </p>
+                        <p>
+                            Contact us today to discuss your web development needs and embark on a
+                            journey towards online success with Creative Think Digital.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-12 col-sm-12 col-12 wow slideInRight" data-wow-delay="0ms" data-wow-duration="1500ms">
+                    <partial name="~/Views/Shared/ServicesPages/_ServiceContentForm.cshtml" />
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<partial name="~/Views/Shared/ServicesPages/_CitiesSitemap.cshtml" />
+
+
+<script>
+    $(document).ready(function () {
+        CTDNav.AddCurrentActiveClass(`services`)
+    })
+</script>

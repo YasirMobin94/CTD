@@ -1,0 +1,138 @@
+@{
+
+    ViewBag.Title = "Web Development Services in Belfast";
+    ViewBag.Description = @"Dive into digital excellence with Creative Think Digital’s premium web
+      development services in Belfast. Let us build a powerful digital platform
+      that captures your brand essence and engages your audience.";
+    ViewData["ServiceName"] = "WebDevelopment";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<section class="services-page-section">
+    <div class="auto-container">
+        <div class="row clearfix">
+            <div class="col-lg-8 col-md-6 col-sm-12 col-12 wow fadeInUp" data-wow-delay="0ms" data-wow-duration="2000ms">
+                <div class="inner-column">
+                    <div class="about-service-title">
+                        <h1 class="base-color">@ViewBag.Title</h1>
+
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-12 col-md-12 col-sm-12 col-12 left-rail">
+                            <ul class="base-color">
+                                <partial name="~/Views/Shared/ServicesPages/WebDevelopment/_ShortDescription.cshtml" />
+                            </ul>
+                            <partial name="~/Views/Shared/ServicesPages/_ServiceRating.cshtml" />
+                        </div>
+                        @*<div class="col-lg-6 col-md-12 col-sm-12 col-12 right-form-rail">
+                            <img src="/images/development.svg" alt="text">
+                        </div>*@
+                    </div>
+                </div>
+
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12 col-12 wow fadeInRight" data-wow-delay="0ms" data-wow-duration="2000ms">
+                <partial name="~/Views/Shared/ServicesPages/_ServiceIntroForm.cshtml" />
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid satis-section">
+        <div class="row center-items">
+            <h4 class="">Top Rated Web Development in Belfast</h4>
+        </div>
+    </div>
+    <div class="auto-container">
+        <div class="service-detail-section">
+            <div class="row clearfix">
+                <div class="col-lg-8 col-md-12 col-sm-12 col-12 wow slideInLeft" data-wow-delay="0ms" data-wow-duration="1500ms">
+                    <span class="title-label">Web Development</span>
+                    <div class="service-detail base-color">
+                        <h2>
+                            Web Development in Belfast - Propel Your Digital Journey with Creative
+                            Think Digital
+                        </h2>
+                        <p>
+                            Embark on a transformative digital journey with Creative Think Digital's
+                            state-of-the-art web development services in Belfast. We curate custom,
+                            compelling, and user-focused websites that enhance your brand’s online
+                            footprint.
+                        </p>
+                        <h2>Get Acquainted with Creative Think Digital</h2>
+                        <p>
+                            As a leading web development agency in Belfast, Creative Think Digital
+                            stands tall with its commitment to delivering unparalleled and impactful
+                            web solutions. From dynamic startups to large-scale enterprises, we weave
+                            digital success stories for brands across the spectrum.
+                        </p>
+                        <h2>Creative Think Digital at Work</h2>
+                        <p>
+                            We pride ourselves in developing robust, high-performing, and scalable
+                            websites that mirror your brand's unique attributes. Whether it's an
+                            immersive e-commerce portal or a sophisticated corporate website, our
+                            adept team is primed to bring your digital aspirations to life.
+                        </p>
+                        <h2>Comprehensive Web Development Services</h2>
+                        <p>
+                            Our wide array of web development services caters to a diverse range of
+                            digital needs. From a simplistic blog to an elaborate web portal, our team
+                            has the skills and imagination to design a digital masterpiece that
+                            embodies your vision.
+                        </p>
+                        <h2>Harness the Power of Expertise</h2>
+                        <p>
+                            Our team's rich skillset spans the full breadth of web development,
+                            including front-end and back-end technologies, UX/UI design, responsive
+                            design, CMS, and ecommerce
+                            solutions. Additionally, our prowess in Search Engine Optimization gives
+                            your website the boost it needs to reach the top.
+                        </p>
+                        <h2>Tailored to Your Needs</h2>
+                        <p>
+                            At Creative Think Digital, we place our clients at the center of our
+                            strategy. We design solutions that not only meet your business objectives
+                            but also appeal to your target audience, delivering a client-first
+                            approach that sets us apart.
+                        </p>
+                        <h2>Why Choose Creative Think Digital?</h2>
+                        <p>
+                            Choosing Creative Think Digital for web development in Belfast means
+                            choosing a dedicated partner committed to your business's digital success.
+                            Our unique blend of technical excellence, creative flair, and unwavering
+                            commitment is what sets us apart in the industry.
+                        </p>
+                        <h2>Experience the Creative Think Digital Edge</h2>
+                        <p>
+                            With Creative Think Digital, you get more than just a service - you gain a
+                            team committed to delivering a website that not only reflects your
+                            business goals but also engages your audience and stands out in the
+                            digital world.
+                        </p>
+                        <h2>Embark on a Digital Adventure</h2>
+                        <p>
+                            In today's digital age, having a powerful online presence is
+                            non-negotiable. By choosing Creative Think Digital as your web development
+                            partner in Belfast, you're choosing a team that's future-ready. Ready to
+                            embark on this exciting journey?
+                        </p>
+                        <p>
+                            At Creative Think Digital, we understand that every business has a unique
+                            story to tell. Allow us to share your story through our exceptional web
+                            development services. Let's build a compelling digital narrative together.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-12 col-sm-12 col-12 wow slideInRight" data-wow-delay="0ms" data-wow-duration="1500ms">
+                    <partial name="~/Views/Shared/ServicesPages/_ServiceContentForm.cshtml" />
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<partial name="~/Views/Shared/ServicesPages/_CitiesSitemap.cshtml" />
+
+
+<script>
+    $(document).ready(function () {
+        CTDNav.AddCurrentActiveClass(`services`)
+    })
+</script>

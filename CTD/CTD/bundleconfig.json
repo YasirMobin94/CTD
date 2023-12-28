@@ -1,0 +1,245 @@
+[
+  // CSS
+  {
+    "outputFileName": "wwwroot/bundles/css/font-icon.min.css",
+    "inputFiles": [
+      "wwwroot/css/font-awesome.css",
+      "wwwroot/css/flaticon.css"
+    ],
+    "minify": {
+      "enabled": true,
+      "outputMode": "singleLine"
+    }
+  },
+  {
+    "outputFileName": "wwwroot/bundles/css/animate.min.css",
+    "inputFiles": [
+      "wwwroot/css/animate.css"
+    ],
+    "minify": {
+      "enabled": true,
+      "outputMode": "singleLine"
+    }
+  },
+  {
+    "outputFileName": "wwwroot/bundles/css/owl.min.css",
+    "inputFiles": [
+      "wwwroot/css/owl.css"
+    ],
+    "minify": {
+      "enabled": true,
+      "outputMode": "singleLine"
+    }
+  },
+  {
+    "outputFileName": "wwwroot/bundles/css/animation.min.css",
+    "inputFiles": [
+      "wwwroot/css/animation.css"
+    ],
+    "minify": {
+      "enabled": true,
+      "outputMode": "singleLine"
+    }
+  },
+  {
+    "outputFileName": "wwwroot/bundles/css/custom-animate.min.css",
+    "inputFiles": [
+      "wwwroot/css/custom-animate.css"
+    ],
+    "minify": {
+      "enabled": true,
+      "outputMode": "singleLine"
+    }
+  },
+  {
+    "outputFileName": "wwwroot/bundles/css/jquery-ui.min.css",
+    "inputFiles": [
+      "wwwroot/css/jquery-ui.css"
+    ],
+    "minify": {
+      "enabled": true,
+      "outputMode": "singleLine"
+    }
+  },
+  {
+    "outputFileName": "wwwroot/bundles/css/jquery-plugins.min.css",
+    "inputFiles": [
+      "wwwroot/css/jquery.bootstrap-touchspin.css",
+      "wwwroot/css/jquery.fancybox.min.css",
+      "wwwroot/css/jquery.mCustomScrollbar.min.css"
+    ],
+    "minify": {
+      "enabled": true,
+      "outputMode": "singleLine"
+    }
+  },
+  {
+    "outputFileName": "wwwroot/bundles/css/style.min.css",
+    "inputFiles": [
+      "wwwroot/css/style.css"
+    ],
+    "minify": {
+      "enabled": true,
+      "outputMode": "singleLine"
+    }
+  },
+  {
+    "outputFileName": "wwwroot/bundles/css/responsive.min.css",
+    "inputFiles": [
+      "wwwroot/css/responsive.css"
+    ],
+    "minify": {
+      "enabled": true,
+      "outputMode": "singleLine"
+    }
+  },
+  {
+    "outputFileName": "wwwroot/bundles/css/site.min.css",
+    "inputFiles": [
+      "wwwroot/css/site.css"
+    ],
+    "minify": {
+      "enabled": true,
+      "outputMode": "singleLine"
+    }
+  },
+  {
+    "outputFileName": "wwwroot/bundles/css/bootstrap.min.css",
+    "inputFiles": [
+      "wwwroot/css/bootstrap.css"
+    ],
+    "minify": {
+      "enabled": true,
+      "outputMode": "singleLine"
+    }
+  },
+  // JS
+  {
+    "outputFileName": "wwwroot/bundles/js/jquery.min.js",
+    "inputFiles": [
+      "wwwroot/js/jquery.js"
+    ],
+    "minify": {
+      "enabled": true,
+      "outputMode": "singleLine"
+    }
+  },
+  {
+    "outputFileName": "wwwroot/bundles/js/popper-bootstrap.min.js",
+    "inputFiles": [
+      "wwwroot/js/popper.min.js",
+      "wwwroot/js/bootstrap.min.js"
+    ],
+    "minify": {
+      "enabled": true,
+      "outputMode": "singleLine"
+    }
+  },
+  {
+    "outputFileName": "wwwroot/bundles/js/jquery-scroll-appear.min.js",
+    "inputFiles": [
+      "wwwroot/js/jquery.mCustomScrollbar.concat.min.js",
+      "wwwroot/js/appear.js"
+    ],
+    "minify": {
+      "enabled": true,
+      "outputMode": "singleLine"
+    }
+  },
+  {
+    "outputFileName": "wwwroot/bundles/js/mixitup-parallax.min.js",
+    "inputFiles": [
+      "wwwroot/js/mixitup.js",
+      "wwwroot/js/parallax.min.js"
+    ],
+    "minify": {
+      "enabled": true,
+      "outputMode": "singleLine"
+    }
+  },
+  {
+    "outputFileName": "wwwroot/bundles/js/jquery-tilt-paroller.min.js",
+    "inputFiles": [
+      "wwwroot/js/tilt.jquery.min.js",
+      "wwwroot/js/jquery.paroller.min.js"
+    ],
+    "minify": {
+      "enabled": true,
+      "outputMode": "singleLine"
+    }
+  },
+  {
+    "outputFileName": "wwwroot/bundles/js/owl-wow.min.js",
+    "inputFiles": [
+      "wwwroot/js/owl.js",
+      "wwwroot/js/wow.js"
+    ],
+    "minify": {
+      "enabled": true,
+      "outputMode": "singleLine"
+    }
+  },
+  {
+    "outputFileName": "wwwroot/bundles/js/validate-nav-tool.min.js",
+    "inputFiles": [
+      "wwwroot/js/validate.js",
+      "wwwroot/js/nav-tool.js"
+    ],
+    "minify": {
+      "enabled": true,
+      "outputMode": "singleLine"
+    }
+  },
+  {
+    "outputFileName": "wwwroot/bundles/js/jquery-ui.min.js",
+    "inputFiles": [
+      "wwwroot/js/jquery-ui.js"
+    ],
+    "minify": {
+      "enabled": true,
+      "outputMode": "singleLine",
+      "preserveImportantComments": false
+    }
+  },
+  {
+    "outputFileName": "wwwroot/bundles/js/jquery-bootstrap-touchspin.min.js",
+    "inputFiles": [
+      "wwwroot/js/jquery.bootstrap-touchspin.js"
+    ],
+    "minify": {
+      "enabled": true,
+      "outputMode": "singleLine"
+    }
+  },
+  {
+    "outputFileName": "wwwroot/bundles/js/sweetalert.min.js",
+    "inputFiles": [
+      "wwwroot/js/sweetalert2.js"
+    ],
+    "minify": {
+      "enabled": true,
+      "outputMode": "singleLine"
+    }
+  },
+  {
+    "outputFileName": "wwwroot/bundles/js/script.min.js",
+    "inputFiles": [
+      "wwwroot/js/script.js",
+      "wwwroot/js/color-settings.js"
+    ],
+    "minify": {
+      "enabled": true,
+      "outputMode": "singleLine"
+    }
+  },
+  {
+    "outputFileName": "wwwroot/bundles/js/site.min.js",
+    "inputFiles": [
+      "wwwroot/js/site.js"
+    ],
+    "minify": {
+      "enabled": true,
+      "outputMode": "singleLine"
+    }
+  }
+]
