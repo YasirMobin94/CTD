@@ -91,6 +91,7 @@ namespace CTD.BussinessOperations.Services
             body = body.Replace("[Email]", userVM.Email);
             body = body.Replace("[Phone]", userVM.Phone);
             body = body.Replace("[Website]", userVM.Website);
+            body = body.Replace("[ServicePlan]", userVM.ServicePlanName);
             body = body.Replace("[Message]", userVM.Message);
             body = body.Replace("[CurrentYear]", DateTime.UtcNow.Year + "");
 

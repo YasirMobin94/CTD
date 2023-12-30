@@ -109,7 +109,19 @@
         <!-- End News Section Two -->
         <partial name="~/Views/Shared/_Footer.cshtml" />
 
-
+        <div class="modal fade" id="services-modal" tabindex="-1" role="dialog" aria-labelledby="servicesModal" aria-hidden="true">
+            <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body services-modal-body">
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
     <div class="scroll-to-top scroll-to-target" data-target="html"><span class="fa fa-arrow-up"></span></div>
 
@@ -122,28 +134,28 @@
 
         <link rel="preload" src="~/bundles/js/mixitup-parallax.min.js" asp-append-version="true" as="script">
         <script type="text/javascript" src="~/bundles/js/mixitup-parallax.min.js" asp-append-version="true" defer></script>
-        
+
         <link rel="preload" src="~/bundles/js/jquery-tilt-paroller.min.js" asp-append-version="true" as="script">
         <script type="text/javascript" src="~/bundles/js/jquery-tilt-paroller.min.js" asp-append-version="true" defer></script>
-        
+
         <link rel="preload" src="~/bundles/js/owl-wow.min.js" asp-append-version="true" as="script">
         <script type="text/javascript" src="~/bundles/js/owl-wow.min.js" asp-append-version="true" defer></script>
-        
+
         <link rel="preload" src="~/bundles/js/validate-nav-tool.min.js" asp-append-version="true" as="script">
         <script type="text/javascript" src="~/bundles/js/validate-nav-tool.min.js" asp-append-version="true" defer></script>
-        
+
         <link rel="preload" src="~/bundles/js/jquery-ui.min.js" asp-append-version="true" as="script">
         <script type="text/javascript" src="~/bundles/js/jquery-ui.min.js" asp-append-version="true" defer></script>
-        
+
         <link rel="preload" src="~/bundles/js/jquery-bootstrap-touchspin.min.js" asp-append-version="true" as="script">
         <script type="text/javascript" src="~/bundles/js/jquery-bootstrap-touchspin.min.js" asp-append-version="true" defer></script>
-        
+
         <link rel="preload" src="~/bundles/js/sweetalert.min.js" asp-append-version="true" as="script">
         <script type="text/javascript" src="~/bundles/js/sweetalert.min.js" asp-append-version="true" defer></script>
-        
+
         <link rel="preload" src="~/bundles/js/script.min.js" asp-append-version="true" as="script">
         <script type="text/javascript" src="~/bundles/js/script.min.js" asp-append-version="true" defer></script>
-        
+
         <link rel="preload" src="~/bundles/js/site.min.js" asp-append-version="true" as="script">
         <script type="text/javascript" src="~/bundles/js/site.min.js" asp-append-version="true" defer></script>
     </environment>

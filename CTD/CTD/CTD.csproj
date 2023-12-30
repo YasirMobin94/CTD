@@ -31,8 +31,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Views\Shared\ServicesPages\GraphicDesigning\" />
-    <Folder Include="Views\Shared\ServicesPages\ITStaffAugumentation\" />
     <Folder Include="Views\Shared\ServicesPages\SEO\" />
     <Folder Include="wwwroot\bundles\" />
   </ItemGroup>

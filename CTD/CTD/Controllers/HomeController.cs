@@ -73,11 +73,33 @@ namespace CTD.Controllers
             {
                 response.Success = false;
                 response.Message = "An error occurred. Please Try later.";
+                Log.Error(exception: ex, messageTemplate: "ContactUsFromSubmit - Controller: {0}", user.ToJson());
             }
 
             return Json(response);
         }
 
+        [HttpPost("services-contact-form")]
+        public async Task<IActionResult> ContactFormForServices(string servicePlan)
+        {
+            ViewBag.ServicePlan = servicePlan;
+
+            return PartialView("~/Views/Shared/ServicesPages/_ServiceContentForm.cshtml");
+        }
+        [HttpPost("it-staff-services-contact-form")]
+        public async Task<IActionResult> ITStaffContactFormForServices(string servicePlan)
+        {
+            ViewBag.ServicePlan = servicePlan;
+
+            return PartialView($"{_servicesViewPath}/ITStaffAugumentation/_ITStaffContactForm.cshtml");
+        }
+        [HttpPost("web-development-services-contact-form")]
+        public async Task<IActionResult> WebDevelopmentContactFormForServices(string servicePlan)
+        {
+            ViewBag.ServicePlan = servicePlan;
+
+            return PartialView($"{_servicesViewPath}/WebDevelopment/_WebDevelopmentContactForm.cshtml");
+        }
         #endregion
 
         #region About

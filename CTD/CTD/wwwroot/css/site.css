@@ -345,6 +345,7 @@ html {
 
     .services-page-section .service-detail-section .service-detail {
         margin-top: 2rem;
+        text-align: justify;
     }
 
         .services-page-section .service-detail-section .service-detail h2 {
@@ -577,3 +578,61 @@ html {
     }
 }
 /* Cities Sitemap End*/
+.price-block .seo_price_plan thead {
+    font-size: larger;
+}
+
+.price-block .seo_price_plan tbody tr td:nth-child(2),
+.price-block .seo_price_plan tbody tr td:nth-child(3),
+.price-block .seo_price_plan tbody tr td:nth-child(4) {
+    text-align: center;
+}
+
+.price-block .inner-box .seo_price_plan .btn-box .theme-btn {
+    font-size: 13px;
+    padding: 5px 15px;
+}
+
+.price-block .seo_price_plan {
+    font-size: 1.1rem;
+}
+
+    .price-block .it_staff_price_plan .category_name,
+    .price-block .seo_price_plan thead tr th,
+    .price-block .it_staff_price_plan thead tr th {
+        vertical-align: middle;
+    }
+
+.price_plan th:first-child {
+    width: 30%;
+}
+
+.price_plan td:first-child {
+    width: 30%;
+}
+
+.price_plan th {
+    width: 20%;
+}
+
+.price_plan td {
+    width: 20%;
+}
+
+.it_staff_price_plan .it_staff_br {
+    display: none;
+}
+
+@media (max-width: 767px) {
+    .price_plan .btn-box {
+        white-space: nowrap;
+    }
+
+    .price-block .inner-box {
+        padding: 30px 15px;
+    }
+
+    .it_staff_price_plan .it_staff_br {
+        display: block;
+    }
+}

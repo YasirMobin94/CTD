@@ -26,11 +26,58 @@ let SweetAlert = {
         });
     }
 }
-
+let CTDFn = {
+    handleITStaffService: function (servicePlan) {
+        console.log(servicePlan)
+        let spinner = $(".preloader");
+        spinner.show();
+        let modalbody = $(".services-modal-body")
+        let modalDiv = $("#services-modal")
+        $.ajax({
+            url: '/it-staff-services-contact-form',
+            type: "POST",
+            data: {
+                servicePlan: servicePlan
+            },
+        }).done(function (html) {
+            modalbody.html(html)
+            modalDiv.modal('show');
+            spinner.hide();
+        }).fail(function (error) {
+            spinner.hide();
+            SweetAlert.Error()
+            console.error(error)
+        });
+    },
+    handlePricePlanService: function (servicePlan) {
+        console.log(servicePlan)
+        let spinner = $(".preloader");
+        spinner.show();
+        let modalbody = $(".services-modal-body")
+        let modalDiv = $("#services-modal")
+        $.ajax({
+            url: '/services-contact-form',
+            type: "POST",
+            data: {
+                servicePlan: servicePlan
+            },
+        }).done(function (html) {
+            modalbody.html(html)
+            modalDiv.modal('show');
+            spinner.hide();
+        }).fail(function (error) {
+            spinner.hide();
+            SweetAlert.Error()
+            console.error(error)
+        });
+    },
+}
 let HttpService = {
+
     postDataOfEmail: function (url, form) {
         if (form.valid()) {
             let token = '';
+            let servicePlan = $(".servicePlan").val();
             let formValue = form.serializeArray();
             let model = {};
             for (let item of formValue) {
@@ -40,6 +87,7 @@ let HttpService = {
                     model[item.name] = item.value;
                 }
             }
+            model.ServicePlanName = servicePlan
             let spinner = $(".preloader");
             spinner.show();
             console.log(model)

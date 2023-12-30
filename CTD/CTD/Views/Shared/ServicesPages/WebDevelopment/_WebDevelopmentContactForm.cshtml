@@ -1,0 +1,82 @@
+﻿@{
+    Layout = null;
+}
+
+<input type="hidden" value="@ViewBag.ServicePlan" class="servicePlan" />
+<div class="">
+    <div class="sidebar-form">
+        <div class="sidebar-form-text">
+            <h6 class="base-color">Start with a FREE Quote!</h6>
+            <span>No Obligation Estimate, Expert Advice</span>
+        </div>
+        <form class="row g-3" id="it-staff-content-form" method="post">
+            <div class="col-md-6">
+                <label for="Name" class="form-label"></label>
+                <input type="text" name="Name" placeholder="Name" class="form-control" required>
+            </div>
+            <div class="col-md-6">
+                <label for="Email" class="form-label"></label>
+                <input type="email" name="Email" placeholder="Email" class="form-control" required>
+            </div>
+            <div class="col-md-6">
+                <label for="Phone" class="form-label"></label>
+                <input type="tel" name="Phone" placeholder="Phone" class="form-control" required>
+            </div>
+            <div class="col-md-6">
+                <label for="Website" class="form-label"></label>
+                <input type="text" name="Website" placeholder="Website" class="form-control">
+            </div>
+            <div class="col-md-6">
+                <label for="Experience " class="form-label"></label>
+                <select class="form-control" id="Experience" name="Experience" required>
+                    <option value="">--Select Experience--</option>
+                    <option value="Junior">Junior (1 to 3)</option>
+                    <option value="Mid">Mid level (3 to 5)</option>
+                    <option value="Senior">Senior (6+) </option>
+                </select>
+            </div>
+            <div class="col-md-6">
+                <label for="Technologies" class="form-label"></label>
+                <select class="form-control" id="Technologies" name="Technologies" required>
+                    <option value="">--Select Technology--</option>
+                    <option value="ASP.NET">ASP.NET</option>
+                    <option value="PHP">PHP</option>
+                    <option value="Python">Python</option>
+                    <option value="JavaScript">JavaScript</option>
+                    <option value="Flutter">Flutter</option>
+                    <option value="Android">Android</option>
+                    <option value="iOS">iOS</option>
+                    <option value="other">Other</option>
+                </select>
+            </div>
+            <div class="col-12">
+                <label for="Message" class="form-label"></label>
+                <textarea type="text" class="form-control" id="Message" name="Message" placeholder="Tell us about your project" required></textarea>
+            </div>
+            <div class="col-12">
+                <button type="submit" class="btn btn-block theme-btn btn-style-three">
+                    <span class="txt">Send Request</span>
+                </button>
+            </div>
+        </form>
+    </div>
+</div>
+
+
+<script>
+    $("#it-staff-content-form").submit(function (e) {
+        console.log('content', e)
+        e.preventDefault();
+        debugger
+        let form = $("#it-staff-content-form")
+        let tech = $("#Technologies").find(':selected').val()
+        if (tech === "")
+            return SweetAlert.Error("Please select technology!")
+        let experience = $("#Experience").find(':selected').val()
+        if (experience === "")
+            return SweetAlert.Error("Please select experience!")
+
+        $(".servicePlan").val(`IT Staff Augumentation - ${experience} - ${tech}`)
+        HttpService.postDataOfEmail("@Url.Action("ContactUsFromSubmit", "Home")", form)
+    })
+</script>

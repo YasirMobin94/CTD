@@ -687,6 +687,37 @@
 
 
     //Contact Form Validation
+    if ($('#it-staff-content-form').length) {
+        $('#it-staff-content-form').validate({
+            rules: {
+                Name: {
+                    required: true,
+                    maxlength: 30
+                },
+                Email: {
+                    required: true,
+                    email: true,
+                    maxlength: 30
+                },
+                Phone: {
+                    required: true,
+                    maxlength: 30
+                },
+                Website: {
+                    maxlength: 200
+                },
+                Message: {
+                    required: true
+                },
+                Technologies: {
+                    required: true
+                },
+                Experience: {
+                    required: true
+                }
+            }
+        });
+    }
     if ($('#contact-form').length) {
         $('#contact-form').validate({
             rules: {
