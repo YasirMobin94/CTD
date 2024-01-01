@@ -623,6 +623,15 @@ html {
     display: none;
 }
 
+.pricing-section {
+    padding: 50px 0px 0px;
+}
+
+.aw-nd-badges {
+    width: 200px;
+    height: 216px;
+}
+
 @media (max-width: 767px) {
     .price_plan .btn-box {
         white-space: nowrap;
