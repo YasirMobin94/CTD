@@ -126,6 +126,7 @@ namespace CTD.Controllers
         [Route("it-staff-augumentation")]
         public IActionResult ITStaffAugumentation()
         {
+            ViewBag.CityName = "UK";
             return View();
         }
 
@@ -135,6 +136,7 @@ namespace CTD.Controllers
 
             if (!string.IsNullOrEmpty(cityName))
             {
+                ViewBag.CityName = cityName.ToTitleCaseText();
                 string viewName = cityName.ITStaffServicesViewNameByCity();
                 if (!string.IsNullOrEmpty(viewName))
                     return View($"{_servicesViewPath}/ITStaffAugumentation/{viewName}.cshtml");
@@ -154,6 +156,7 @@ namespace CTD.Controllers
         [Route("web-development")]
         public IActionResult WebDevelopment()
         {
+            ViewBag.CityName = "UK";
             return View();
         }
         [Route("{cityName}-web-development")]
@@ -161,6 +164,7 @@ namespace CTD.Controllers
         {
             if (!string.IsNullOrEmpty(cityName))
             {
+                ViewBag.CityName = cityName.ToTitleCaseText();
                 string viewName = cityName.WebDevServicesViewNameByCity();
                 if (!string.IsNullOrEmpty(viewName))
                     return View($"{_servicesViewPath}/WebDevelopment/{viewName}.cshtml");
@@ -179,6 +183,7 @@ namespace CTD.Controllers
         [Route("graphic-designing")]
         public IActionResult GraphicDesigning()
         {
+            ViewBag.CityName = "UK";
             return View();
         }
         [Route("{cityName}-graphic-designing")]
@@ -186,6 +191,7 @@ namespace CTD.Controllers
         {
             if (!string.IsNullOrEmpty(cityName))
             {
+                ViewBag.CityName = cityName.ToTitleCaseText();
                 string viewName = cityName.GraphicDesigningServicesViewNameByCity();
                 if (!string.IsNullOrEmpty(viewName))
                     return View($"{_servicesViewPath}/GraphicDesigning/{viewName}.cshtml");
@@ -203,6 +209,7 @@ namespace CTD.Controllers
         [Route("seo")]
         public IActionResult SEO()
         {
+            ViewBag.CityName = "UK";
             return View();
         }
         [Route("{cityName}-seo")]
@@ -210,6 +217,7 @@ namespace CTD.Controllers
         {
             if (!string.IsNullOrEmpty(cityName))
             {
+                ViewBag.CityName = cityName.ToTitleCaseText();
                 string viewName = cityName.SEOServicesViewNameByCity();
                 if (!string.IsNullOrEmpty(viewName))
                     return View($"{_servicesViewPath}/SEO/{viewName}.cshtml");

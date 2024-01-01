@@ -632,6 +632,10 @@ html {
     height: 216px;
 }
 
+.services-page-section .sidebar-form {
+    padding-top: 20px
+}
+
 @media (max-width: 767px) {
     .price_plan .btn-box {
         white-space: nowrap;
@@ -643,5 +647,11 @@ html {
 
     .it_staff_price_plan .it_staff_br {
         display: block;
+    }
+}
+
+@media (min-width:1068px) {
+    .intro_form {
+        margin-bottom: 0.8rem;
     }
 }
