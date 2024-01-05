@@ -636,6 +636,14 @@ html {
     padding-top: 20px
 }
 
+.about__us__section .about-section {
+    padding-bottom: 0px;
+}
+
+.teams_section .team-page-section {
+    padding-top: 0px;
+}
+
 @media (max-width: 767px) {
     .price_plan .btn-box {
         white-space: nowrap;
