@@ -8952,12 +8952,14 @@ img {
     padding: 110px 0px 60px;
 }
 
-.price-block {
+.price-block,
+.reviews-block {
     position: relative;
     margin-bottom: 60px;
 }
 
-    .price-block .inner-box {
+    .price-block .inner-box,
+    .reviews-block .inner-box {
         position: relative;
         padding: 30px 35px;
         border-radius: 10px;
@@ -8971,11 +8973,13 @@ img {
         transition: all 300ms ease;
     }
 
-        .price-block .inner-box:hover {
+        .price-block .inner-box:hover,
+        .reviews-block .inner-box:hover {
             border-color: #141d38;
         }
 
-        .price-block .inner-box:before {
+        .price-block .inner-box:before,
+        .reviews-block .inner-box:before {
             position: absolute;
             content: '';
             left: -30px;
@@ -8992,18 +8996,21 @@ img {
             transition: all 300ms ease;
         }
 
-        .price-block .inner-box:hover::before {
+        .price-block .inner-box:hover::before,
+        .reviews-block .inner-box:hover::before {
             background-color: #0060ff;
         }
 
-        .price-block .inner-box h3 {
+        .price-block .inner-box h3,
+        .reviews-block .inner-box h3 {
             position: relative;
             color: #141d38;
             font-weight: 600;
             line-height: 1.3em;
         }
 
-        .price-block .inner-box .text {
+        .price-block .inner-box .text,
+        .reviews-block .inner-box .text {
             position: relative;
             color: #222222;
             font-size: 16px;
@@ -9011,7 +9018,8 @@ img {
             margin-top: 12px;
         }
 
-        .price-block .inner-box .price {
+        .price-block .inner-box .price,
+        .reviews-block .inner-box .price {
             position: relative;
             color: #0060ff;
             font-size: 36px;
@@ -9023,7 +9031,8 @@ img {
             font-family: 'Montserrat', sans-serif;
         }
 
-            .price-block .inner-box .price span {
+            .price-block .inner-box .price span,
+            .reviews-block .inner-box .price span {
                 position: relative;
                 display: block;
                 color: #777777;
@@ -9031,14 +9040,16 @@ img {
                 font-weight: 600;
             }
 
-        .price-block .inner-box .price-list {
+        .price-block .inner-box .price-list,
+        .reviews-block .inner-box .price-list {
             position: relative;
             margin-top: 20px;
             margin-bottom: 35px;
             display: inline-block;
         }
 
-            .price-block .inner-box .price-list li {
+            .price-block .inner-box .price-list li,
+            .reviews-block .inner-box .price-list li {
                 position: relative;
                 padding-left: 30px;
                 color: #555555;
@@ -9049,7 +9060,8 @@ img {
                 font-weight: 600;
             }
 
-                .price-block .inner-box .price-list li:before {
+                .price-block .inner-box .price-list li:before,
+                .reviews-block .inner-box .price-list li:before {
                     position: absolute;
                     content: '\f00c';
                     left: 0px;
@@ -9063,15 +9075,18 @@ img {
                     transition: all 300ms ease;
                 }
 
-                .price-block .inner-box .price-list li:last-child {
+                .price-block .inner-box .price-list li:last-child,
+                .reviews-block .inner-box .price-list li:last-child {
                     margin-bottom: 0px;
                 }
 
-        .price-block .inner-box .btn-box {
+        .price-block .inner-box .btn-box,
+        .reviews-block .inner-box .btn-box {
             position: relative;
         }
 
-            .price-block .inner-box .btn-box .theme-btn {
+            .price-block .inner-box .btn-box .theme-btn,
+            .reviews-block .inner-box .btn-box .theme-btn {
                 width: 100%;
                 font-size: 18px;
                 text-align: center;
