@@ -26,7 +26,13 @@ if (autoMigrate)
     scope?.ServiceProvider?.GetRequiredService<CTDContext>()?.Database?.Migrate();
 }
 
-app.UseStaticFiles();
+app.UseStaticFiles(new StaticFileOptions
+{
+	OnPrepareResponse = ctx =>
+	{
+		ctx.Context.Response.Headers.Append("cache-control", string.Format("public,max-age={0}", 60 * 60 * 24 * 365));
+	}
+});
 app.UseRouting();
 app.UseAuthorization();
 app.MapControllerRoute(

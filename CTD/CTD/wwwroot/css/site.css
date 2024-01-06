@@ -1,5 +1,13 @@
+:root {
+    --placeholder-color: #2f3033;
+}
+
 html {
     font-size: 14px;
+}
+
+::placeholder {
+    color: var(--placeholder-color);
 }
 
 @media (min-width: 768px) {
