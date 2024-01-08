@@ -652,7 +652,18 @@ html {
     padding-top: 0px;
 }
 
+.reviews-block .clutch-widget {
+    margin: inherit;
+}
+
+    .reviews-block .clutch-widget iframe {
+        width: 97%;
+    }
+
 @media (max-width: 767px) {
+    .reviews-block .clutch-widget {
+        margin: unset;
+    }
     .price_plan .btn-box {
         white-space: nowrap;
     }
