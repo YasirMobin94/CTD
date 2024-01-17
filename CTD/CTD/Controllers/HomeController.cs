@@ -31,7 +31,7 @@ namespace CTD.Controllers
         #region Home
 
         [Route("")]
-        public IActionResult Index()
+        public async Task<IActionResult> Index()
         {
             return View();
         }
@@ -42,7 +42,7 @@ namespace CTD.Controllers
 
         [HttpGet]
         [Route("contact-us")]
-        public IActionResult ContactUs()
+        public async Task<IActionResult> ContactUs()
         {
             return View();
         }
@@ -105,7 +105,7 @@ namespace CTD.Controllers
         #region About
 
         [Route("about-us")]
-        public IActionResult AboutUs()
+        public async Task<IActionResult> AboutUs()
         {
             return View();
         }
@@ -115,23 +115,22 @@ namespace CTD.Controllers
         #region Services
 
         [Route("services")]
-        public IActionResult Services()
+        public async Task<IActionResult> Services()
         {
             return View();
         }
 
         #region ITStaffAugumentation
 
-
         [Route("it-staff-augumentation")]
-        public IActionResult ITStaffAugumentation()
+        public async Task<IActionResult> ITStaffAugumentation()
         {
             ViewBag.CityName = "UK";
             return View();
         }
 
-        [Route("{cityName}-it-staff-augumentation")]
-        public IActionResult CitywiseITStaffAugumentation(string cityName)
+        [Route("it-staff-augumentation/{cityName}-it-staff-augumentation")]
+        public async Task<IActionResult> CitywiseITStaffAugumentation(string cityName)
         {
 
             if (!string.IsNullOrEmpty(cityName))
@@ -148,19 +147,24 @@ namespace CTD.Controllers
             }
         }
 
+        [Route("{cityName}-it-staff-augumentation")]
+        public async Task<IActionResult> OldRouteCitywiseITStaffAugumentation(string cityName)
+        {
+            return RedirectToActionPermanent(nameof(CitywiseITStaffAugumentation), new { cityName });
+        }
         #endregion
 
         #region Web Development
 
-
         [Route("web-development")]
-        public IActionResult WebDevelopment()
+        public async Task<IActionResult> WebDevelopment()
         {
             ViewBag.CityName = "UK";
             return View();
         }
-        [Route("{cityName}-web-development")]
-        public IActionResult CitywiseWebDevelopment(string cityName)
+
+        [Route("web-development/{cityName}-web-development")]
+        public async Task<IActionResult> CitywiseWebDevelopment(string cityName)
         {
             if (!string.IsNullOrEmpty(cityName))
             {
@@ -176,18 +180,25 @@ namespace CTD.Controllers
             }
         }
 
+        [Route("{cityName}-web-development")]
+        public async Task<IActionResult> OldRouteCitywiseWebDevelopment(string cityName)
+        {
+            return RedirectToActionPermanent(nameof(CitywiseWebDevelopment), new { cityName });
+        }
+
         #endregion
 
         #region Graphic designing
 
         [Route("graphic-designing")]
-        public IActionResult GraphicDesigning()
+        public async Task<IActionResult> GraphicDesigning()
         {
             ViewBag.CityName = "UK";
             return View();
         }
-        [Route("{cityName}-graphic-designing")]
-        public IActionResult CitywiseGraphicDesigning(string cityName)
+
+        [Route("graphic-designing/{cityName}-graphic-designing")]
+        public async Task<IActionResult> CitywiseGraphicDesigning(string cityName)
         {
             if (!string.IsNullOrEmpty(cityName))
             {
@@ -202,18 +213,25 @@ namespace CTD.Controllers
                 return View(_commingSoonViewPath);
             }
         }
+
+        [Route("{cityName}-graphic-designing")]
+        public async Task<IActionResult> OldRouteCitywiseGraphicDesigning(string cityName)
+        {
+            return RedirectToActionPermanent(nameof(CitywiseGraphicDesigning), new { cityName });
+        }
         #endregion
 
         #region SEO 
 
         [Route("seo")]
-        public IActionResult SEO()
+        public async Task<IActionResult> SEO()
         {
             ViewBag.CityName = "UK";
             return View();
         }
-        [Route("{cityName}-seo")]
-        public IActionResult CitywiseSEO(string cityName)
+
+        [Route("seo/{cityName}-seo")]
+        public async Task<IActionResult> CitywiseSEO(string cityName)
         {
             if (!string.IsNullOrEmpty(cityName))
             {
@@ -228,6 +246,12 @@ namespace CTD.Controllers
                 return View(_commingSoonViewPath);
             }
         }
+
+        [Route("{cityName}-seo")]
+        public async Task<IActionResult> OldRouteCitywiseSEO(string cityName)
+        {
+            return RedirectToActionPermanent(nameof(CitywiseSEO), new { cityName });
+        }
         #endregion
 
         #endregion
@@ -235,13 +259,13 @@ namespace CTD.Controllers
         #region Portfolio
 
         [Route("portfolio")]
-        public IActionResult Portfolio()
+        public async Task<IActionResult> Portfolio()
         {
             return View();
         }
 
         [Route("portfolio/{portfolioSlug}")]
-        public IActionResult PortfolioDetail(string portfolioSlug)
+        public async Task<IActionResult> PortfolioDetail(string portfolioSlug)
         {
             var viewName = portfolioSlug.PortfolioViewName();
             if (!string.IsNullOrEmpty(viewName))
