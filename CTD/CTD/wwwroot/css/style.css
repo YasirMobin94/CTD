@@ -44,7 +44,7 @@
 **********************************************/
 
 /*
-	font-family: 'Montserrat', sans-serif;
+	font-family: 'Inter', sans-serif;
 	font-family: 'Nunito Sans', sans-serif;
 */
 
@@ -72,7 +72,7 @@
  ***/
 
 body {
-    font-family: 'Nunito Sans', sans-serif;
+    font-family: 'Inter', sans-serif;
     font-size: 14px;
     color: #777777;
     line-height: 1.7em;
@@ -104,7 +104,7 @@ h1, h2, h3, h4, h5, h6 {
     margin: 0px;
     background: none;
     line-height: 1.6em;
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Inter', sans-serif;
 }
 
 input, button, select, textarea {
@@ -270,7 +270,7 @@ img {
         font-weight: 500;
         line-height: 1.6em;
         margin-bottom: 10px;
-        font-family: 'Montserrat', sans-serif;
+        font-family: 'Inter', sans-serif;
     }
 
         .list-style-two li:before {
@@ -305,7 +305,7 @@ img {
     overflow: hidden;
     text-transform: capitalize;
     background-color: #0060ff;
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Inter', sans-serif;
 }
 
     .btn-style-one:before {
@@ -356,7 +356,7 @@ img {
     overflow: hidden;
     text-transform: capitalize;
     background-color: #141d38;
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Inter', sans-serif;
 }
 
     .btn-style-two:before {
@@ -406,7 +406,7 @@ img {
     overflow: hidden;
     text-transform: capitalize;
     background-color: #1c2c52;
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Inter', sans-serif;
 }
 
     .btn-style-three:before {
@@ -530,7 +530,7 @@ img {
         font-size: 16px;
         font-weight: 700;
         text-transform: uppercase;
-        font-family: 'Montserrat', sans-serif;
+        font-family: 'Inter', sans-serif;
     }
 
     .sec-title h2 {
@@ -825,7 +825,7 @@ img {
         color: #132144;
         font-size: 18px;
         text-transform: capitalize;
-        font-family: 'Montserrat', sans-serif;
+        font-family: 'Inter', sans-serif;
     }
 
     .main-header .info-box:last-child {
@@ -1270,7 +1270,7 @@ img {
     -webkit-transition: all 500ms ease;
     -ms-transition: all 500ms ease;
     -o-transition: all 500ms ease;
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Inter', sans-serif;
 }
 
 .main-menu .navigation > li.dropdown > a {
@@ -4917,7 +4917,7 @@ img {
             font-size: 60px;
             font-weight: 800;
             line-height: 1em;
-            font-family: 'Montserrat', sans-serif;
+            font-family: 'Inter', sans-serif;
         }
 
         .feature-block-two .inner-box h4 {
@@ -6215,7 +6215,7 @@ img {
                 -webkit-transition: all 0.3s ease;
                 -ms-transition: all 0.3s ease;
                 -o-transition: all 0.3s ease;
-                font-family: 'Montserrat', sans-serif;
+                font-family: 'Inter', sans-serif;
             }
 
                 .news-block .inner-box .lower-content .read-more .arrow {
@@ -6636,7 +6636,7 @@ img {
             font-size: 18px;
             padding-top: 20px;
             text-transform: uppercase;
-            font-family: 'Montserrat', sans-serif;
+            font-family: 'Inter', sans-serif;
         }
 
         .banner-section-two .content-column .video-box {
@@ -6796,7 +6796,7 @@ img {
     font-size: 44px;
     font-weight: 800;
     line-height: 1.3em;
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Inter', sans-serif;
     opacity: 0;
     transform: scaleY(0);
     transform-origin: top;
@@ -7220,7 +7220,7 @@ img {
         font-size: 48px;
         line-height: 1em;
         font-weight: 700;
-        font-family: 'Montserrat', sans-serif;
+        font-family: 'Inter', sans-serif;
     }
 
     .fact-counter .column .inner .counter-title {
@@ -7532,7 +7532,7 @@ img {
             -webkit-transition: all 0.3s ease;
             -ms-transition: all 0.3s ease;
             -o-transition: all 0.3s ease;
-            font-family: 'Montserrat', sans-serif;
+            font-family: 'Inter', sans-serif;
         }
 
             .process-block .inner-box .read-more .arrow {
@@ -8315,7 +8315,7 @@ img {
             color: #dddddd;
             font-size: 60px;
             font-weight: 700;
-            font-family: 'Montserrat', sans-serif;
+            font-family: 'Inter', sans-serif;
             transition: all 900ms ease;
             -moz-transition: all 900ms ease;
             -webkit-transition: all 900ms ease;
@@ -8679,7 +8679,7 @@ img {
             -webkit-transition: all 0.3s ease;
             -ms-transition: all 0.3s ease;
             -o-transition: all 0.3s ease;
-            font-family: 'Montserrat', sans-serif;
+            font-family: 'Inter', sans-serif;
         }
 
             .news-block-three .inner-box .lower-content .read-more .arrow {
@@ -9028,7 +9028,7 @@ img {
             text-align: right;
             margin-top: 25px;
             margin-bottom: 20px;
-            font-family: 'Montserrat', sans-serif;
+            font-family: 'Inter', sans-serif;
         }
 
             .price-block .inner-box .price span,
@@ -9371,7 +9371,7 @@ img {
         letter-spacing: 1px;
         border-radius: 6px;
         text-transform: capitalize;
-        font-family: 'Montserrat', sans-serif;
+        font-family: 'Inter', sans-serif;
     }
 
 /***
@@ -9509,7 +9509,7 @@ img {
             -ms-transition: all 500ms ease;
             -o-transition: all 500ms ease;
             transition: all 500ms ease;
-            font-family: 'Montserrat', sans-serif;
+            font-family: 'Inter', sans-serif;
         }
 
             .accordion-box .block .acc-btn.active {
@@ -9775,7 +9775,7 @@ img {
             border-radius: 20px;
             box-shadow: 0 0 30px rgba(0,0,0,0.25);
             background-color: rgba(54,54,54,.40);
-            font-family: 'Montserrat', sans-serif;
+            font-family: 'Inter', sans-serif;
             margin: 0 15px 20px;
         }
 
@@ -10327,7 +10327,7 @@ img {
                 font-size: 18px;
                 padding-top: 20px;
                 text-transform: uppercase;
-                font-family: 'Montserrat', sans-serif;
+                font-family: 'Inter', sans-serif;
             }
 
             .services-detail .inner-box .image-two .video-box {
@@ -10710,7 +10710,7 @@ img {
                 font-weight: 700;
                 font-size: 18px;
                 color: #141d38;
-                font-family: 'Montserrat', sans-serif;
+                font-family: 'Inter', sans-serif;
             }
 
     .contact-info-section .lower-text {
@@ -11096,7 +11096,7 @@ img {
             -webkit-transition: all 0.3s ease;
             -ms-transition: all 0.3s ease;
             -o-transition: all 0.3s ease;
-            font-family: 'Montserrat', sans-serif;
+            font-family: 'Inter', sans-serif;
         }
 
     .sidebar .popular-posts .post a:hover {
@@ -11344,7 +11344,7 @@ img {
                 color: #141d38;
                 font-size: 16px;
                 font-weight: 600;
-                font-family: 'Montserrat', sans-serif;
+                font-family: 'Inter', sans-serif;
             }
 
                 .news-block-five .inner-box .lower-content .lower-box .read-more .arrow {
@@ -11645,7 +11645,7 @@ img {
     line-height: 1.3em;
     display: inline-block;
     text-transform: capitalize;
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Inter', sans-serif;
 }
 
 .sidebar-page-container .comments-area .comment-box .text {
@@ -11662,7 +11662,7 @@ img {
     margin-left: 20px;
     display: inline-block;
     font-weight: 500;
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Inter', sans-serif;
 }
 
 .sidebar-page-container .comments-area .comment-box .theme-btn {

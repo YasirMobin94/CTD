@@ -33,6 +33,7 @@
   <ItemGroup>
     <Folder Include="Views\Shared\ServicesPages\SEO\" />
     <Folder Include="wwwroot\bundles\" />
+    <Folder Include="wwwroot\fonts\Inter\" />
   </ItemGroup>
 
   <ItemGroup>

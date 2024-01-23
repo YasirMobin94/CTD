@@ -16,8 +16,8 @@ html {
     }
 }
 
-.font-montserrat {
-    font-family: 'Montserrat', sans-serif !important;
+.font-Inter {
+    font-family: 'Inter', sans-serif !important;
 }
 
 .uppercase {
@@ -321,7 +321,7 @@ html {
         margin: 20px 0 0 20px;
         font-size: 1.03rem;
         /* font-weight: 500; */
-        font-family: 'Montserrat', sans-serif !important;
+        font-family: 'Inter', sans-serif !important;
     }
 
         .services-page-section ul li {
@@ -347,7 +347,7 @@ html {
         padding: 0.5rem;
         background: #23304F;
         color: #fff;
-        font-family: 'Montserrat', sans-serif !important;
+        font-family: 'Inter', sans-serif !important;
         border-radius: 0.5rem;
     }
 
@@ -367,7 +367,7 @@ html {
             line-height: 1.7rem;
             /*text-align: justify;*/
             margin-bottom: 2rem;
-            font-family: 'Montserrat', sans-serif !important;
+            font-family: 'Inter', sans-serif !important;
         }
 
         .services-page-section .service-detail-section .service-detail .detail-with-list ul {
@@ -545,7 +545,7 @@ html {
     display: flex;
     flex-wrap: wrap;
     /*justify-content: space-between;*/
-    font-family: 'Montserrat', sans-serif !important;
+    font-family: 'Inter', sans-serif !important;
     /*padding: 2rem;*/
 }
 
