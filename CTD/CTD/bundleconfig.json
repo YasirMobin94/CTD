@@ -1,6 +1,16 @@
 [
   // CSS
   {
+    "outputFileName": "wwwroot/bundles/css/inter-font.min.css",
+    "inputFiles": [
+      "wwwroot/css/inter-font.css"
+    ],
+    "minify": {
+      "enabled": true,
+      "outputMode": "singleLine"
+    }
+  },
+  {
     "outputFileName": "wwwroot/bundles/css/font-icon.min.css",
     "inputFiles": [
       "wwwroot/css/font-awesome.css",

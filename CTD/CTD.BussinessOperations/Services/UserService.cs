@@ -85,8 +85,7 @@ namespace CTD.BussinessOperations.Services
         }
         private string GetEmailBodyForAdmin(UserViewModel userVM)
         {
-            string body = string.Empty;
-            body = System.IO.File.ReadAllText(Path.Combine(userVM.FilePath, "AdminEmailMessage.html"));
+            var body = File.ReadAllText(Path.Combine(userVM.FilePath, "AdminEmailMessage.html"));
             body = body.Replace("[UserName]", userVM.Name);
             body = body.Replace("[Email]", userVM.Email);
             body = body.Replace("[Phone]", userVM.Phone);
@@ -99,8 +98,7 @@ namespace CTD.BussinessOperations.Services
         }
         private string GetEmailBody(UserViewModel userVM)
         {
-            string body = string.Empty;
-            body = System.IO.File.ReadAllText(Path.Combine(userVM.FilePath, "EmailResponse.html"));
+            var body = File.ReadAllText(Path.Combine(userVM.FilePath, "EmailResponse.html"));
             body = body.Replace("[UserName]", userVM.Name);
             body = body.Replace("[CurrentYear]", DateTime.UtcNow.Year + "");
 

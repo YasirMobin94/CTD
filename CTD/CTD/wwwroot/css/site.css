@@ -185,7 +185,7 @@ html {
 
     .our-solutions-section .card-text,
     .our-results-section .card-text {
-        font-weight: lighter;
+        /*font-weight: lighter;*/
         font-size: medium;
     }
 

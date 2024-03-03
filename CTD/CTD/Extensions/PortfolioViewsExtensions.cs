@@ -20,6 +20,7 @@
                 "web-development-football365" => "_WebDevelopmentForViewsLiveMatches",
                 "web-development-for-stainless-steel-railing-kits" => "_WebDevelopmentForStainlessSteelRailingKits",
 				"web-development-for-drive-xcel" => "_WebDevelopmentForDriveXcel",
+                "web-development-for-flexi-biz-pro" => "_WebDevelopmentForFlexiBizPro",
                 "seo-for-admiral-farragut-academy" => "_SEOForAdmiralFarragutAcademy",
                 "seo-for-think-up-themes" => "_SEOForThinkUpThemes",
                 "seo-for-eiksmarka" => "_SEOForEiksmarka",

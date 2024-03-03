@@ -94,10 +94,13 @@
         <link href="~/bundles/css/site.min.css" rel="preload" asp-append-version="true" as="style">
         <link href="~/bundles/css/site.min.css" rel="stylesheet" asp-append-version="true" async>
 
-        <link rel="preload" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&family=Nunito+Sans:wght@300;600;700;800;900&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+        <link href="~/bundles/css/inter-font.min.css" rel="preload" asp-append-version="true" as="style">
+        <link href="~/bundles/css/inter-font.min.css" rel="stylesheet" asp-append-version="true" async>
+
+      @*   <link rel="preload" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&family=Nunito+Sans:wght@300;600;700;800;900&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
         <noscript>
             <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&family=Nunito+Sans:wght@300;600;700;800;900&display=swap">
-        </noscript>
+        </noscript> *@
     </environment>
 
     <link rel="canonical" href="@(Context.Request.GetDisplayUrl().StartsWith("https") ? Context.Request.GetDisplayUrl() : Context.Request.GetDisplayUrl().Replace("http", "https"))">
