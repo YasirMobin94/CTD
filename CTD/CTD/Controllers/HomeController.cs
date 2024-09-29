@@ -274,12 +274,16 @@ namespace CTD.Controllers
                 return RedirectToAction(nameof(CommingSoon));
             }
         }
+		public async Task<IActionResult> ProjectDetail()
+		{
+			return View($"~/Views/Shared/Portfolio/_ProjectDetail.cshtml");
+		}
 
-        #endregion
+		#endregion
 
-        #region Blogs
+		#region Blogs
 
-        [Route("blogs")]
+		[Route("blogs")]
         public IActionResult Blogs()
         {
             return View();
