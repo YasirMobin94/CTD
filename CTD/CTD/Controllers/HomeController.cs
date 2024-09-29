@@ -2,14 +2,8 @@
 using CTD.BussinessOperations.Models.ViewModels;
 using CTD.BussinessOperations.Services;
 using CTD.Extensions;
-using CTD.Helpers;
-using CTD.Models;
-using CTD.Models.Projects;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.AspNetCore.Mvc.ModelBinding;
 using Serilog;
-using System.Diagnostics;
-using System.Dynamic;
 
 namespace CTD.Controllers
 {
