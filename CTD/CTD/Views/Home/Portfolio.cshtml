@@ -3,7 +3,7 @@
     ViewBag.Title = "Portfolio";
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
-
+<link href="~/css/color-themes/default-theme.css" rel="stylesheet" />
 <!-- Gallery Section -->
 <section class="gallery-section">
 	<div class="auto-container">
@@ -19,21 +19,26 @@
 			<div class="filters clearfix">
 
 				<ul class="filter-tabs filter-btns text-center clearfix">
-					<li class="active filter" data-role="button" data-filter=".seo">SEO</li>
+					<li class="active filter" data-role="button" data-filter="all">All</li>
+					<li class="filter" data-role="button" data-filter=".seo">SEO</li>
 					<li class="filter" data-role="button" data-filter=".uiux">UI & UX</li>
 					<li class="filter" data-role="button" data-filter=".appdevelopment">App Development</li>
 					<li class="filter" data-role="button" data-filter=".webdevelopment">Web Development</li>
 				</ul>
 			</div>
 			<div class="filter-list row clearfix">
-				<partial name="~/Views/Shared/Portfolio/_AllProjects.cshtml"/>
+				<partial name="~/Views/Shared/Portfolio/_AllProjects.cshtml" />
+				<partial name="~/Views/Shared/Portfolio/_SEOProjects.cshtml" />
+				<partial name="~/Views/Shared/Portfolio/_UIUXProjects.cshtml" />
+				<partial name="~/Views/Shared/Portfolio/_AppDevProjects.cshtml" />
+				<partial name="~/Views/Shared/Portfolio/_WebDevProjects.cshtml" />
 			</div>
 		</div>
 	</div>
 </section>
 
-@* <script>
+<script>
     $(document).ready(function () {
         CTDNav.AddCurrentActiveClass(`portfolio`)
     })
-</script> *@
+</script>

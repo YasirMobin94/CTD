@@ -10487,6 +10487,7 @@ img {
         .gallery-section .filters .filter.active,
         .gallery-section .filters .filter:hover {
             color: #0060ff;
+            text-decoration: line-through;
             /*text-decoration: line-through;*/
         }
 
