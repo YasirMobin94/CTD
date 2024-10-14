@@ -25,8 +25,19 @@
                 "seo-for-think-up-themes" => "_SEOForThinkUpThemes",
                 "seo-for-eiksmarka" => "_SEOForEiksmarka",
                 "seo-for-mgbtechnik" => "_SEOForMGbtechnik",
+				"app-development-for-aljomah-automative" => "_AppDevAljomahAutomative",
+				"app-development-for-dubai-watch-week" => "_AppDevDubaiWatchWeek",
+				"app-development-for-pay-box" => "_AppDevPayBox",
+				"app-development-for-secret-society" => "_AppDevSecretSociaty",
+				"app-development-for-almadallah" => "_AppDevAlmadallah",
+				"app-development-for-swim-warrior" => "_AppDevSwimWarrior",
+				"app-development-for-up-ticker" => "_AppDevUpTicker",
+				"app-development-for-wiki-saleep" => "_AppDevWikiSaleep",
+				"web-development-for-news24" => "_WebDevNews24",
+				"web-development-for-racing-and-sports" => "_WebDevRacningAndSport",
 
-                _ => null
+
+				_ => null
             };
         }
 
