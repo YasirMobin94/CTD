@@ -8,10 +8,10 @@
             <div class="overlay-box">
                 <a href="images/portfolio/web-development/drive-excel/featured-image.png" data-fancybox="gallery" data-caption="" class="search-icon"><span class="icon flaticon-search"></span></a>
                 <div class="content">
-                    <h4><a href="Views\Shared\Portfolio\_WebDevelopmentForDriveXcel.cshtml">Driving School Site</a></h4>
+                    <h4><a href="@Url.Action("PortfolioDetail", "Home", new { portfolioSlug = "web-development-for-drive-xcel" })">Driving School Site</a></h4>
                     <div class="category">Web Development</div>
                 </div>
-                <a href="/Home/ProjectDetail" class="arrow flaticon-long-arrow-pointing-to-the-right"></a>
+                <a href="@Url.Action("PortfolioDetail", "Home", new { portfolioSlug = "web-development-for-drive-xcel" })" class="arrow flaticon-long-arrow-pointing-to-the-right"></a>
             </div>
         </div>
     </div>
