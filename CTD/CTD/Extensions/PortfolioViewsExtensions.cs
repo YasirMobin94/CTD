@@ -35,6 +35,11 @@
 				"app-development-for-wiki-saleep" => "_AppDevWikiSaleep",
 				"web-development-for-news24" => "_WebDevNews24",
 				"web-development-for-racing-and-sports" => "_WebDevRacningAndSport",
+				"web-development-for-price-match" => "_WebDevPriceMatch",
+				"web-development-for-osix-media" => "_WebDevOsixMedia",
+				"web-development-for-snl-24-kickoff" => "_WebDevSnl24Kickoff",
+				"web-development-for-snl-24-soccer" => "_WebDevSnl24Soccer",
+				"web-development-for-tour-planner" => "_WebDevTourPlanner",
 
 
 				_ => null
