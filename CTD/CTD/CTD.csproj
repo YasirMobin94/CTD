@@ -38,6 +38,7 @@
 
   <ItemGroup>
     <None Include="bundleconfig.json" />
+    <None Include="wwwroot\images\portfolio\uxui\linux-gurus\Linux Gurus.docx" />
     <None Include="wwwroot\js\sweetalert2.js" />
   </ItemGroup>
 
