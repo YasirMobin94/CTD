@@ -1,230 +1,72 @@
 ﻿@{
-    ViewBag.Title = "Web Development for FlexiBizPro: Dynamic Enterprise Management System";
-    Layout = "~/Views/Shared/_Layout.cshtml";
+	ViewBag.Title = "Web Development for FlexiBizPro: Dynamic Enterprise Management System";
+	Layout = "~/Views/Shared/_Layout.cshtml";
 }
-
+<!--Page Title-->
+<section class="page-title">
+	<div class="pattern-layer-one" style="background-image: url(/images/background/pattern-16.png)"></div>
+	<div class="auto-container">
+		<h2>Project Detail</h2>
+		<ul class="page-breadcrumb">
+			<li><a href="index.html">home</a></li>
+			<li>Project Detail</li>
+		</ul>
+	</div>
+</section>
+<!--End Page Title-->
+<!-- Project Detail Section -->
 <section class="project-detail-section">
-    <div class="auto-container">
-        <div class="upper-section">
-            <div class="row clearfix">
-                <div class="col-lg-5 col-md-12 col-sm-12 col-12 wow fadeInUp" data-wow-delay="0ms" data-wow-duration="2000ms">
-                    <div class="inner-column">
-                        <div class="about-project-title">
-                            <h1>About the project</h1>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-7 col-md-12 col-sm-12 col-12 wow fadeInUp" data-wow-delay="0ms" data-wow-duration="2000ms">
-                    <div class="text-row">
-                        <p>
-                            FlexiBizPro is an innovative, customizable management system designed for a variety of business needs. Developed using ASP.NET MVC 5 and a SQL database, it specializes in dynamic product variant management and comprehensive financial modules, tailored to meet diverse industry requirements with enhanced security and efficiency.
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="key-challenges-section">
-            <div class="row mb">
-                <div class="col-lg-12 col-md-12 col-sm-12 col-12">
-                    <h4>
-                        <strong>Why Clients Should Choose FlexiBizPro?</strong>
-                    </h4>
-                </div>
-                <div class="row clearfix">
-                    <div class="col-lg-6 col-md-12 col-sm-12 col-12 wow slideInLeft" data-wow-delay="0ms" data-wow-duration="1500ms">
-                        <ul>
-                            <li>
-                                <div class="challange-text">
-                                    <h6>Customized Business Solutions</h6>
-                                    <p>
-                                        Tailor-made to suit specific industry needs, enabling businesses to manage custom product variants efficiently.
-                                    </p>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="challange-text">
-                                    <h6>Comprehensive Financial Management</h6>
-                                    <p>
-                                        Streamlines all financial operations, from credit and debit management to account balancing and reporting, for precise financial oversight.
-                                    </p>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="challange-text">
-                                    <h6>Scalability for Business Growth</h6>
-                                    <p>
-                                        Accommodates increasing transaction volumes and data loads, ideal for expanding businesses.
-                                    </p>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="challange-text">
-                                    <h6>User-Friendly Experience</h6>
-                                    <p>
-                                        The intuitive ASP.NET MVC 5 interface simplifies navigation and management, reducing the learning curve.
-                                    </p>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="challange-text">
-                                    <h6>Compliance Assurance</h6>
-                                    <p>
-                                        Adheres to industry standards, helping businesses remain compliant with regulatory requirements.
-                                    </p>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="challange-text">
-                                    <h6>Reliable Support and Maintenance</h6>
-                                    <p>
-                                        Ensures the system remains efficient and secure with regular updates and support.
-                                    </p>
-                                </div>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="col-lg-6 col-md-12 col-sm-12 col-12 wow slideInRight" data-wow-delay="0ms" data-wow-duration="1500ms">
-                        <img src="/images/portfolio/flexi-biz-pro/flexi-biz-pro-1.jpg" />
-                    </div>
-                </div>
-            </div>
+	<div class="auto-container">
+		<div class="upper-section">
+			<div class="row clearfix">
 
+				<!-- Image Column -->
+				<div class="image-column col-lg-8 col-md-12 col-sm-12">
+					<div class="inner-column">
+						<!-- Sec Title -->
+						<div class="sec-title">
+							<div class="title">IT-Solutions</div>
+							<h2>Proud Projects That Make Us Stand Out</h2>
+						</div>
+						<div class="image">
+							<img src="~/images/gallery/14.jpg" alt="" />
+						</div>
+					</div>
+				</div>
 
-        </div>
-        <div class="key-challenges-section">
-            <div class="row mb">
-                <div class="col-lg-12 col-md-12 col-sm-12 col-12">
-                    <h4>
-                        <strong>Time and Cost Efficiency</strong>
-                    </h4>
-                </div>
-                <div class="row clearfix">
-                    <div class="col-lg-12 col-md-12 col-sm-12 col-12 wow slideInRight" data-wow-delay="0ms" data-wow-duration="1500ms">
-                        <ul>
-                            <li>
-                                <div class="challange-text">
-                                    <p>
-                                        <strong>Streamlined Operations:</strong>  By integrating various business processes into one platform, FlexiBizPro reduces the need for multiple software solutions, leading to significant cost savings on software acquisition and maintenance.
-                                    </p>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="challange-text">
-                                    <p>
-                                        <strong>Automated Processes:</strong> Automation of routine tasks like financial calculations, report generation, and data management reduces manual labor, saving time and minimizing human error.
-                                    </p>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="challange-text">
-                                    <p>
-                                        <strong>Data-Driven Decision Making: </strong>With real-time data analytics and reporting, businesses can make informed decisions quickly, reducing downtime and enhancing operational efficiency.
-                                    </p>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="challange-text">
-                                    <p>
-                                        <strong>Reduced Training Time: </strong>The user-friendly interface and intuitive design of FlexiBizPro shorten the training period for new users, saving time and resources in employee training.
-                                    </p>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="challange-text">
-                                    <p>
-                                        <strong>Scalability: </strong>Its scalable nature means businesses won't need to invest in a new system as they grow, providing long-term cost-effectiveness.
-                                    </p>
-                                </div>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
+				<!-- Info Column -->
+				<div class="info-column col-lg-4 col-md-12 col-sm-12">
+					<div class="inner-column">
+						<h4>Project Info</h4>
+						<div class="text">Etiam volutpat ultricies est id volutpat. Maecenas finibus risus purus, id lobortis urna rutrum id. Sed pellent esquevert pharetra consequat</div>
+						<ul class="info-list">
+							<li><span class="icon flaticon-user"></span><strong>Client: </strong>John Amanda</li>
+							<li><span class="icon fa fa-bookmark-o"></span><strong>Category: </strong>Business, Campaign</li>
+							<li><span class="icon flaticon-timetable"></span><strong>Date: </strong>6 June 20</li>
+							<li><span class="icon fa fa-globe"></span><strong>Website: </strong>Globex.com</li>
+							<li><span class="icon fa fa-map-marker"></span><strong>Location: </strong>New York</li>
+						</ul>
+					</div>
+				</div>
 
-
-        </div>
-
-        <div class="key-challenges-section">
-            <div class="row mb">
-                <div class="col-lg-12 col-md-12 col-sm-12 col-12">
-                    <h2 class="text-row-title">Key Features</h2>
-                </div>
-            </div>
-            <div class="row clearfix">
-                <div class="col-lg-6 col-md-12 col-sm-12 col-12 wow slideInLeft" data-wow-delay="0ms" data-wow-duration="1500ms">
-                    <ul>
-                        <li>
-                            <div class="challange-text">
-                                <p>
-                                    Dynamic Product Variant Customization
-                                </p>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="challange-text">
-                                <p>
-                                    Complete Account Module
-                                </p>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="challange-text">
-                                <p>
-                                    SQL Database with Database-First Approach
-                                </p>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="challange-text">
-                                <p>
-                                    Secure User Management with MVC Identity
-
-                                </p>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="challange-text">
-                                <p>
-                                    Scalable and Performance-Optimized Architecture
-                                </p>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="challange-text">
-                                <p>
-                                    User-Friendly Interface using ASP.NET MVC 5
-                                </p>
-                            </div>
-                        </li>
-                    </ul>
-                </div>
-                <div class="col-lg-6 col-md-12 col-sm-12 col-12 wow slideInRight" data-wow-delay="0ms" data-wow-duration="1500ms">
-                    <img src="/images/portfolio/flexi-biz-pro/flexi-biz-pro-2.jpg" />
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="container-fluid technologies-section">
-        <div class="row center-items">
-            <img src="/images/portfolio/asp-net-mvc.jpeg" />
-            <img src="/images/portfolio/sql-server-db.jpeg" />
-            <img src="/images/portfolio/entity-framework.jpeg" />
-        </div>
-    </div>
-    <div class="auto-container">
-        <div class="upper-section">
-            <div class="row">
-                <div class="col-lg-12 col-md-12 col-sm-12 col-12">
-                    <h2 class="base-color">
-                        <strong>Conclusion</strong>
-                    </h2>
-                    <div class="text-row">
-                        <p>
-                            FlexiBizPro stands as a cutting-edge solution for modern businesses, offering versatility, security, and efficiency. Its capacity to adapt to varying operational needs, combined with its robust technological foundation, makes it an invaluable tool for companies seeking to streamline their management processes, save time and costs, and foster business growth.
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+			</div>
+		</div>
+		<div class="lower-section">
+			<h3>Innovative Interfaces</h3>
+			<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. remaining essentially unchanged.</p>
+			<h3>You May Also Know How it Uses In IT Field?</h3>
+			<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. remaining essentially unchanged.</p>
+			<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+			<h3>Project Result & Benefits of Project</h3>
+			<p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using ‘Content here, content here’, making it look like readable English. Many desktop publishing packages and web page editors now.</p>
+			<div class="buttons-box clearfix">
+				<div class="pull-left">
+					<a href="#" class="theme-btn btn-style-three"><span class="txt"><i class="fa fa-angle-double-left"></i>&nbsp; Previous</span></a>
+				</div>
+				<div class="pull-right">
+					<a href="#" class="theme-btn btn-style-three"><span class="txt">Send Massage &nbsp;<i class="fa fa-angle-double-right"></i></span></a>
+				</div>
+			</div>
+		</div>
+	</div>
 </section>

@@ -40,7 +40,17 @@
 				"web-development-for-snl-24-kickoff" => "_WebDevSnl24Kickoff",
 				"web-development-for-snl-24-soccer" => "_WebDevSnl24Soccer",
 				"web-development-for-tour-planner" => "_WebDevTourPlanner",
-
+				"seo-for-saint-school" => "_SeoSaintSchool",
+				"seo-for-sun-in-me" => "_SeoSunInMe",
+				"seo-for-treat-in-fair" => "_SeoTreatInFair",
+				"ui-ux-design-for-book-store" => "_UIUXBookStore",
+				"ui-ux-design-for-coding-gurus" => "_UIUXCodingGurus",
+				"ui-ux-design-for-linux-gurus" => "_UIUXLinuxGurus",
+				"ui-ux-design-for-party-app" => "_UIUXPartyApp",
+				"ui-ux-design-for-ride-app" => "_UIUXRideApp",
+				"ui-ux-design-for-ukdt" => "_UIUXUkDt",
+				"ui-ux-design-for-nursing-agency" => "_UIUXNursingAgency",
+				"ui-ux-design-for-my-boost" => "_UIUXMyBoost",
 
 				_ => null
             };
