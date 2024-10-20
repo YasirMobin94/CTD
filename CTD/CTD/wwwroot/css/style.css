@@ -10622,7 +10622,26 @@ img {
             line-height: 1.8em;
             font-weight: 600;
         }
+        /*custom nasir*/ 
+        /* Override list style for lower-section only */
+        /* Increase specificity for ul and li */
+        .project-detail-section .lower-section > ul {
+            position: relative;
+            padding-left: 40px; /* Increased padding for better visibility */
+            margin-bottom: 20px;
+            list-style-type: disc !important; /* Force disc bullets */
+            list-style-position: outside;
+        }
 
+            .project-detail-section .lower-section > ul > li {
+                margin-bottom: 8px;
+                color: #555555;
+                font-size: 16px;
+                line-height: 1.8em;
+                font-weight: 600;
+            }
+
+        /*custom*/
         .project-detail-section .lower-section .buttons-box {
             position: relative;
             margin-top: 40px;
