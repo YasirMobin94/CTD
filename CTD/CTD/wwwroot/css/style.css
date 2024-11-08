@@ -10620,7 +10620,7 @@ img {
             color: #555555;
             font-size: 16px;
             line-height: 1.8em;
-            font-weight: 600;
+            /*font-weight: 600;*/
         }
         /*custom nasir*/ 
         /* Override list style for lower-section only */
@@ -10638,9 +10638,15 @@ img {
                 color: #555555;
                 font-size: 16px;
                 line-height: 1.8em;
-                font-weight: 600;
+                /*font-weight: 600;*/
             }
+        .project-detail-section .lower-section h3{
+            font-size : 20px;
+        }
 
+    .project-detail-section h2 {
+        font-size: 30px;
+    }
         /*custom*/
         .project-detail-section .lower-section .buttons-box {
             position: relative;
